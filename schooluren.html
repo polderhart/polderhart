@@ -9,7 +9,9 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -19,7 +21,7 @@
     <nav class="nav">
         <div class="nav__container">
             <a href="index.html" class="nav__logo">'t Polderhart</a>
-            
+
             <ul class="nav__menu">
                 <li class="nav__item">
                     <a href="index.html" class="nav__link">Welkom</a>
@@ -27,7 +29,7 @@
                 <li class="nav__item">
                     <a href="onze-school.html" class="nav__link">Onze school</a>
                 </li>
-                                <li class="nav__item nav__item--dropdown">
+                <li class="nav__item nav__item--dropdown">
                     <a href="praktisch.html" class="nav__link">Praktisch</a>
                     <div class="nav__dropdown">
                         <div class="nav__dropdown-item">
@@ -38,7 +40,8 @@
                             <div class="nav__submenu">
                                 <a href="schooluren.html" class="nav__submenu-link">Schooluren</a>
                                 <a href="opvang-studie.html" class="nav__submenu-link">Opvang en studie</a>
-                                <a href="https://order.hanssens.be/menu/X78A/GBS-t-Polderhart-Zuienkerke-Kleuter" target="_blank" rel="noopener" class="nav__submenu-link">Warme maaltijden</a>
+                                <a href="https://order.hanssens.be/menu/X78A/GBS-t-Polderhart-Zuienkerke-Kleuter"
+                                    target="_blank" rel="noopener" class="nav__submenu-link">Warme maaltijden</a>
                             </div>
                         </div>
                         <div class="nav__dropdown-item">
@@ -59,7 +62,7 @@
                     <a href="contact.html" class="nav__link nav__link--cta">Contact</a>
                 </li>
             </ul>
-            
+
             <button class="nav__toggle" aria-label="Menu">
                 <span></span>
                 <span></span>
@@ -76,66 +79,112 @@
         </div>
     </section>
 
-
-    
-
-    <!-- CONTENT -->
-    <section class="section fade-in">
-        <div class="container"><div class="u-grid u-grid--2">
-            <div class="card">
-                <h2>Kleuter, 1ste, 2de en 3de leerjaar</h2>
-                <ul>
-                    <li>Maandag: 8.40 – 11.50 en 13.15 – 16.00</li>
-                    <li>Dinsdag: 8.40 – 11.50 en 13.15 – 16.00</li>
-                    <li>Woensdag: 8.40 – 11.50</li>
-                    <li>Donderdag: 8.40 – 11.50 en 13.15 – 16.00</li>
-                    <li>Vrijdag: 8.40 – 11.50 en 13.00 – 15.10</li>
-                </ul>
-            </div>
-            <div class="card">
-                <h2>4de, 5de en 6de leerjaar</h2>
-                <ul>
-                    <li>Maandag: 8.40 – 11.50 en 13.00 – 16.00</li>
-                    <li>Dinsdag: 8.40 – 11.50 en 13.00 – 16.00</li>
-                    <li>Woensdag: 8.40 – 11.50</li>
-                    <li>Donderdag: 8.40 – 11.50 en 13.00 – 16.00</li>
-                    <li>Vrijdag: 8.40 – 11.50 en 13.00 – 15.10</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-            <section class="section">
+    <!-- LESUREN CONTENT -->
+    <section class="section">
         <div class="section__container">
+            <!-- Intro -->
+            <div style="text-align: center; max-width: 700px; margin: 0 auto var(--space-2xl);">
+                <p style="font-size: 1.125rem; color: var(--text-secondary); line-height: 1.7;">
+                    Onze school biedt een duidelijke lessenstructuur aangepast aan de verschillende leeftijdsgroepen.
+                </p>
+            </div>
+
+            <!-- Lesuren Cards -->
             <div class="card-grid card-grid--2">
+                <!-- Kleuter + 1-2-3 -->
                 <div class="card">
-                    <h3 class="card__title">Lesuren kleuterschool</h3>
-                    <p class="card__description">
-                        <strong>Voormiddag:</strong> 8:30 - 12:00<br>
-                        <strong>Namiddag:</strong> 13:15 - 15:30<br><br>
-                        <strong>Woensdag:</strong> 8:30 - 12:00
-                    </p>
+                    <p class="card__subtitle">Kleuter, 1ste, 2de en 3de leerjaar</p>
+                    <h2 class="card__title">Jongere leerlingen</h2>
+                    <div style="margin-top: var(--space-lg);">
+                        <div style="display: grid; gap: var(--space-md);">
+                            <div
+                                style="display: flex; justify-content: space-between; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-light);">
+                                <span style="font-weight: 500;">Maandag</span>
+                                <span style="color: var(--text-secondary);">8.40 – 11.50 <span
+                                        style="margin: 0 0.5rem;">•</span> 13.15 – 16.00</span>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-light);">
+                                <span style="font-weight: 500;">Dinsdag</span>
+                                <span style="color: var(--text-secondary);">8.40 – 11.50 <span
+                                        style="margin: 0 0.5rem;">•</span> 13.15 – 16.00</span>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-light);">
+                                <span style="font-weight: 500;">Woensdag</span>
+                                <span style="color: var(--text-secondary);">8.40 – 11.50</span>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-light);">
+                                <span style="font-weight: 500;">Donderdag</span>
+                                <span style="color: var(--text-secondary);">8.40 – 11.50 <span
+                                        style="margin: 0 0.5rem;">•</span> 13.15 – 16.00</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: var(--space-sm) 0;">
+                                <span style="font-weight: 500;">Vrijdag</span>
+                                <span style="color: var(--text-secondary);">8.40 – 11.50 <span
+                                        style="margin: 0 0.5rem;">•</span> 13.00 – 15.10</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- 4-5-6 -->
                 <div class="card">
-                    <h3 class="card__title">Lesuren lagere school</h3>
-                    <p class="card__description">
-                        <strong>Voormiddag:</strong> 8:30 - 12:10<br>
-                        <strong>Namiddag:</strong> 13:15 - 15:30<br><br>
-                        <strong>Woensdag:</strong> 8:30 - 12:10
-                    </p>
+                    <p class="card__subtitle">4de, 5de en 6de leerjaar</p>
+                    <h2 class="card__title">Oudere leerlingen</h2>
+                    <div style="margin-top: var(--space-lg);">
+                        <div style="display: grid; gap: var(--space-md);">
+                            <div
+                                style="display: flex; justify-content: space-between; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-light);">
+                                <span style="font-weight: 500;">Maandag</span>
+                                <span style="color: var(--text-secondary);">8.40 – 11.50 <span
+                                        style="margin: 0 0.5rem;">•</span> 13.00 – 16.00</span>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-light);">
+                                <span style="font-weight: 500;">Dinsdag</span>
+                                <span style="color: var(--text-secondary);">8.40 – 11.50 <span
+                                        style="margin: 0 0.5rem;">•</span> 13.00 – 16.00</span>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-light);">
+                                <span style="font-weight: 500;">Woensdag</span>
+                                <span style="color: var(--text-secondary);">8.40 – 11.50</span>
+                            </div>
+                            <div
+                                style="display: flex; justify-content: space-between; padding: var(--space-sm) 0; border-bottom: 1px solid var(--border-light);">
+                                <span style="font-weight: 500;">Donderdag</span>
+                                <span style="color: var(--text-secondary);">8.40 – 11.50 <span
+                                        style="margin: 0 0.5rem;">•</span> 13.00 – 16.00</span>
+                            </div>
+                            <div style="display: flex; justify-content: space-between; padding: var(--space-sm) 0;">
+                                <span style="font-weight: 500;">Vrijdag</span>
+                                <span style="color: var(--text-secondary);">8.40 – 11.50 <span
+                                        style="margin: 0 0.5rem;">•</span> 13.00 – 15.10</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            
-            <div class="card" style="margin-top: var(--space-xl);">
-                <h3 class="card__title">Belangrijke informatie</h3>
+
+            <!-- Extra info -->
+            <div class="card" style="margin-top: var(--space-2xl); background-color: var(--color-sand);">
+                <h3 class="card__title">Belangrijk om te weten</h3>
                 <p class="card__description">
-                    De schoolpoorten openen om 8:15. We vragen om stipt aanwezig te zijn zodat de lessen 
-                    op tijd kunnen beginnen. Bij te laat komen, meld je aan bij het secretariaat.
+                    De deuren openen om 8.30 uur. We vragen om op tijd aanwezig te zijn zodat de lessen stipt kunnen
+                    beginnen om 8.40 uur.
+                </p>
+                <p class="card__description">
+                    Voor opvang voor en na schooltijd, bekijk onze <a href="opvang-studie.html">opvang pagina</a>.
                 </p>
             </div>
         </div>
     </section>
-<!-- FOOTER -->
+   
+   
+    </section>
+    <!-- FOOTER -->
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__main">
@@ -147,10 +196,13 @@
                 <div>
                     <h3 class="footer__column-title">School</h3>
                     <ul class="footer__nav">
-                        <li class="footer__nav-item"><a href="onze-school.html" class="footer__nav-link">Onze school</a></li>
+                        <li class="footer__nav-item"><a href="onze-school.html" class="footer__nav-link">Onze school</a>
+                        </li>
                         <li class="footer__nav-item"><a href="team.html" class="footer__nav-link">Team</a></li>
-                        <li class="footer__nav-item"><a href="praktisch.html" class="footer__nav-link">Praktisch</a></li>
-                        <li class="footer__nav-item"><a href="vriendenkring.html" class="footer__nav-link">Vriendenkring</a></li>
+                        <li class="footer__nav-item"><a href="praktisch.html" class="footer__nav-link">Praktisch</a>
+                        </li>
+                        <li class="footer__nav-item"><a href="vriendenkring.html"
+                                class="footer__nav-link">Vriendenkring</a></li>
                     </ul>
                 </div>
 
@@ -158,7 +210,8 @@
                     <h3 class="footer__column-title">Info</h3>
                     <ul class="footer__nav">
                         <li class="footer__nav-item"><a href="agenda.html" class="footer__nav-link">Agenda</a></li>
-                        <li class="footer__nav-item"><a href="documenten.html" class="footer__nav-link">Documenten</a></li>
+                        <li class="footer__nav-item"><a href="documenten.html" class="footer__nav-link">Documenten</a>
+                        </li>
                         <li class="footer__nav-item"><a href="jobs.html" class="footer__nav-link">Jobs</a></li>
                     </ul>
                 </div>
@@ -166,7 +219,8 @@
                 <div>
                     <h3 class="footer__column-title">Contact</h3>
                     <div class="footer__contact-item">Nieuwe Steenweg 37<br>8377 Zuienkerke</div>
-                    <div class="footer__contact-item"><a href="mailto:ingrid.igodt@gbszuienkerke.net">ingrid.igodt@gbszuienkerke.net</a></div>
+                    <div class="footer__contact-item"><a
+                            href="mailto:ingrid.igodt@gbszuienkerke.net">ingrid.igodt@gbszuienkerke.net</a></div>
                     <div class="footer__contact-item"><a href="tel:+3250418430">+32 50 41 84 30</a></div>
                 </div>
             </div>
@@ -176,7 +230,8 @@
                     <span>© 2025 't Polderhart</span>
                 </div>
                 <div class="footer__legal">
-                    <a href="https://www.facebook.com/gbszuienkerke" target="_blank" rel="noopener" class="footer__legal-link">Facebook</a>
+                    <a href="https://www.facebook.com/gbszuienkerke" target="_blank" rel="noopener"
+                        class="footer__legal-link">Facebook</a>
                 </div>
             </div>
         </div>
