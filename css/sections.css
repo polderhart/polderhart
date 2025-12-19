@@ -38,6 +38,7 @@
   font-size: clamp(2rem, 5vw, 3.5rem);
   line-height: 1.1;
   margin-bottom: var(--space-md);
+  color: var(--color-cream);
 }
 
 .section__description {
