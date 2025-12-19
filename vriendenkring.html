@@ -4,41 +4,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vriendenkring – ’t Polderhart</title>
-    <link
-        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <title>Vriendenkring – 't Polderhart</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-    <header class="header">
-        <nav>
-            <ul class="header__menu header__menu--center">
-                <li><a href="index.html" class="header__link">Welkom</a></li>
-                <li><a href="onze-school.html" class="header__link">Onze school</a></li>
-                <li class="header__item header__item--has-submenu">
-                    <a href="praktisch.html" class="header__link header__link--active">Praktisch</a>
-                    <ul class="header__submenu">
-                        <li><a href="inschrijvingen.html" class="header__sublink">Inschrijvingen</a></li>
-                        <li><a href="documenten.html" class="header__sublink">Documenten</a></li>
-                        <li><a href="bereikbaarheid.html" class="header__sublink">Hoe geraak ik er?</a></li>
-                        <li><a href="opvang-studie.html" class="header__sublink">Opvang en studie</a></li>
-                        <li><a href="schooluren.html" class="header__sublink">Schooluren</a></li>
-                        <li><a href="warme-maaltijden.html" class="header__sublink">Warme maaltijden</a></li>
-                        <li><a href="vriendenkring.html" class="header__sublink header__link--active">Vriendenkring</a>
-                        </li>
-                        <li><a href="schoolbus.html" class="header__sublink">Schoolbus</a></li>
-                    </ul>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="index.html" class="nav__logo">'t Polderhart</a>
+            
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Welkom</a>
                 </li>
-                <li class="header__logo-item"><a href="index.html" class="header__logo-link"><img src="assets/logo.png"
-                            alt="Logo Polderhart"></a></li>
-                <li><a href="team.html" class="header__link">Team</a></li>
-                <li><a href="kalender.html" class="header__link">Kalender</a></li>
-                <li><a href="contact.html" class="header__link">Contact</a></li>
+                <li class="nav__item">
+                    <a href="onze-school.html" class="nav__link">Onze school</a>
+                </li>
+                <li class="nav__item nav__item--dropdown">
+                    <a href="praktisch.html" class="nav__link">Praktisch</a>
+                    <div class="nav__dropdown">
+                        <a href="inschrijvingen.html" class="nav__dropdown-link">Inschrijven</a>
+                        <div class="nav__dropdown-group">
+                            <span class="nav__dropdown-category">Dagelijks</span>
+                            <a href="schooluren.html" class="nav__dropdown-link">Schooluren</a>
+                            <a href="opvang-studie.html" class="nav__dropdown-link">Opvang en studie</a>
+                            <a href="warme-maaltijden.html" class="nav__dropdown-link">Warme maaltijden</a>
+                        </div>
+                        <a href="documenten.html" class="nav__dropdown-link">Documenten</a>
+                        <a href="schoolbus.html" class="nav__dropdown-link">Schoolbus</a>
+                    </div>
+                </li>
+                <li class="nav__item">
+                    <a href="team.html" class="nav__link">Team</a>
+                </li>
+                <li class="nav__item">
+                    <a href="agenda.html" class="nav__link">Agenda</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link nav__link--cta">Contact</a>
+                </li>
             </ul>
-        </nav>
-    </header>
+            
+            <button class="nav__toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero__container">
+            <p class="page-hero__breadcrumb">Vriendenkring</p>
+            <h1 class="page-hero__title">Vriendenkring</h1>
+            <p class="page-hero__subtitle">Samen sterker voor onze kinderen</p>
+        </div>
+    </section>
+
 
     <section class="hero hero--small fade-in">
         <div class="hero__content">
