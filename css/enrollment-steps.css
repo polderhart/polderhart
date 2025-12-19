@@ -1,0 +1,179 @@
+/* ==========================================================================
+   ENROLLMENT STEPS - Timeline Layout
+   ========================================================================== */
+
+.enrollment-intro {
+  text-align: center;
+  max-width: 700px;
+  margin: 0 auto var(--space-2xl);
+}
+
+.enrollment-intro__title {
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-family: var(--font-display);
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-md);
+}
+
+.enrollment-intro__description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* Steps Grid */
+.enrollment-steps {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-xl);
+  max-width: 900px;
+  margin: 0 auto;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .enrollment-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Individual Step Card */
+.step-card {
+  background: var(--color-cream);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  position: relative;
+  transition: all 600ms ease;
+}
+
+.step-card:hover {
+  border-color: var(--color-earth);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(42, 37, 32, 0.06);
+}
+
+/* Step Number */
+.step-card__number {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 3rem;
+  font-weight: 300;
+  color: var(--color-earth);
+  margin-bottom: var(--space-md);
+  opacity: 0.3;
+}
+
+.step-card__title {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-sm);
+}
+
+.step-card__description {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: 0;
+}
+
+.step-card__description strong {
+  color: var(--color-charcoal);
+  font-weight: 600;
+}
+
+/* Step List */
+.step-card__list {
+  list-style: none;
+  padding: 0;
+  margin: var(--space-md) 0 0;
+}
+
+.step-card__list-item {
+  padding-left: 1.5rem;
+  margin-bottom: var(--space-sm);
+  position: relative;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--text-secondary);
+}
+
+.step-card__list-item::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--color-earth);
+}
+
+/* Full Width Info Card */
+.enrollment-info {
+  background: var(--color-sand);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
+  padding: var(--space-xl);
+  text-align: center;
+  margin-top: var(--space-xl);
+}
+
+.enrollment-info__title {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-md);
+}
+
+.enrollment-info__description {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* CTA Section */
+.enrollment-cta {
+  text-align: center;
+  max-width: 600px;
+  margin: var(--space-2xl) auto 0;
+  padding: var(--space-2xl);
+  background: var(--color-cream);
+  border: 2px solid var(--color-earth);
+  border-radius: var(--radius-md);
+}
+
+.enrollment-cta__title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--color-charcoal);
+  margin-bottom: var(--space-md);
+}
+
+.enrollment-cta__description {
+  font-size: 1.0625rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+  margin-bottom: var(--space-lg);
+}
+
+.enrollment-cta__contacts {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+}
+
+.enrollment-cta__contacts a {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+@media (max-width: 767px) {
+  .step-card {
+    padding: var(--space-lg);
+  }
+  
+  .enrollment-cta {
+    padding: var(--space-xl);
+  }
+}

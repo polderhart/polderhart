@@ -3,12 +3,9 @@
    ========================================================================== */
 
 .section {
-  padding: var(--space-3xl) var(--space-md);
+  padding: var(--space-xl) var(--space-md);
 }
 
-.section--narrow {
-  padding: var(--space-2xl) var(--space-md);
-}
 
 .section--wide {
   padding: var(--space-3xl) 0;
