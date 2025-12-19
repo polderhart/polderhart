@@ -2,6 +2,35 @@
    TEAM CARDS
    ========================================================================== */
 
+/* Team Photo Section */
+.team-photo {
+  padding: var(--space-lg) 0;
+  background: var(--color-cream);
+}
+
+.team-photo__container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 var(--space-md);
+}
+
+.team-photo__image {
+  width: 100%;
+  height: 400px;
+  background: var(--color-sand);
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-tertiary);
+  font-size: 1.125rem;
+}
+
+.team-photo__image::after {
+  content: 'Team foto komt hier';
+}
+
+/* Team Sections */
 .team-section {
   margin-bottom: var(--space-3xl);
 }

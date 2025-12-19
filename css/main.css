@@ -10,6 +10,9 @@
 /* Typography */
 @import url('typography.css');
 
+/* Links */
+@import url('links.css');
+
 /* Layout */
 @import url('navigation.css');
 @import url('hero-index.css');

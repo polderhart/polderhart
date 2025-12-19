@@ -1,0 +1,64 @@
+/* ==========================================================================
+   LINKS - Universal link styling with accent color
+   ========================================================================== */
+
+/* Base link styles - apply to all links */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  position: relative;
+  transition: color 600ms ease;
+}
+
+a:hover {
+  color: var(--color-earth);
+}
+
+/* Underline hover effect for content links */
+p a,
+.section a:not(.btn):not(.team-card__email):not(.footer__nav-link),
+.card a {
+  padding-bottom: 2px;
+}
+
+p a::after,
+.section a:not(.btn):not(.team-card__email):not(.footer__nav-link)::after,
+.card a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-accent);
+  transition: width 600ms ease;
+}
+
+p a:hover::after,
+.section a:not(.btn):not(.team-card__email):not(.footer__nav-link):hover::after,
+.card a:hover::after {
+  width: 100%;
+}
+
+/* Navigation links - keep their own styling */
+.nav__link,
+.footer__nav-link {
+  color: var(--text-primary);
+}
+
+.nav__link:hover,
+.footer__nav-link:hover {
+  color: var(--text-secondary);
+}
+
+/* Button links - keep their own styling */
+.btn,
+.btn--primary,
+.btn--secondary {
+  color: inherit;
+}
+
+/* Team card email links - already have custom underline */
+.team-card__email {
+  color: var(--color-accent);
+}

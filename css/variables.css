@@ -10,6 +10,7 @@
   --color-earth: #8B7E6A;
   --color-moss: #4A4539;
   --color-charcoal: #20292a;
+  --color-accent: #8B7E6A;
   
   /* Semantic Colors */
   --text-primary: var(--color-charcoal);
