@@ -1,0 +1,66 @@
+/* ==========================================================================
+   SECTIONS
+   ========================================================================== */
+
+.section {
+  padding: var(--space-3xl) var(--space-md);
+}
+
+.section--narrow {
+  padding: var(--space-2xl) var(--space-md);
+}
+
+.section--wide {
+  padding: var(--space-3xl) 0;
+}
+
+.section__container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+}
+
+.section__header {
+  text-align: center;
+  max-width: var(--content-width);
+  margin: 0 auto var(--space-2xl);
+}
+
+.section__subtitle {
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+  color: var(--text-tertiary);
+  margin-bottom: var(--space-sm);
+}
+
+.section__title {
+  font-size: clamp(2rem, 5vw, 3.5rem);
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+}
+
+.section__description {
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: var(--text-secondary);
+}
+
+/* Dark Section Variant */
+.section--dark {
+  background-color: var(--color-charcoal);
+  color: var(--color-cream);
+}
+
+.section--dark .section__subtitle {
+  color: var(--color-stone);
+}
+
+.section--dark .section__description {
+  color: var(--color-sand);
+}
+
+/* Sand Background Variant */
+.section--sand {
+  background-color: var(--color-sand);
+}

@@ -1,0 +1,45 @@
+/* ==========================================================================
+   DESIGN TOKENS - The Row Inspired
+   ========================================================================== */
+
+:root {
+  /* Colors - Earthy Minimal Palette */
+  --color-cream: #FAF8F3;
+  --color-sand: #E8E3D8;
+  --color-stone: #C9C4B8;
+  --color-earth: #8B7E6A;
+  --color-moss: #4A4539;
+  --color-charcoal: #2A2520;
+  
+  /* Semantic Colors */
+  --text-primary: var(--color-charcoal);
+  --text-secondary: var(--color-moss);
+  --text-tertiary: var(--color-earth);
+  --bg-primary: var(--color-cream);
+  --bg-secondary: var(--color-sand);
+  --border-light: rgba(42, 37, 32, 0.08);
+  --border-medium: rgba(42, 37, 32, 0.15);
+  
+  /* Typography */
+  --font-display: 'Cormorant Garamond', serif;
+  --font-body: 'Inter', sans-serif;
+  
+  /* Spacing Scale */
+  --space-xs: 0.5rem;
+  --space-sm: 1rem;
+  --space-md: 2rem;
+  --space-lg: 4rem;
+  --space-xl: 6rem;
+  --space-2xl: 8rem;
+  --space-3xl: 12rem;
+  
+  /* Layout */
+  --container-width: 1200px;
+  --content-width: 800px;
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --radius-lg: 8px;
+  
+  /* Transitions */
+  --transition-base: 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
