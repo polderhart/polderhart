@@ -27,18 +27,26 @@
                 <li class="nav__item">
                     <a href="onze-school.html" class="nav__link">Onze school</a>
                 </li>
-                <li class="nav__item nav__item--dropdown">
+                                <li class="nav__item nav__item--dropdown">
                     <a href="praktisch.html" class="nav__link">Praktisch</a>
                     <div class="nav__dropdown">
-                        <a href="inschrijvingen.html" class="nav__dropdown-link">Inschrijven</a>
-                        <div class="nav__dropdown-group">
-                            <span class="nav__dropdown-category">Dagelijks</span>
-                            <a href="schooluren.html" class="nav__dropdown-link">Schooluren</a>
-                            <a href="opvang-studie.html" class="nav__dropdown-link">Opvang en studie</a>
-                            <a href="warme-maaltijden.html" class="nav__dropdown-link">Warme maaltijden</a>
+                        <div class="nav__dropdown-item">
+                            <a href="inschrijvingen.html" class="nav__dropdown-link">Inschrijven</a>
                         </div>
-                        <a href="documenten.html" class="nav__dropdown-link">Documenten</a>
-                        <a href="schoolbus.html" class="nav__dropdown-link">Schoolbus</a>
+                        <div class="nav__dropdown-item nav__dropdown-item--has-submenu">
+                            <a href="#" class="nav__dropdown-link">Dagelijks</a>
+                            <div class="nav__submenu">
+                                <a href="schooluren.html" class="nav__submenu-link">Schooluren</a>
+                                <a href="opvang-studie.html" class="nav__submenu-link">Opvang en studie</a>
+                                <a href="https://order.hanssens.be/menu/X78A/GBS-t-Polderhart-Zuienkerke-Kleuter" target="_blank" rel="noopener" class="nav__submenu-link">Warme maaltijden</a>
+                            </div>
+                        </div>
+                        <div class="nav__dropdown-item">
+                            <a href="documenten.html" class="nav__dropdown-link">Documenten</a>
+                        </div>
+                        <div class="nav__dropdown-item">
+                            <a href="schoolbus.html" class="nav__dropdown-link">Schoolbus</a>
+                        </div>
                     </div>
                 </li>
                 <li class="nav__item">
@@ -67,33 +75,46 @@
             <p class="page-hero__subtitle">Vragen of opmerkingen? We helpen je graag verder</p>
         </div>
     </section>
-
-
-    
-
-    <!-- CONTACT INFO -->
-    <section class="section fade-in">
-        <div class="container">
-            <div class="contact-card">
-                <h2>Contactgegevens</h2>
-                <p><strong>Adres</strong><br>Nieuwe Steenweg 37, 8377 Zuienkerke</p>
-                <p><strong>Telefoon</strong><br><a href="tel:+3250418430" class="contact-link">+32 50 41 84 30</a></p>
-                <p><strong>E‑mail</strong><br><a href="mailto:ingrid.igodt@gbszuienkerke.net" class="contact-link">ingrid.igodt@gbszuienkerke.net</a></p>
+    <!-- CONTACT CONTENT -->
+    <section class="section">
+        <div class="section__container">
+            <div class="card-grid card-grid--2">
+                <div class="card">
+                    <h3 class="card__title">Adres</h3>
+                    <p class="card__description">
+                        GBS 't Polderhart Zuienkerke<br>
+                        Nieuwe Steenweg 37<br>
+                        8377 Zuienkerke
+                    </p>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Contact</h3>
+                    <p class="card__description">
+                        <strong>E-mail:</strong><br>
+                        <a href="mailto:ingrid.igodt@gbszuienkerke.net">ingrid.igodt@gbszuienkerke.net</a><br><br>
+                        <strong>Telefoon:</strong><br>
+                        <a href="tel:+3250418430">+32 50 41 84 30</a>
+                    </p>
+                </div>
             </div>
-            <div class="contact-card">
-                <h2>Openingsuren</h2>
-                <p><strong>Secretariaat</strong><br>Schooldagen: 8.30 – 16.00</p>
-                <p>Juli en vanaf 15 augustus: 9.00 – 12.00</p>
-            </div>
-            <div class="contact-card">
-                <h2>Nuttige links</h2>
-                <p><a href="bereikbaarheid.html" class="contact-link">Hoe geraak ik er?</a></p>
-                <p><a href="schoolbus.html" class="contact-link">Schoolbus</a></p>
+            
+            <div style="margin-top: var(--space-2xl);">
+                <div class="card">
+                    <h3 class="card__title">Bereikbaarheid</h3>
+                    <p class="card__description">
+                        Onze school is gemakkelijk bereikbaar met de auto via de N9 richting Brugge-Blankenberge. 
+                        Er is voldoende parkeergelegenheid voor de school. Voor wie met het openbaar vervoer komt, 
+                        stopt de buslijn op 200 meter van de school.
+                    </p>
+                    <p class="card__description">
+                        We bieden ook schoolbusvervoer aan vanuit verschillende wijken. Meer informatie vind je op onze 
+                        <a href="schoolbus.html">schoolbus pagina</a>.
+                    </p>
+                </div>
             </div>
         </div>
     </section>
-
-        <!-- FOOTER -->
+<!-- FOOTER -->
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__main">

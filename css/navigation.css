@@ -65,11 +65,12 @@
   border: 1px solid var(--border-light);
   border-radius: var(--radius-lg);
   padding: var(--space-sm);
-  min-width: 200px;
+  min-width: 220px;
   opacity: 0;
   visibility: hidden;
   transition: opacity var(--transition-base), visibility var(--transition-base), transform var(--transition-base);
   box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  z-index: 1000;
 }
 
 .nav__item:hover .nav__dropdown {
@@ -83,8 +84,10 @@
   padding: 0.75rem var(--space-sm);
   font-size: 0.9375rem;
   color: var(--text-secondary);
+  text-decoration: none;
   border-radius: var(--radius-sm);
   transition: background var(--transition-base);
+  position: relative;
 }
 
 .nav__dropdown-category {
@@ -99,6 +102,56 @@
 
 .nav__dropdown-category:first-child {
   margin-top: 0;
+}
+
+/* Nested dropdown for Dagelijks */
+.nav__dropdown-item {
+  position: relative;
+}
+
+.nav__dropdown-item--has-submenu {
+  position: relative;
+}
+
+.nav__dropdown-item--has-submenu > .nav__dropdown-link::after {
+  content: '→';
+  position: absolute;
+  right: var(--space-sm);
+  transition: transform var(--transition-base);
+}
+
+.nav__submenu {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: var(--space-sm);
+  min-width: 200px;
+  margin-left: 0.5rem;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateX(-10px);
+  transition: opacity var(--transition-base), visibility var(--transition-base), transform var(--transition-base);
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.06);
+  z-index: 1001;
+}
+
+.nav__dropdown-item--has-submenu:hover .nav__submenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.nav__submenu-link {
+  display: block;
+  padding: 0.75rem var(--space-sm);
+  font-size: 0.9375rem;
+  color: var(--text-secondary);
+  text-decoration: none;
+  border-radius: var(--radius-sm);
+  transition: background var(--transition-base);
 }
 
 /* Mobile */

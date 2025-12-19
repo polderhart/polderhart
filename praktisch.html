@@ -27,18 +27,26 @@
                 <li class="nav__item">
                     <a href="onze-school.html" class="nav__link">Onze school</a>
                 </li>
-                <li class="nav__item nav__item--dropdown">
+                                <li class="nav__item nav__item--dropdown">
                     <a href="praktisch.html" class="nav__link nav__link--active">Praktisch</a>
                     <div class="nav__dropdown">
-                        <a href="inschrijvingen.html" class="nav__dropdown-link">Inschrijven</a>
-                        <div class="nav__dropdown-group">
-                            <span class="nav__dropdown-category">Dagelijks</span>
-                            <a href="schooluren.html" class="nav__dropdown-link">Schooluren</a>
-                            <a href="opvang-studie.html" class="nav__dropdown-link">Opvang en studie</a>
-                            <a href="warme-maaltijden.html" class="nav__dropdown-link">Warme maaltijden</a>
+                        <div class="nav__dropdown-item">
+                            <a href="inschrijvingen.html" class="nav__dropdown-link">Inschrijven</a>
                         </div>
-                        <a href="documenten.html" class="nav__dropdown-link">Documenten</a>
-                        <a href="schoolbus.html" class="nav__dropdown-link">Schoolbus</a>
+                        <div class="nav__dropdown-item nav__dropdown-item--has-submenu">
+                            <a href="#" class="nav__dropdown-link">Dagelijks</a>
+                            <div class="nav__submenu">
+                                <a href="schooluren.html" class="nav__submenu-link">Schooluren</a>
+                                <a href="opvang-studie.html" class="nav__submenu-link">Opvang en studie</a>
+                                <a href="https://order.hanssens.be/menu/X78A/GBS-t-Polderhart-Zuienkerke-Kleuter" target="_blank" rel="noopener" class="nav__submenu-link">Warme maaltijden</a>
+                            </div>
+                        </div>
+                        <div class="nav__dropdown-item">
+                            <a href="documenten.html" class="nav__dropdown-link">Documenten</a>
+                        </div>
+                        <div class="nav__dropdown-item">
+                            <a href="schoolbus.html" class="nav__dropdown-link">Schoolbus</a>
+                        </div>
                     </div>
                 </li>
                 <li class="nav__item">
@@ -71,45 +79,39 @@
 
     
 
-    <!-- OVERZICHT PRAKTISCH -->
-    <section class="zoeken zoeken--praktisch fade-in">
-        <div class="zoeken__grid">
-            <a href="inschrijvingen.html" class="zoeken__card">
-                <img src="assets/insch.jpg" alt="Inschrijvingen">
-                <span class="zoeken__label">Inschrijvingen</span>
-            </a>
-            <a href="documenten.html" class="zoeken__card">
-                <img src="assets/docu.jpg" alt="Documenten">
-                <span class="zoeken__label">Documenten</span>
-            </a>
-            <a href="opvang-studie.html" class="zoeken__card">
-                <img src="assets/docu.jpg" alt="Opvang">
-                <span class="zoeken__label">Opvang & Studie</span>
-            </a>
-            <a href="schooluren.html" class="zoeken__card">
-                <img src="assets/docu.jpg" alt="Schooluren">
-                <span class="zoeken__label">Schooluren</span>
-            </a>
-            <a href="bereikbaarheid.html" class="zoeken__card">
-                <img src="assets/docu.jpg" alt="Bereikbaarheid">
-                <span class="zoeken__label">Hoe geraak ik er?</span>
-            </a>
-            <a href="warme-maaltijden.html" class="zoeken__card">
-                <img src="assets/docu.jpg" alt="Warme maaltijden">
-                <span class="zoeken__label">Warme maaltijden</span>
-            </a>
-            <a href="vriendenkring.html" class="zoeken__card">
-                <img src="assets/docu.jpg" alt="Vriendenkring">
-                <span class="zoeken__label">Vriendenkring</span>
-            </a>
-            <a href="schoolbus.html" class="zoeken__card">
-                <img src="assets/docu.jpg" alt="Schoolbus">
-                <span class="zoeken__label">Schoolbus</span>
-            </a>
+        <!-- PRAKTISCH OVERZICHT -->
+    <section class="section">
+        <div class="section__container">
+            <div class="card-grid card-grid--3">
+                <a href="inschrijvingen.html" class="card" style="text-decoration: none; color: inherit;">
+                    <h3 class="card__title">Inschrijven</h3>
+                    <p class="card__description">Start het avontuur bij 't Polderhart. Informatie over inschrijvingen en eerste schooldag.</p>
+                </a>
+                <a href="documenten.html" class="card" style="text-decoration: none; color: inherit;">
+                    <h3 class="card__title">Documenten</h3>
+                    <p class="card__description">Alle belangrijke documenten, formulieren en schoolreglementen op één plek.</p>
+                </a>
+                <a href="schoolbus.html" class="card" style="text-decoration: none; color: inherit;">
+                    <h3 class="card__title">Schoolbus</h3>
+                    <p class="card__description">Informatie over routes, haltes en vervoer naar school.</p>
+                </a>
+                <a href="schooluren.html" class="card" style="text-decoration: none; color: inherit;">
+                    <h3 class="card__title">Schooluren</h3>
+                    <p class="card__description">Overzicht van lestijden en dagindeling op onze school.</p>
+                </a>
+                <a href="opvang-studie.html" class="card" style="text-decoration: none; color: inherit;">
+                    <h3 class="card__title">Opvang en studie</h3>
+                    <p class="card__description">Voor- en naschoolse opvang met studiemomenten en activiteiten.</p>
+                </a>
+                <a href="https://order.hanssens.be/menu/X78A/GBS-t-Polderhart-Zuienkerke-Kleuter" target="_blank" rel="noopener" class="card" style="text-decoration: none; color: inherit;">
+                    <h3 class="card__title">Warme maaltijden</h3>
+                    <p class="card__description">Bestellen van gezonde en lekkere warme maaltijden →</p>
+                </a>
+            </div>
         </div>
     </section>
 
-        <!-- FOOTER -->
+<!-- FOOTER -->
     <footer class="footer">
         <div class="footer__container">
             <div class="footer__main">
