@@ -28,14 +28,41 @@
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-  gap: var(--space-lg);
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-xl);
 }
 
 .team-card {
-  background: transparent;
+  background: var(--color-cream);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-md);
   text-align: center;
-  padding: var(--space-md);
+  padding: var(--space-xl);
+  transition: border-color 600ms ease;
+}
+
+.team-card:hover {
+  border-color: var(--border-medium);
+}
+
+.team-card__photo {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto var(--space-md);
+  border-radius: 50%;
+  background: var(--color-sand);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
+  color: var(--text-tertiary);
+  overflow: hidden;
+}
+
+.team-card__photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .team-card__name {
@@ -43,12 +70,13 @@
   font-size: 1.25rem;
   font-weight: 500;
   margin-bottom: var(--space-xs);
+  color: var(--text-primary);
 }
 
 .team-card__role {
   font-size: 0.9375rem;
   color: var(--text-secondary);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
 }
 
 .team-card__email {
@@ -56,8 +84,24 @@
   font-size: 0.875rem;
   color: var(--text-primary);
   text-decoration: none;
-  border-bottom: 1px solid var(--border-medium);
-  transition: var(--transition-base);
+  position: relative;
+  padding-bottom: 2px;
+}
+
+.team-card__email::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--text-primary);
+  transition: width 600ms ease;
+}
+
+.team-card__email:hover::after {
+  width: 100%;
+}
 }
 
 @media (max-width: 768px) {
