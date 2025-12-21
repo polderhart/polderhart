@@ -1,28 +1,28 @@
 /* ==========================================================================
-   POLDERHART - MAIN STYLESHEET
-   The Row inspired minimalist design system
+   POLDERHART - Main Stylesheet
    ========================================================================== */
 
-/* Foundation */
-@import url('variables.css');
-@import url('reset.css');
+/* 00 - Settings */
+@import url('00-settings/tokens.css');
 
-/* Typography */
-@import url('typography.css');
+/* 10 - Base */
+@import url('10-base/reset.css');
+@import url('10-base/typography.css');
+@import url('10-base/links.css');
 
-/* Links */
-@import url('links.css');
+/* 20 - Layout */
+@import url('20-layout/container.css');
+@import url('20-layout/nav.css');
+@import url('20-layout/footer.css');
 
-/* Layout */
-@import url('navigation.css');
-@import url('hero-index.css');
-@import url('hero-page.css');
-@import url('sections.css');
-@import url('footer.css');
+/* 30 - Components */
+@import url('30-components/button.css');
+@import url('30-components/card.css');
+@import url('30-components/features.css');
+@import url('30-components/team.css');
+@import url('30-components/agenda.css');
+@import url('30-components/enrollment.css');
 
-/* Components */
-@import url('buttons.css');
-@import url('cards.css');
-@import url('team.css');
-@import url('agenda.css');
-@import url('enrollment-steps.css');
+/* 40 - Sections */
+@import url('40-sections/hero.css');
+@import url('40-sections/hero-page.css');
