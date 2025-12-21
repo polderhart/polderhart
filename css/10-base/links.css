@@ -1,38 +1,16 @@
-/* ==========================================================================
-   LINKS - Universal link styling with accent color
-   ========================================================================== */
-
-/* Base link styles - apply to all links */
 a {
-  color: var(--color-accent);
+  color: var(--color-forest);
   text-decoration: none;
   position: relative;
   transition: color 600ms ease;
 }
 
 a:hover {
-  color: var(--color-earth);
+  color: var(--color-sunset);
+  text-decoration: none;
 }
 
-/* Underline hover effect for content links */
-p a,
-.section a:not(.btn):not(.team-card__email):not(.footer__nav-link),
-.card a {
-  padding-bottom: 2px;
-}
 
-p a::after,
-.section a:not(.btn):not(.team-card__email):not(.footer__nav-link)::after,
-.card a::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: var(--color-accent);
-  transition: width 600ms ease;
-}
 
 p a:hover::after,
 .section a:not(.btn):not(.team-card__email):not(.footer__nav-link):hover::after,
@@ -43,12 +21,14 @@ p a:hover::after,
 /* Navigation links - keep their own styling */
 .nav__link,
 .footer__nav-link {
-  color: var(--text-primary);
+  color: var(--color-forest);
+  text-decoration: none;
 }
 
 .nav__link:hover,
 .footer__nav-link:hover {
-  color: var(--text-secondary);
+  color: var(--color-sunset);
+  text-decoration: none;
 }
 
 /* Button links - keep their own styling */

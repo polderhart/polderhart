@@ -1,25 +1,36 @@
-/* ==========================================================================
-   DESIGN TOKENS - The Row Inspired
-   ========================================================================== */
-
 :root {
-  /* Colors - Earthy Minimal Palette */
-  --color-cream: #FAF8F3;
-  --color-sand: #E8E3D8;
-  --color-stone: #C9C4B8;
-  --color-earth: #8B7E6A;
-  --color-moss: #4A4539;
-  --color-charcoal: #20292a;
-  --color-accent: #8B7E6A;
+  /* Colors - Playful Nature Palette */
+  --color-forest: #255551;
+  --color-sky: #779BAD;
+  --color-sand: #ECE9DF;
+  --color-sunrise: #EECB8E;
+  --color-sunset: #DC8672;
   
   /* Semantic Colors */
-  --text-primary: var(--color-charcoal);
-  --text-secondary: var(--color-moss);
-  --text-tertiary: var(--color-earth);
-  --bg-primary: var(--color-cream);
-  --bg-secondary: var(--color-sand);
-  --border-light: rgba(42, 37, 32, 0.08);
-  --border-medium: rgba(42, 37, 32, 0.15);
+  --text-primary: var(--color-forest);
+  --text-secondary: #1A3F3C;
+  --text-tertiary: #5A7A8E;
+  --bg-primary: var(--color-sand);
+  --bg-secondary: var(--color-sky);
+  --bg-accent: var(--color-sunrise);
+  --bg-warm: var(--color-sunset);
+  --border-light: rgba(37, 85, 81, 0.1);
+  --border-medium: rgba(37, 85, 81, 0.2);
+  
+  /* Legacy color names for compatibility */
+  --color-cream: var(--color-sand);
+  --color-peach: var(--color-sunrise);
+  --color-sage: var(--color-sky);
+  --color-moss: var(--color-forest);
+  --color-charcoal: var(--color-forest);
+  --color-orange: var(--color-sunrise);
+  --color-honey: var(--color-sunrise);
+  --color-sangria: var(--color-sunset);
+  --color-olive: var(--color-forest);
+  --color-porcelain: var(--color-sand);
+  --color-earth: var(--color-forest);
+  --color-stone: var(--color-sky);
+  --color-accent: var(--color-sunset);
   
   /* Typography */
   --font-display: 'Cormorant Garamond', serif;
@@ -37,9 +48,10 @@
   /* Layout */
   --container-width: 1400px;
   --content-width: 900px;
-  --radius-sm: 2px;
-  --radius-md: 4px;
-  --radius-lg: 8px;
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
   
   /* Transitions */
   --transition-base: 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);

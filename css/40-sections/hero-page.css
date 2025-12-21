@@ -3,7 +3,7 @@
    ========================================================================== */
 
 .page-hero {
-  padding: calc(80px + var(--space-2xl)) var(--space-md) var(--space-xl);
+  padding: calc(180px + var(--space-2xl)) var(--space-md) var(--space-xl);
   text-align: center;
   border-bottom: 1px solid var(--border-light);
 }

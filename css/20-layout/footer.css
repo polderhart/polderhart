@@ -3,10 +3,10 @@
    ========================================================================== */
 
 .footer {
-  background-color: var(--color-charcoal);
-  color: var(--color-cream);
-  padding: var(--space-3xl) var(--space-md) var(--space-xl);
-  border-top: 1px solid rgba(250, 248, 243, 0.1);
+  background-color: rgba(250, 248, 243, 0.95);
+  color: var(--color-forest);
+  padding: var(--space-xl) var(--space-md) var(--space-xl);
+  border-top: 1px solid rgba(0, 0, 0, 0.269);
 }
 
 .footer__container {
@@ -37,12 +37,12 @@
 }
 
 .footer__logo-img {
-  height: 100px;
+  height: 150px;
   width: auto;
 }
 
 .footer__tagline {
-  color: var(--color-stone);
+  color: var(--text-secondary);
   line-height: 1.7;
   font-size: 0.9375rem;
 }
@@ -51,6 +51,7 @@
   font-family: var(--font-display);
   font-size: 1.125rem;
   margin-bottom: var(--space-md);
+  color: var(--color-forest);
 }
 
 .footer__nav {
@@ -62,22 +63,62 @@
 }
 
 .footer__nav-link {
-  color: var(--color-sand);
+  color: var(--color-forest);
   text-decoration: none;
   font-size: 0.9375rem;
-  transition: color var(--transition-base);
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.footer__nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-sunset);
+  transition: width var(--transition-base);
+}
+
+.footer__nav-link:hover {
+  color: var(--color-sunset);
+}
+
+.footer__nav-link:hover::after {
+  width: 100%;
 }
 
 .footer__contact-item {
   margin-bottom: var(--space-sm);
-  color: var(--color-sand);
+  color: var(--text-secondary);
   font-size: 0.9375rem;
 }
 
 .footer__contact-item a {
-  color: var(--color-sand);
+  color: var(--color-forest);
   text-decoration: none;
-  transition: color var(--transition-base);
+  transition: all var(--transition-base);
+  position: relative;
+}
+
+.footer__contact-item a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--color-sunset);
+  transition: width var(--transition-base);
+}
+
+.footer__contact-item a:hover {
+  color: var(--color-sunset);
+}
+
+.footer__contact-item a:hover::after {
+  width: 100%;
 }
 
 .footer__bottom {
@@ -85,7 +126,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 0.875rem;
-  color: var(--color-stone);
+  color: var(--text-tertiary);
 }
 
 .footer__copyright {
@@ -99,8 +140,13 @@
 }
 
 .footer__legal-link {
-  color: var(--color-stone);
+  color: var(--text-tertiary);
   text-decoration: none;
+  transition: color var(--transition-base);
+}
+
+.footer__legal-link:hover {
+  color: var(--color-orange);
 }
 
 @media (max-width: 1024px) {
