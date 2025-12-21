@@ -28,9 +28,17 @@
 }
 
 .footer__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   font-family: var(--font-display);
   font-size: 1.75rem;
   margin-bottom: var(--space-md);
+}
+
+.footer__logo-img {
+  height: 100px;
+  width: auto;
 }
 
 .footer__tagline {

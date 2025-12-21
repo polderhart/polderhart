@@ -21,7 +21,9 @@
     <!-- NAVIGATION -->
     <nav class="nav">
         <div class="nav__container">
-            <a href="index.html" class="nav__logo">'t Polderhart</a>
+            <a href="index.html" class="nav__logo">
+                <img src="assets/logo.png" alt="GBS 't Polderhart logo" class="nav__logo-img">
+            </a>
 
             <ul class="nav__menu">
                 <li class="nav__item">
@@ -80,10 +82,10 @@
     <section class="hero">
         <div class="hero__container">
             <div class="hero__content">
-                <p class="hero__subtitle">Vrije basisschool</p>
+                <p class="hero__subtitle">Gemeentelijke Basisschool in Zuienkerke</p>
                 <h1 class="hero__title">'t Polderhart</h1>
-                <p class="hero__description">Met een warm hart voor elk kind bieden wij kleuter en lager onderwijs aan
-                    in een zorgzame omgeving. Onze school in Lissewege staat voor aandacht, evenwicht en groeikansen.
+                <p class="hero__description">Waar elk kind mag groeien, leren en spelen in een veilige en vertrouwde
+                    omgeving. Onze school in Lissewege staat voor persoonlijke aandacht, gezelligheid en groeikansen.
                 </p>
                 <div class="hero__actions">
                     <a href="inschrijvingen.html" class="btn btn--primary">Inschrijven</a>
@@ -91,7 +93,7 @@
                 </div>
             </div>
             <div class="hero__image">
-                <img src="assets/hero-image.jpg" alt="Kinderen in de klas" />
+                <img src="assets/hero-image.jpg" alt="Kinderen in de klas van GBS 't Polderhart" loading="eager" />
             </div>
         </div>
     </section>
@@ -137,53 +139,40 @@
                     style="font-family: var(--font-display); font-size: clamp(2rem, 5vw, 2.5rem); margin-bottom: var(--space-md);">
                     Waar wij voor staan
                 </h2>
+                <p style="font-size: 1.0625rem; line-height: 1.7; color: var(--text-secondary);">
+                    Onze kernwaarden vormen de basis van alles wat we doen
+                </p>
             </header>
 
-            <div class="card-grid card-grid--2" style="max-width: 800px; margin: 0 auto;">
-                <div style="text-align: center; padding: var(--space-xl);">
-                    <img src="assets/1.png" alt="Ambitieus"
-                        style="width: 80px; height: 80px; margin: 0 auto var(--space-md); opacity: 0.8;">
-                    <h3
-                        style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 400; margin-bottom: var(--space-sm); color: var(--color-charcoal);">
-                        Ambitieus
-                    </h3>
-                    <p style="font-size: 1rem; line-height: 1.6; color: var(--text-tertiary); margin: 0;">
+            <div class="values-grid">
+                <div class="value-card">
+                    <img src="assets/1.png" alt="Ambitieus" class="value-card__icon">
+                    <h3 class="value-card__title">Ambitieus</h3>
+                    <p class="value-card__description">
                         We dagen kinderen uit en stimuleren hun nieuwsgierigheid
                     </p>
                 </div>
 
-                <div style="text-align: center; padding: var(--space-xl);">
-                    <img src="assets/2.png" alt="Balans"
-                        style="width: 80px; height: 80px; margin: 0 auto var(--space-md); opacity: 0.8;">
-                    <h3
-                        style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 400; margin-bottom: var(--space-sm); color: var(--color-charcoal);">
-                        Balans
-                    </h3>
-                    <p style="font-size: 1rem; line-height: 1.6; color: var(--text-tertiary); margin: 0;">
+                <div class="value-card">
+                    <img src="assets/2.png" alt="Balans" class="value-card__icon">
+                    <h3 class="value-card__title">Balans</h3>
+                    <p class="value-card__description">
                         Leren en spelen in evenwicht voor optimale ontwikkeling
                     </p>
                 </div>
 
-                <div style="text-align: center; padding: var(--space-xl);">
-                    <img src="assets/3.png" alt="Verbondenheid"
-                        style="width: 80px; height: 80px; margin: 0 auto var(--space-md); opacity: 0.8;">
-                    <h3
-                        style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 400; margin-bottom: var(--space-sm); color: var(--color-charcoal);">
-                        Verbondenheid
-                    </h3>
-                    <p style="font-size: 1rem; line-height: 1.6; color: var(--text-tertiary); margin: 0;">
+                <div class="value-card">
+                    <img src="assets/3.png" alt="Verbondenheid" class="value-card__icon">
+                    <h3 class="value-card__title">Verbondenheid</h3>
+                    <p class="value-card__description">
                         Een hechte gemeenschap waar iedereen welkom is
                     </p>
                 </div>
 
-                <div style="text-align: center; padding: var(--space-xl);">
-                    <img src="assets/4.png" alt="Zorgzaam"
-                        style="width: 80px; height: 80px; margin: 0 auto var(--space-md); opacity: 0.8;">
-                    <h3
-                        style="font-family: var(--font-display); font-size: 1.5rem; font-weight: 400; margin-bottom: var(--space-sm); color: var(--color-charcoal);">
-                        Zorgzaam
-                    </h3>
-                    <p style="font-size: 1rem; line-height: 1.6; color: var(--text-tertiary); margin: 0;">
+                <div class="value-card">
+                    <img src="assets/4.png" alt="Zorgzaam" class="value-card__icon">
+                    <h3 class="value-card__title">Zorgzaam</h3>
+                    <p class="value-card__description">
                         Persoonlijke aandacht voor elk kind en zijn talenten
                     </p>
                 </div>
@@ -223,8 +212,12 @@
             <div class="footer__main">
                 <!-- School Info -->
                 <div class="footer__brand">
-                    <h2 class="footer__logo">'t Polderhart</h2>
-                    <p class="footer__tagline">Vrije basisschool in Lissewege met een warm hart voor elk kind.</p>
+                    <h2 class="footer__logo">
+                        <img src="assets/logo.png" alt="GBS 't Polderhart logo" class="footer__logo-img">
+                        't Polderhart
+                    </h2>
+                    <p class="footer__tagline">Gemeentelijke Basisschool 't Polderhart Zuienkerke - Een school met een
+                        warm hart waar elk kind mag groeien.</p>
                 </div>
 
                 <!-- School -->

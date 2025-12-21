@@ -20,7 +20,9 @@
     <!-- NAVIGATION -->
     <nav class="nav">
         <div class="nav__container">
-            <a href="index.html" class="nav__logo">'t Polderhart</a>
+            <a href="index.html" class="nav__logo">
+                <img src="assets/logo.png" alt="GBS 't Polderhart logo" class="nav__logo-img">
+            </a>
 
             <ul class="nav__menu">
                 <li class="nav__item">
@@ -87,7 +89,7 @@
     <section class="section">
         <div class="section__container">
             <div class="feature">
-                <div class="feature__image">
+                <div class="feature__image" role="img" aria-label="Het schoolgebouw van GBS 't Polderhart">
                     Foto schoolgebouw
                 </div>
                 <div class="feature__content">
@@ -117,73 +119,80 @@
             <div class="timeline">
                 <div class="timeline-item timeline-item--left">
                     <div class="timeline-item__content">
-                        <div class="timeline-item__number">08:30</div>
                         <h3 class="timeline-item__title">Start van de dag</h3>
                         <p class="timeline-item__description">
-                            De schooldag begint met een warm onthaal. Kinderen worden verwelkomd door hun juf of
-                            meester en er is tijd voor een praatje en om rustig aan de dag te beginnen.
+                            Vanaf 8.30 uur verwelkomen we alle kinderen met een warm onthaal. De lessen starten om
+                            8.40 uur. Er is tijd voor een praatje en om rustig aan de dag te beginnen in een
+                            vertrouwde sfeer.
                         </p>
                     </div>
-                    <div class="timeline-item__image">
+                    <div class="timeline-item__image" role="img"
+                        aria-label="Kinderen worden verwelkomd bij aankomst op school">
                         Foto onthaal
                     </div>
                 </div>
 
                 <div class="timeline-item timeline-item--right">
                     <div class="timeline-item__content">
-                        <div class="timeline-item__number">09:00</div>
-                        <h3 class="timeline-item__title">Leren en ontdekken</h3>
+                        <h3 class="timeline-item__title">Actieve voormiddag</h3>
                         <p class="timeline-item__description">
-                            De voormiddag staat vol met lesactiviteiten. Van taal en rekenen tot wereldoriëntatie,
-                            kinderen leren op een actieve en ontdekkende manier in kleine groepjes.
+                            De voormiddag staat vol met gevarieerde lesactiviteiten. Van taal en rekenen tot
+                            wereldoriëntatie, kinderen leren op een actieve en ontdekkende manier in kleine groepjes
+                            tot 11.50 uur.
                         </p>
                     </div>
-                    <div class="timeline-item__image">
+                    <div class="timeline-item__image" role="img" aria-label="Kinderen aan het werk tijdens een les">
                         Foto in de klas
                     </div>
                 </div>
 
                 <div class="timeline-item timeline-item--left">
                     <div class="timeline-item__content">
-                        <div class="timeline-item__number">12:00</div>
                         <h3 class="timeline-item__title">Middagpauze</h3>
                         <p class="timeline-item__description">
-                            Tijd om bij te tanken. Kinderen eten hun brooddoos of genieten van een warme maaltijd.
-                            Daarna is er volop tijd om te spelen op onze groene speelplaats.
+                            Tijd om bij te tanken! Kinderen eten hun brooddoos of genieten van een warme maaltijd.
+                            Daarna is er volop tijd om te spelen, ravotten en energie op te doen op onze groene
+                            speelplaats.
                         </p>
                     </div>
-                    <div class="timeline-item__image">
+                    <div class="timeline-item__image" role="img" aria-label="Kinderen spelen op de groene speelplaats">
                         Foto speelplaats
                     </div>
                 </div>
 
                 <div class="timeline-item timeline-item--right">
                     <div class="timeline-item__content">
-                        <div class="timeline-item__number">13:15</div>
                         <h3 class="timeline-item__title">Creatieve namiddag</h3>
                         <p class="timeline-item__description">
-                            De namiddag biedt ruimte voor meer creatieve vakken. Muziek, kunst, beweging en
-                            projectwerk komen aan bod. Kinderen kunnen hun talenten ontdekken en ontwikkelen.
+                            De namiddag biedt ruimte voor creatieve vakken en projectwerk. Muziek, kunst, beweging en
+                            ontdekkend leren komen aan bod. Kinderen kunnen hun talenten ontdekken en ontwikkelen.
                         </p>
                     </div>
-                    <div class="timeline-item__image">
+                    <div class="timeline-item__image" role="img" aria-label="Kinderen bezig met creatieve activiteit">
                         Foto creatieve activiteit
                     </div>
                 </div>
 
                 <div class="timeline-item timeline-item--left">
                     <div class="timeline-item__content">
-                        <div class="timeline-item__number">15:15</div>
                         <h3 class="timeline-item__title">Einde schooldag</h3>
                         <p class="timeline-item__description">
-                            De schooldag eindigt met een gezellig afscheid. Voor wie naschoolse opvang nodig heeft, is
-                            er studiewerking tot 18 uur met huiswerkbegeleiding en speelmogelijkheden.
+                            De schooldag eindigt tussen 15.10 en 16.00 uur, afhankelijk van de leeftijd. Voor wie
+                            naschoolse opvang nodig heeft, is er studiewerking tot 18 uur met huiswerkbegeleiding en
+                            speelmogelijkheden.
                         </p>
                     </div>
-                    <div class="timeline-item__image">
+                    <div class="timeline-item__image" role="img" aria-label="Naschoolse opvang met kinderen">
                         Foto naschoolse opvang
                     </div>
                 </div>
+            </div>
+
+            <div style="text-align: center; margin-top: var(--space-2xl);">
+                <p style="font-size: 1rem; color: var(--text-secondary);">
+                    De exacte lestijden verschillen per leerjaar. <br> <a href="schooluren.html">Bekijk het volledige
+                        uurrooster</a>
+                </p>
             </div>
         </div>
     </section>
@@ -192,7 +201,7 @@
     <section class="section">
         <div class="section__container">
             <div class="feature feature--reverse">
-                <div class="feature__image">
+                <div class="feature__image" role="img" aria-label="Moderne klaslokalen met digitale leermiddelen">
                     Foto moderne klassen
                 </div>
                 <div class="feature__content">
@@ -210,7 +219,7 @@
     <section class="section">
         <div class="section__container">
             <div class="feature">
-                <div class="feature__image">
+                <div class="feature__image" role="img" aria-label="Groene speelplaats met speeltoestellen">
                     Foto speelplaats natuur
                 </div>
                 <div class="feature__content">
@@ -228,7 +237,7 @@
     <section class="section">
         <div class="section__container">
             <div class="feature feature--reverse">
-                <div class="feature__image">
+                <div class="feature__image" role="img" aria-label="Kinderen aan het sporten in de turnzaal">
                     Foto turnzaal sport
                 </div>
                 <div class="feature__content">
@@ -291,7 +300,8 @@
                         <div class="process-step__content">
                             <h3 class="process-step__title">Betrokken gemeenschap</h3>
                             <p class="process-step__description">
-                                Onze vriendenkring, betrokken ouders en enthousiast team zorgen samen voor een hechte
+                                Onze <a href="vriendenkring.html">vriendenkring</a>, betrokken ouders en enthousiast
+                                team zorgen samen voor een hechte
                                 schoolgemeenschap waar iedereen welkom is.
                             </p>
                         </div>
@@ -331,7 +341,10 @@
         <div class="footer__container">
             <div class="footer__main">
                 <div class="footer__brand">
-                    <h2 class="footer__logo">'t Polderhart</h2>
+                    <h2 class="footer__logo">
+                        <img src="assets/logo.png" alt="GBS 't Polderhart logo" class="footer__logo-img">
+                        't Polderhart
+                    </h2>
                     <p class="footer__tagline">Vrije basisschool in Lissewege met een warm hart voor elk kind.</p>
                 </div>
 

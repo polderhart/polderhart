@@ -6,7 +6,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: var(--space-3xl) var(--space-md) var(--space-2xl);
+  padding: 180px var(--space-md) var(--space-xl);
   position: relative;
 }
 
@@ -58,12 +58,14 @@
   display: flex;
   gap: var(--space-md);
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .hero__image {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  aspect-ratio: 3/4;
+  aspect-ratio: 4/5;
+  max-height: 80vh;
 }
 
 .hero__image img {

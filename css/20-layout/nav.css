@@ -1,6 +1,3 @@
-/* ==========================================================================
-   NAVIGATION - Minimal & Clean
-   ========================================================================== */
 
 .nav {
   position: fixed;
@@ -10,24 +7,44 @@
   z-index: 1000;
   background: rgba(250, 248, 243, 0.95);
   backdrop-filter: blur(20px);
-  border-bottom: 1px solid var(--border-light);
+  overflow: visible;
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.nav--hidden {
+  transform: translateY(-120%);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .nav__container {
   max-width: var(--container-width);
   margin: 0 auto;
-  padding: 0 var(--space-md);
+  padding: var(--space-md);
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
+  min-height: 100px;
+  overflow: visible;
 }
 
 .nav__logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
   font-family: var(--font-display);
   font-size: 1.5rem;
   font-weight: 400;
   letter-spacing: -0.01em;
+  position: relative;
+  z-index: 10;
+}
+
+.nav__logo-img {
+  height: 150px;
+  width: auto;
+  margin-top: -15px;
+  margin-bottom: -50px;
 }
 
 .nav__menu {

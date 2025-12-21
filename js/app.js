@@ -20,4 +20,26 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
   }
+  
+  // Hide nav on scroll down, show on scroll up
+  let lastScroll = 0;
+  
+  window.addEventListener('scroll', () => {
+    const currentScroll = window.pageYOffset;
+    
+    if (currentScroll <= 0) {
+      nav.classList.remove('nav--hidden');
+      return;
+    }
+    
+    if (currentScroll > lastScroll && currentScroll > 100) {
+      // Scrolling down
+      nav.classList.add('nav--hidden');
+    } else {
+      // Scrolling up
+      nav.classList.remove('nav--hidden');
+    }
+    
+    lastScroll = currentScroll;
+  });
 });
