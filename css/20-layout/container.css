@@ -1,64 +1,66 @@
 /* ==========================================================================
-   SECTIONS
+   SECTIONS - Unified Layout System
    ========================================================================== */
 
 .section {
-  padding: var(--space-xl) var(--space-md);
-}
-
-
-.section--wide {
   padding: var(--space-3xl) 0;
 }
 
 .section__container {
   max-width: var(--container-width);
   margin: 0 auto;
+  padding: 0 var(--space-md);
 }
 
 .section__header {
   text-align: center;
-  max-width: var(--content-width);
+  max-width: 700px;
   margin: 0 auto var(--space-2xl);
 }
 
 .section__subtitle {
-  font-size: 0.875rem;
+  font-size: 0.8125rem;
   text-transform: uppercase;
   letter-spacing: 0.15em;
   font-weight: 500;
   color: var(--text-tertiary);
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-xs);
 }
 
 .section__title {
-  font-size: clamp(2rem, 5vw, 3.5rem);
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4vw, 3rem);
   line-height: 1.1;
   margin-bottom: var(--space-md);
-  color: var(--color-cream);
 }
 
 .section__description {
-  font-size: 1.125rem;
+  font-size: 1rem;
   line-height: 1.7;
   color: var(--text-secondary);
 }
 
-/* Dark Section Variant */
-.section--dark {
-  background-color: var(--color-charcoal);
-  color: var(--color-cream);
+/* Section Grid - Herbruikbaar voor cards/features */
+.section__grid {
+  display: grid;
+  gap: var(--space-xl);
 }
 
-.section--dark .section__subtitle {
-  color: var(--color-stone);
+.section__grid--2col {
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
 
-.section--dark .section__description {
-  color: var(--color-sand);
+.section__grid--3col {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-/* Sand Background Variant */
-.section--sand {
-  background-color: var(--color-sand);
+@media (max-width: 768px) {
+  .section {
+    padding: var(--space-2xl) 0;
+  }
+  
+  .section__grid--2col,
+  .section__grid--3col {
+    grid-template-columns: 1fr;
+  }
 }

@@ -6,7 +6,7 @@
   min-height: 100vh;
   display: flex;
   align-items: center;
-  padding: 180px var(--space-md) var(--space-xl);
+  padding: calc(var(--nav-height) + var(--space-lg)) 0 var(--space-xl);
   position: relative;
 }
 
@@ -21,15 +21,17 @@
 .hero__container {
   max-width: var(--container-width);
   margin: 0 auto;
-  width: 100%;
+  padding: 0 var(--space-md);
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1.05fr 0.95fr;
   gap: var(--space-xl);
   align-items: center;
 }
 
 .hero__content {
-  max-width: 600px;
+  width: 100%;
+  max-width: 520px;
+  padding-right: 0;
 }
 
 .hero__subtitle {
@@ -38,25 +40,25 @@
   letter-spacing: 0.15em;
   font-weight: 500;
   color: var(--text-tertiary);
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-sm);
 }
 
 .hero__title {
-  font-size: clamp(3.5rem, 8vw, 7rem);
-  line-height: 0.95;
-  margin-bottom: var(--space-lg);
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  line-height: 1.05;
+  margin-bottom: var(--space-md);
 }
 
 .hero__description {
-  font-size: 1.125rem;
-  line-height: 1.7;
+  font-size: 1rem;
+  line-height: 1.6;
   color: var(--text-secondary);
-  margin-bottom: var(--space-xl);
+  margin-bottom: var(--space-md);
 }
 
 .hero__actions {
   display: flex;
-  gap: var(--space-md);
+  gap: var(--space-sm);
   flex-wrap: wrap;
   align-items: center;
 }
@@ -64,14 +66,18 @@
 .hero__image {
   border-radius: var(--radius-lg);
   overflow: hidden;
-  aspect-ratio: 4/5;
-  max-height: 80vh;
+  aspect-ratio: 16/11;
+  max-height: 460px;
+  width: 100%;
+  justify-self: end;
+  border: 1px solid var(--border-light);
 }
 
 .hero__image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 @media (max-width: 1024px) {
@@ -82,5 +88,31 @@
   
   .hero__image {
     order: -1;
+    max-height: 420px;
+    justify-self: stretch;
+    aspect-ratio: 16/10;
+  }
+  
+  .hero__content {
+    max-width: 100%;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: calc(var(--nav-height) + var(--space-md)) 0 var(--space-lg);\n  }
+  
+  .hero__title {
+    font-size: clamp(2rem, 8vw, 2.5rem);
+  }
+  
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .hero__actions .btn {
+    width: 100%;
   }
 }

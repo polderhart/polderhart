@@ -14,8 +14,8 @@
   --bg-secondary: var(--color-sky);
   --bg-accent: var(--color-sunrise);
   --bg-warm: var(--color-sunset);
-  --border-light: rgba(37, 85, 81, 0.1);
-  --border-medium: rgba(37, 85, 81, 0.2);
+  --border-light: rgba(37, 85, 81, 0.08);
+  --border-medium: rgba(37, 85, 81, 0.15);
   
   /* Legacy color names for compatibility */
   --color-cream: var(--color-sand);
@@ -46,7 +46,8 @@
   --space-3xl: 12rem;
   
   /* Layout */
-  --container-width: 1400px;
+  --nav-height: 72px;
+  --container-width: 1100px;
   --content-width: 900px;
   --radius-sm: 8px;
   --radius-md: 16px;

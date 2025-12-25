@@ -37,4 +37,12 @@
   cursor: not-allowed;
 }
 
+@media (max-width: 640px) {
+  .btn {
+    padding: 0.875rem 1.5rem;
+    font-size: 0.9375rem;
+    width: 100%;
+  }
+}
+
 
