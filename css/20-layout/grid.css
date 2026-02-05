@@ -1,8 +1,20 @@
-/* Grid System */
+/* ==========================================================================
+   GRID SYSTEM - Flexible & Responsive
+   ========================================================================== */
+
+.card-grid {
+  display: grid;
+  gap: var(--space-5xl);
+  margin-bottom: var(--space-6xl);
+}
+
+.card-grid--2 {
+  grid-template-columns: repeat(2, 1fr);
+}
 
 .grid {
   display: grid;
-  gap: var(--space-xl);
+  gap: var(--space-3xl);
 }
 
 .grid--2 {
@@ -17,7 +29,24 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+/* Auto-fit variants */
+.grid--auto-2 {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 400px), 1fr));
+}
+
+.grid--auto-3 {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+}
+
+.grid--auto-4 {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
+}
+
 @media (max-width: 1024px) {
+  .grid {
+    gap: var(--space-xl);
+  }
+  
   .grid--3,
   .grid--4 {
     grid-template-columns: repeat(2, 1fr);
@@ -25,13 +54,13 @@
 }
 
 @media (max-width: 640px) {
+  .grid {
+    gap: var(--space-lg);
+  }
+  
   .grid--2,
   .grid--3,
   .grid--4 {
     grid-template-columns: 1fr;
-  }
-  
-  .grid {
-    gap: var(--space-md);
   }
 }

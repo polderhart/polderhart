@@ -9,13 +9,6 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logo.png">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet">
-
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -35,7 +28,14 @@
                     <a href="onze-school.html" class="nav__link">Onze school</a>
                 </li>
                 <li class="nav__item nav__item--dropdown">
-                    <a href="praktisch.html" class="nav__link">Praktisch</a>
+                    <a href="praktisch.html" class="nav__link">
+                        Praktisch
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                            style="margin-left: 4px; transition: transform 0.2s;">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
                     <div class="nav__dropdown">
                         <div class="nav__dropdown-item">
                             <a href="inschrijvingen.html" class="nav__dropdown-link">Inschrijven</a>
@@ -81,7 +81,7 @@
     <!-- PAGE HERO -->
     <section class="page-hero">
         <div class="page-hero__container">
-            <p class="page-hero__breadcrumb">Jobs</p>
+
             <h1 class="page-hero__title">Werken bij ons</h1>
             <p class="page-hero__subtitle">Word onderdeel van ons team</p>
         </div>
@@ -95,7 +95,8 @@
 
     <section class="section">
         <div class="section__container">
-            <div class="card">
+            <div class="card card--static"
+                style="margin-bottom: var(--space-6xl); text-align: center; max-width: 800px; margin-left: auto; margin-right: auto;">
                 <h2 class="card__title">Werken bij 't Polderhart</h2>
                 <p class="card__description">
                     Ben je gepassioneerd door onderwijs en wil je deel uitmaken van ons warm team?
@@ -103,24 +104,24 @@
                 </p>
             </div>
 
-            <div class="card-grid card-grid--2" style="margin-top: var(--space-xl);">
-                <div class="card">
+            <div class="card-grid card-grid--2">
+                <div class="card card--static">
                     <h3 class="card__title">Leerkrachten</h3>
-                    <p class="card__description">
+                    <p class="card__description" style="font-size: 1.0625rem; line-height: 1.85;">
                         We zoeken regelmatig leerkrachten voor zowel kleuter als lager onderwijs.
                         Vervangingen en vaste posities mogelijk.
                     </p>
                 </div>
-                <div class="card">
+                <div class="card card--static">
                     <h3 class="card__title">Andere functies</h3>
-                    <p class="card__description">
+                    <p class="card__description" style="font-size: 1.0625rem; line-height: 1.85;">
                         Ook voor ondersteunend personeel zoals zorgjuffen, administratie en
                         onderhoudspersoneel zijn er soms vacatures.
                     </p>
                 </div>
             </div>
 
-            <div class="card" style="margin-top: var(--space-xl);">
+            <div class="card card--static" style="text-align: center; margin-top: var(--space-5xl);">
                 <h3 class="card__title">Interesse?</h3>
                 <p class="card__description">
                     Stuur je CV en motivatiebrief naar:<br>

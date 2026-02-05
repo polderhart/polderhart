@@ -1,0 +1,32 @@
+/* ==========================================================================
+   SCHEDULE LIST - Clean & Minimal
+   ========================================================================== */
+
+.schedule-list {
+  display: grid;
+  gap: 0;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) 0;
+  border-bottom: 1px solid var(--border-light);
+}
+
+.schedule-item--last {
+  border-bottom: none;
+}
+
+.schedule-day {
+  font-weight: 400;
+  font-size: 1.0625rem;
+  color: var(--text-primary);
+}
+
+.schedule-time {
+  color: var(--text-secondary);
+  font-size: 1.0625rem;
+  text-align: right;
+}

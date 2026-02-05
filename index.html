@@ -9,13 +9,6 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logo.png">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet">
-
     <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -36,7 +29,14 @@
                     <a href="onze-school.html" class="nav__link">Onze school</a>
                 </li>
                 <li class="nav__item nav__item--dropdown">
-                    <a href="praktisch.html" class="nav__link">Praktisch</a>
+                    <a href="praktisch.html" class="nav__link">
+                        Praktisch
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                            style="margin-left: 4px; transition: transform 0.2s;">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
                     <div class="nav__dropdown">
                         <div class="nav__dropdown-item">
                             <a href="inschrijvingen.html" class="nav__dropdown-link">Inschrijven</a>
@@ -105,20 +105,17 @@
     <!-- OVER ONS -->
     <section class="section">
         <div class="section__container">
-            <div
-                style="display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-2xl); align-items: center; max-width: 1100px; margin: 0 auto;">
+            <div class="section__grid section__grid--2">
                 <div>
-                    <h2
-                        style="font-family: var(--font-display); font-size: clamp(2rem, 5vw, 3rem); margin-bottom: var(--space-lg); line-height: 1.2;">
+                    <h2 class="section__title">
                         Een school waar elk kind zichzelf kan zijn
                     </h2>
-                    <p
-                        style="font-size: 1.125rem; line-height: 1.8; color: var(--text-secondary); margin-bottom: var(--space-md);">
+                    <p class="section__description">
                         Bij 't Polderhart geloven we in onderwijs met aandacht voor elk kind. Of je nu dromerig bent of
                         druk,
                         analytisch of creatief – hier is ruimte om te groeien op jouw manier.
                     </p>
-                    <p style="font-size: 1.125rem; line-height: 1.8; color: var(--text-secondary);">
+                    <p class="section__description">
                         Onze kleuters en leerlingen leren niet alleen rekenen en lezen, maar ook samenwerken, nadenken
                         en ontdekken.
                         In een warme omgeving waar leerkrachten écht tijd nemen.
@@ -138,12 +135,11 @@
     <!-- WAARDEN -->
     <section class="section" style="background: var(--color-sand);">
         <div class="section__container">
-            <header style="text-align: center; max-width: 700px; margin: 0 auto var(--space-3xl);">
-                <h2
-                    style="font-family: var(--font-display); font-size: clamp(2rem, 5vw, 2.5rem); margin-bottom: var(--space-md);">
+            <header class="section__header">
+                <h2 class="section__title">
                     Waar wij voor staan
                 </h2>
-                <p style="font-size: 1.0625rem; line-height: 1.7; color: var(--text-secondary);">
+                <p class="section__description">
                     Onze kernwaarden vormen de basis van alles wat we doen
                 </p>
             </header>
@@ -191,14 +187,12 @@
     <!-- INSCHRIJF CTA -->
     <section class="section">
         <div class="section__container">
-            <div
-                style="max-width: 800px; margin: 0 auto; text-align: center; padding: var(--space-2xl); background: var(--color-cream); border: 2px solid var(--color-earth); border-radius: var(--radius-md);">
-                <h2
-                    style="font-family: var(--font-display); font-size: clamp(2rem, 5vw, 2.75rem); margin-bottom: var(--space-md); line-height: 1.2;">
+            <div class="card card--static"
+                style="max-width: 800px; margin: 0 auto; text-align: center; padding: var(--space-4xl) var(--space-3xl); background: var(--color-cream); border: 2px solid var(--border-light);">
+                <h2 class="card__title">
                     Klaar om deel te worden van 't Polderhart?
                 </h2>
-                <p
-                    style="font-size: 1.125rem; line-height: 1.7; color: var(--text-secondary); margin-bottom: var(--space-xl);">
+                <p class="card__description">
                     Ontdek hoe we leren leuk en betekenisvol maken. Neem contact op voor een kennismakingsgesprek of
                     schrijf direct in.
                 </p>

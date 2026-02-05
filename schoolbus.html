@@ -9,13 +9,6 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logo.png">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet">
-
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -35,7 +28,14 @@
                     <a href="onze-school.html" class="nav__link">Onze school</a>
                 </li>
                 <li class="nav__item nav__item--dropdown">
-                    <a href="praktisch.html" class="nav__link">Praktisch</a>
+                    <a href="praktisch.html" class="nav__link">
+                        Praktisch
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                            style="margin-left: 4px; transition: transform 0.2s;">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
                     <div class="nav__dropdown">
                         <div class="nav__dropdown-item">
                             <a href="inschrijvingen.html" class="nav__dropdown-link">Inschrijven</a>
@@ -81,7 +81,6 @@
     <!-- PAGE HERO -->
     <section class="page-hero">
         <div class="page-hero__container">
-            <p class="page-hero__breadcrumb">Schoolbus</p>
             <h1 class="page-hero__title">Schoolbus</h1>
             <p class="page-hero__subtitle">Gemakkelijk vervoer naar school</p>
         </div>
@@ -90,9 +89,9 @@
     <section class="section">
         <div class="section__container">
             <!-- Intro -->
-            <div class="enrollment-intro">
+            <div class="enrollment-intro" style="margin: 0 auto var(--space-6xl);">
                 <h2 class="enrollment-intro__title">Schoolbus</h2>
-                <p class="enrollment-intro__description">
+                <p class="enrollment-intro__description" style="font-size: 1.0625rem; line-height: 1.85;">
                     Kinderen die in Zuienkerke (en deelgemeenten) wonen, kunnen thuis worden opgehaald en naar huis
                     teruggebracht met onze schoolbus.
                     De kinderen kennen onze buschauffeur - juf Marleen - al, zij zorgt ook voor een veilige voortour bij
@@ -103,20 +102,20 @@
             </div>
 
             <!-- Tarieven Section -->
-            <div class="card"
-                style="margin-top: var(--space-xl); max-width: 900px; margin-left: auto; margin-right: auto;">
-                <h3 class="card__title">Tarieven busvervoer 2022-2023</h3>
-                <p class="card__description">
+            <div class="card card--static"
+                style="margin: 0 auto var(--space-6xl); padding: var(--space-4xl) var(--space-3xl);">
+                <h3 class="card__title" style="margin-bottom: var(--space-xl);">Tarieven busvervoer 2022-2023</h3>
+                <p class="card__description" style="margin-bottom: var(--space-2xl);">
                     Voor het busvervoer worden de (zeer voordelige!) tarieven van De Lijn gehanteerd.
                     Bovendien komt de Gemeente Zuienkerke voor schoolvervoer 25% tegemoet in de onkosten.
                 </p>
-                <div style="text-align: left; max-width: 700px; margin: var(--space-lg) auto 0; line-height: 2;">
-                    <p style="margin-bottom: var(--space-sm);">Ø <strong>Kleuters</strong> reizen
+                <div style="text-align: left; max-width: 700px; margin: 0 auto; line-height: 2.2;">
+                    <p style="margin-bottom: var(--space-lg);">Ø <strong>Kleuters</strong> reizen
                         <strong>gratis</strong> met onze schoolbus.
                     </p>
-                    <p style="margin-bottom: var(--space-sm);">Ø <strong>Kinderen van 6 tot 11 jaar betalen €
+                    <p style="margin-bottom: var(--space-lg);">Ø <strong>Kinderen van 6 tot 11 jaar betalen €
                             42,00</strong> voor een volledig schooljaar.</p>
-                    <p style="margin-bottom: var(--space-sm);">Ø Kinderen die houder zijn van een
+                    <p style="margin-bottom: var(--space-lg);">Ø Kinderen die houder zijn van een
                         <strong>verminderingskaart 75 %</strong> van De Lijn (bijvoorbeeld BG(J)G) hebben recht op
                         <strong>gratis</strong> vervoer tot de leeftijd van 11 jaar indien zij de dichtstbijzijnde
                         school bezoeken (een gezin van minimum drie kinderen, deze kinderen hoeven niet allemaal op onze
@@ -129,7 +128,7 @@
             </div>
 
             <!-- Trajecten Section -->
-            <div class="enrollment-info" style="margin-top: var(--space-2xl);">
+            <div class="enrollment-info" style="margin: 0 auto var(--space-5xl);">
                 <h3 class="enrollment-info__title">Trajecten en haltes</h3>
                 <p class="enrollment-info__description">
                     Hieronder vindt u een overzicht van de verschillende trajecten met data en tijdstippen.
@@ -138,7 +137,7 @@
 
             <!-- Bus Images -->
             <div
-                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: var(--space-lg); margin-top: var(--space-xl); max-width: 1000px; margin-left: auto; margin-right: auto;">
+                style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--space-5xl); margin: 0 auto;">
                 <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-light);">
                     <img src="assets/docu/bus1.jpeg" alt="Kaart schoolbus traject 1 - route via Meetkerke"
                         loading="lazy" style="width: 100%; height: auto; display: block;">

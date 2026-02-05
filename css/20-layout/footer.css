@@ -1,22 +1,23 @@
 .footer {
-  background-color: rgba(250, 248, 243, 0.95);
-  color: var(--color-forest);
-  padding: var(--space-xl) var(--space-md) var(--space-xl);
-  border-top: 1px solid rgba(0, 0, 0, 0.269);
+  background-color: var(--c-gray-50);
+  backdrop-filter: none;
+  color: var(--text-secondary);
+  padding: var(--space-6xl) var(--space-3xl) var(--space-4xl);
+  border-top: 1px solid var(--border-light);
 }
 
 .footer__container {
-  max-width: var(--container-width);
+  max-width: 1400px;
   margin: 0 auto;
 }
 
 .footer__main {
   display: grid;
   grid-template-columns: 2fr 1fr 1fr 1.5fr;
-  gap: var(--space-xl);
-  padding-bottom: var(--space-2xl);
-  border-bottom: 1px solid rgba(250, 248, 243, 0.1);
-  margin-bottom: var(--space-lg);
+  gap: var(--space-5xl);
+  padding-bottom: var(--space-4xl);
+  border-bottom: 1px solid var(--border-light);
+  margin-bottom: var(--space-2xl);
 }
 
 .footer__brand {
@@ -26,14 +27,14 @@
 .footer__logo {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
+  gap: var(--space-md);
   font-family: var(--font-display);
   font-size: 1.75rem;
-  margin-bottom: var(--space-md);
+  margin-bottom: var(--space-lg);
 }
 
 .footer__logo-img {
-  height: 150px;
+  height: 180px;
   width: auto;
 }
 
@@ -41,13 +42,17 @@
   color: var(--text-secondary);
   line-height: 1.7;
   font-size: 0.9375rem;
+  font-weight: 300;
 }
 
 .footer__column-title {
   font-family: var(--font-display);
-  font-size: 1.125rem;
-  margin-bottom: var(--space-md);
-  color: var(--color-forest);
+  font-size: 0.875rem;
+  font-weight: 400;
+  margin-bottom: var(--space-xl);
+  color: var(--text-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
 }
 
 .footer__nav {
@@ -55,74 +60,66 @@
 }
 
 .footer__nav-item {
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
 }
 
 .footer__nav-link {
-  color: var(--color-forest);
+  color: var(--text-secondary);
   text-decoration: none;
-  font-size: 0.9375rem;
-  transition: all var(--transition-base);
+  font-size: 0.875rem;
+  transition: all var(--transition-fast);
   position: relative;
+  font-weight: 300;
+  letter-spacing: 0.01em;
 }
 
 .footer__nav-link::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: var(--color-sunset);
-  transition: width var(--transition-base);
+  display: none;
 }
 
 .footer__nav-link:hover {
-  color: var(--color-sunset);
+  color: var(--text-primary);
 }
 
 .footer__nav-link:hover::after {
-  width: 100%;
+  width: 0;
 }
 
 .footer__contact-item {
-  margin-bottom: var(--space-sm);
+  margin-bottom: var(--space-md);
   color: var(--text-secondary);
-  font-size: 0.9375rem;
+  font-size: 0.875rem;
+  font-weight: 300;
+  letter-spacing: 0.01em;
 }
 
 .footer__contact-item a {
-  color: var(--color-forest);
+  color: var(--text-secondary);
   text-decoration: none;
-  transition: all var(--transition-base);
+  transition: all var(--transition-fast);
   position: relative;
 }
 
 .footer__contact-item a::after {
-  content: '';
-  position: absolute;
-  bottom: -2px;
-  left: 0;
-  width: 0;
-  height: 1px;
-  background-color: var(--color-sunset);
-  transition: width var(--transition-base);
+  display: none;
 }
 
 .footer__contact-item a:hover {
-  color: var(--color-sunset);
+  color: var(--text-primary);
 }
 
 .footer__contact-item a:hover::after {
-  width: 100%;
+  width: 0;
 }
 
 .footer__bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: var(--text-tertiary);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
 }
 
 .footer__copyright {
@@ -132,17 +129,17 @@
 
 .footer__legal {
   display: flex;
-  gap: var(--space-md);
+  gap: var(--space-xl);
 }
 
 .footer__legal-link {
   color: var(--text-tertiary);
   text-decoration: none;
-  transition: color var(--transition-base);
+  transition: color var(--transition-fast);
 }
 
 .footer__legal-link:hover {
-  color: var(--color-orange);
+  color: var(--text-primary);
 }
 
 @media (max-width: 1024px) {

@@ -1,59 +1,150 @@
+/* ==========================================================================
+   DESIGN TOKENS - Modern & Fresh
+   ========================================================================== */
+
+/* Font Face Declarations */
+@font-face {
+  font-family: 'Gestura';
+  src: url('../assets/fonts/gestura-font-family/GesturaTextTRIAL-Regular-BF64b755042cf0f.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gestura';
+  src: url('../assets/fonts/gestura-font-family/GesturaTextTRIAL-Semibold-BF64b755043a198.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gestura';
+  src: url('../assets/fonts/gestura-font-family/GesturaTextTRIAL-Light-BF64b755042b8e0.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gestura Display';
+  src: url('../assets/fonts/gestura-font-family/GesturaDisplayTRIAL-Regular-BF64b755043c4b8.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gestura Display';
+  src: url('../assets/fonts/gestura-font-family/GesturaDisplayTRIAL-Semibold-BF64b755044a586.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rework';
+  src: url('../assets/fonts/rework-font-family-1768805289-0/ReworkTextTRIAL-Regular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rework';
+  src: url('../assets/fonts/rework-font-family-1768805289-0/ReworkTextTRIAL-Semibold.otf') format('opentype');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Rework';
+  src: url('../assets/fonts/rework-font-family-1768805289-0/ReworkTextTRIAL-Light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
-  /* Colors - Playful Nature Palette */
-  --color-forest: #255551;
-  --color-sky: #779BAD;
-  --color-sand: #ECE9DF;
-  --color-sunrise: #EECB8E;
-  --color-sunset: #DC8672;
+  /* Colors - Luxury Minimalist Palette */
+  --c-white: #ffffff;
+  --c-black: #0a0a0a;
+  --c-gray-50: #fafafa;
+  --c-gray-100: #f5f5f5;
+  --c-gray-200: #eeeeee;
+  --c-gray-300: #e0e0e0;
+  --c-gray-400: #bdbdbd;
+  --c-gray-500: #9e9e9e;
+  --c-gray-600: #6b6b6b;
+  --c-gray-700: #4a4a4a;
+  --c-gray-800: #2a2a2a;
+  --c-gray-900: #1a1a1a;
   
-  /* Semantic Colors */
-  --text-primary: var(--color-forest);
-  --text-secondary: #1A3F3C;
-  --text-tertiary: #5A7A8E;
-  --bg-primary: var(--color-sand);
-  --bg-secondary: var(--color-sky);
-  --bg-accent: var(--color-sunrise);
-  --bg-warm: var(--color-sunset);
-  --border-light: rgba(37, 85, 81, 0.08);
-  --border-medium: rgba(37, 85, 81, 0.15);
+  /* Primary Colors */
+  --color-forest: #1a1a1a;
+  --color-forest-light: rgba(26, 26, 26, 0.7);
+  --color-forest-lighter: rgba(26, 26, 26, 0.15);
+  --color-sand: #fafafa;
+  --color-sand-dark: #f5f5f5;
+  --color-accent: #2a2a2a;
+  --color-accent-hover: #1a1a1a;
+  
+  /* Semantic Colors - Neutral Tones */
+  --text-primary: var(--c-gray-900);
+  --text-secondary: var(--c-gray-700);
+  --text-tertiary: var(--c-gray-500);
+  --text-muted: var(--c-gray-400);
+  --bg-primary: var(--c-white);
+  --bg-secondary: var(--c-gray-50);
+  --bg-alt: var(--c-gray-100);
+  --border-light: rgba(0, 0, 0, 0.06);
+  --border-medium: rgba(0, 0, 0, 0.1);
+  --border-dark: var(--c-gray-300);
+  --border-dark: var(--c-gray-300);
   
   /* Legacy color names for compatibility */
   --color-cream: var(--color-sand);
-  --color-peach: var(--color-sunrise);
-  --color-sage: var(--color-sky);
   --color-moss: var(--color-forest);
-  --color-charcoal: var(--color-forest);
-  --color-orange: var(--color-sunrise);
-  --color-honey: var(--color-sunrise);
-  --color-sangria: var(--color-sunset);
-  --color-olive: var(--color-forest);
-  --color-porcelain: var(--color-sand);
-  --color-earth: var(--color-forest);
-  --color-stone: var(--color-sky);
-  --color-accent: var(--color-sunset);
+  --color-charcoal: var(--text-primary);
   
-  /* Typography */
-  --font-display: 'Cormorant Garamond', serif;
-  --font-body: 'Inter', sans-serif;
+  /* Typography - Modern Font Stack */
+  --font-display: 'Gestura Display', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-body: 'Rework', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font-accent: 'Gestura', -apple-system, BlinkMacSystemFont, sans-serif;
   
-  /* Spacing Scale */
-  --space-xs: 0.5rem;
-  --space-sm: 1rem;
-  --space-md: 2rem;
-  --space-lg: 4rem;
-  --space-xl: 6rem;
-  --space-2xl: 8rem;
-  --space-3xl: 12rem;
+  /* Spacing Scale - More Breathing Room */
+  --space-2xs: 0.25rem;    /* 4px */
+  --space-xs: 0.5rem;      /* 8px */
+  --space-sm: 0.75rem;     /* 12px */
+  --space-md: 1rem;        /* 16px */
+  --space-lg: 1.5rem;      /* 24px */
+  --space-xl: 2rem;        /* 32px */
+  --space-2xl: 3rem;       /* 48px */
+  --space-3xl: 4rem;       /* 64px */
+  --space-4xl: 5rem;       /* 80px */
+  --space-5xl: 6rem;       /* 96px */
+  --space-6xl: 8rem;       /* 128px */
   
   /* Layout */
-  --nav-height: 72px;
-  --container-width: 1100px;
-  --content-width: 900px;
-  --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 24px;
-  --radius-xl: 32px;
+  --nav-height: 80px;
+  --container-width: 1600px;
+  --content-width: 800px;
+  --radius-sm: 4px;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+  --radius-full: 9999px;
   
-  /* Transitions */
-  --transition-base: 400ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  /* Transitions - Smooth & Natural */
+  --transition-fast: 150ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-base: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 350ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+  /* Shadows - Subtle Depth */
+  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.08);
+  --shadow-xl: 0 20px 25px rgba(0, 0, 0, 0.1);
 }

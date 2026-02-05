@@ -9,13 +9,6 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logo.png">
 
-    <!-- Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&display=swap"
-        rel="stylesheet">
-
     <link rel="stylesheet" href="css/main.css">
 </head>
 
@@ -35,7 +28,14 @@
                     <a href="onze-school.html" class="nav__link">Onze school</a>
                 </li>
                 <li class="nav__item nav__item--dropdown">
-                    <a href="praktisch.html" class="nav__link">Praktisch</a>
+                    <a href="praktisch.html" class="nav__link">
+                        Praktisch
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                            style="margin-left: 4px; transition: transform 0.2s;">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
                     <div class="nav__dropdown">
                         <div class="nav__dropdown-item">
                             <a href="inschrijvingen.html" class="nav__dropdown-link">Inschrijven</a>
@@ -81,7 +81,7 @@
     <!-- PAGE HERO -->
     <section class="page-hero">
         <div class="page-hero__container">
-            <p class="page-hero__breadcrumb">Opvang</p>
+
             <h1 class="page-hero__title">Opvang en studie</h1>
             <p class="page-hero__subtitle">Voor en na schooltijd</p>
         </div>
@@ -95,7 +95,7 @@
     <section class="section">
         <div class="section__container">
             <div class="card-grid card-grid--2">
-                <div class="card">
+                <div class="card card--static">
                     <h3 class="card__title">Voor-schoolse opvang</h3>
                     <p class="card__description">
                         Van 7:00 tot 8:15<br><br>
@@ -103,7 +103,7 @@
                         ochtends.
                     </p>
                 </div>
-                <div class="card">
+                <div class="card card--static">
                     <h3 class="card__title">Na-schoolse opvang</h3>
                     <p class="card__description">
                         Van 15:30 tot 18:00<br><br>
@@ -112,7 +112,7 @@
                 </div>
             </div>
 
-            <div class="card" style="margin-top: var(--space-xl);">
+            <div class="card card--static" style="margin-top: var(--space-xl);">
                 <h3 class="card__title">Studiebegeleiding</h3>
                 <p class="card__description">
                     Voor leerlingen van de lagere school organiseren we studiemomenten waar ze hun huiswerk
