@@ -67,22 +67,22 @@
 
 .team-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: var(--space-5xl) var(--space-4xl);
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6xl) var(--space-5xl);
 }
 
 .team-card {
   background: transparent;
   border: none;
   border-radius: 0;
-  text-align: left;
+  text-align: center;
   padding: 0;
 }
 
 .team-card__photo {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto var(--space-lg);
+  width: 140px;
+  height: 140px;
+  margin: 0 auto var(--space-xl);
   border-radius: 50%;
   background: var(--c-gray-50);
   border: none;
