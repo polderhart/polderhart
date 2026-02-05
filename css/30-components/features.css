@@ -42,7 +42,7 @@
 }
 
 .feature__content {
-  max-width: 540px;
+  width: 100%;
 }
 
 .feature__label {

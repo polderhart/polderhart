@@ -4,7 +4,6 @@
 
 .enrollment-intro {
   text-align: center;
-  max-width: 700px;
   margin: 0 auto var(--space-2xl);
 }
 
@@ -26,7 +25,6 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: var(--space-xl);
-  max-width: 900px;
   margin: 0 auto;
   position: relative;
 }
@@ -128,7 +126,6 @@
 /* CTA Section */
 .enrollment-cta {
   text-align: center;
-  max-width: 600px;
   margin: var(--space-2xl) auto 0;
   padding: var(--space-2xl);
   background: var(--color-cream);
