@@ -9,9 +9,9 @@
 }
 
 .team-photo__container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 var(--space-3xl);
+  padding: 0 var(--space-6xl);
 }
 
 .team-photo__image {
@@ -139,36 +139,4 @@
   color: var(--text-primary);
   border-bottom-color: var(--text-primary);
   transform: none;
-}
-
-@media (max-width: 768px) {
-  .team-photo__image {
-    height: 350px;
-  }
-  
-  .team-section {
-    margin-bottom: var(--space-4xl);
-  }
-  
-  .team-section__title {
-    margin-bottom: var(--space-3xl);
-  }
-  
-  .team-subsection__title {
-    margin: var(--space-3xl) 0 var(--space-2xl);
-  }
-  
-  .team-grid {
-    gap: var(--space-3xl);
-  }
-  
-  .team-card {
-    padding: var(--space-2xl) var(--space-lg);
-  }
-  
-  .team-card__photo {
-    width: 100px;
-    height: 100px;
-    margin-bottom: var(--space-lg);
-  }
 }

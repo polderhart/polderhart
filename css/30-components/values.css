@@ -52,19 +52,3 @@
   color: var(--text-secondary);
   font-weight: 300;
 }
-
-@media (max-width: 768px) {
-  .values-grid {
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
-  }
-  
-  .value-card {
-    padding: var(--space-lg);
-  }
-  
-  .value-card__icon {
-    width: 64px;
-    height: 64px;
-  }
-}

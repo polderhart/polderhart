@@ -164,17 +164,3 @@
 .card-grid--4 {
   grid-template-columns: repeat(4, 1fr);
 }
-
-@media (max-width: 1024px) {
-  .card-grid--4 {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 768px) {
-  .card-grid--2,
-  .card-grid--3,
-  .card-grid--4 {
-    grid-template-columns: 1fr;
-  }
-}

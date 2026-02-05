@@ -24,17 +24,11 @@
 /* Steps Grid */
 .enrollment-steps {
   display: grid;
-  grid-template-columns: 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: var(--space-xl);
   max-width: 900px;
   margin: 0 auto;
   position: relative;
-}
-
-@media (min-width: 768px) {
-  .enrollment-steps {
-    grid-template-columns: repeat(2, 1fr);
-  }
 }
 
 /* Individual Step Card */
@@ -166,14 +160,4 @@
 .enrollment-cta__contacts a {
   font-size: 1.125rem;
   font-weight: 500;
-}
-
-@media (max-width: 767px) {
-  .step-card {
-    padding: var(--space-lg);
-  }
-  
-  .enrollment-cta {
-    padding: var(--space-xl);
-  }
 }

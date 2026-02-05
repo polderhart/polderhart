@@ -3,9 +3,9 @@
    ========================================================================== */
 
 .agenda-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 var(--space-3xl);
+  padding: 0 var(--space-6xl);
 }
 
 /* Year Header */
@@ -113,27 +113,4 @@
 .agenda-event__time {
   font-size: 0.875rem;
   color: var(--text-tertiary);
-}
-
-/* Responsive */
-@media (max-width: 640px) {
-  .agenda-event {
-    grid-template-columns: 1fr;
-    gap: var(--space-md);
-  }
-  
-  .agenda-event__date {
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items: baseline;
-    gap: var(--space-sm);
-  }
-  
-  .agenda-event__day {
-    font-size: 2rem;
-  }
-  
-  .agenda-event__month {
-    margin-top: 0;
-  }
 }

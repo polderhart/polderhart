@@ -226,20 +226,3 @@
   line-height: 1.7;
   color: var(--text-secondary);
 }
-
-/* Responsive */
-@media (max-width: 1024px) {
-  .feature,
-  .feature--reverse {
-    grid-template-columns: 1fr;
-    gap: var(--space-lg);
-  }
-  
-  .feature--reverse .feature__image {
-    order: 0;
-  }
-  
-  .feature__content {
-    max-width: 100%;
-  }
-}

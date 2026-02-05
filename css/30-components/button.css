@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-sm);
-  padding: var(--space-lg) var(--space-3xl);
+  padding: var(--space-md) var(--space-3xl);
   font-family: var(--font-body);
   font-size: 0.8125rem;
   font-weight: 300;
@@ -21,6 +21,7 @@
   cursor: pointer;
   transition: all var(--transition-base);
   white-space: nowrap;
+  min-height: 48px;
 }
 
 .btn:hover {
@@ -55,13 +56,3 @@
   color: var(--c-white);
   border-color: #0e615d;
 }
-
-@media (max-width: 640px) {
-  .btn {
-    padding: var(--space-sm) var(--space-xl);
-    font-size: 0.875rem;
-    width: 100%;
-  }
-}
-
-

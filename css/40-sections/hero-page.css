@@ -22,9 +22,9 @@
 }
 
 .page-hero__container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 0 var(--space-3xl);
+  padding: 0 var(--space-6xl);
 }
 
 .page-hero__breadcrumb {
@@ -67,28 +67,4 @@
 
 .page-hero--compact::after {
   display: none;
-}
-
-@media (max-width: 768px) {
-  .page-hero {
-    padding: calc(var(--nav-height) + var(--space-2xl)) var(--space-md) var(--space-xl);
-  }
-  
-  .page-hero__breadcrumb {
-    font-size: 0.75rem;
-    margin-bottom: var(--space-md);
-  }
-  
-  .page-hero__title {
-    font-size: clamp(1.75rem, 8vw, 2.5rem);
-  }
-  
-  .page-hero__subtitle {
-    font-size: 1rem;
-    margin-top: var(--space-md);
-  }
-  
-  .page-hero--compact {
-    padding: calc(var(--nav-height) + var(--space-xl)) var(--space-md) var(--space-lg);
-  }
 }
