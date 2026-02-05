@@ -1,0 +1,92 @@
+# Decap CMS Configuration voor 't Polderhart
+backend:
+  name: github
+  repo: yamushka/polderhart
+  branch: main
+
+# Lokale development (comment out voor productie)
+# local_backend: true
+
+media_folder: "assets/team"
+public_folder: "/assets/team"
+
+# Nederlandse interface
+locale: "nl"
+
+collections:
+  # Team Members - gestructureerd per sectie zoals in team.html
+  - name: "team"
+    label: "Team"
+    label_singular: "Teamlid"
+    folder: "content/team"
+    create: true
+    delete: true
+    slug: "{{section}}-{{fields.name}}"
+    extension: "json"
+    format: "json"
+    editor:
+      preview: false
+    fields:
+      - label: "Sectie"
+        name: "section"
+        widget: "select"
+        options:
+          - { label: "Directie", value: "directie" }
+          - { label: "Kleuterklassen", value: "kleuterklassen" }
+          - { label: "Lagere school", value: "lager" }
+          - { label: "Bijzondere leerkrachten", value: "bijzonder" }
+          - { label: "Administratie", value: "admin" }
+          - { label: "Opvang en ondersteuning", value: "opvang" }
+        hint: "Onder welke hoofdtitel moet dit teamlid verschijnen?"
+      
+      - label: "Subsectie (optioneel)"
+        name: "subsection"
+        widget: "string"
+        required: false
+        hint: "Alleen voor Leerkrachten: 'Kleuterklassen' of 'Lagere school', of voor Ondersteunend: 'Administratie' of 'Opvang en ondersteuning'"
+      
+      - label: "Naam"
+        name: "name"
+        widget: "string"
+        hint: "Bijv. 'Juf Ingrid' of 'Meester Nick'"
+      
+      - label: "Rol"
+        name: "role"
+        widget: "string"
+        hint: "Bijv. 'Directeur' of 'Eerste leerjaar'"
+      
+      - label: "Email"
+        name: "email"
+        widget: "string"
+        required: false
+        pattern: ['^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', "Voer een geldig e-mailadres in"]
+        hint: "Laat leeg als geen email beschikbaar"
+      
+      - label: "Foto"
+        name: "photo"
+        widget: "image"
+        required: false
+        hint: "Upload een foto (bij voorkeur vierkant, min. 300x300px)"
+      
+      - label: "Volgorde"
+        name: "order"
+        widget: "number"
+        default: 100
+        value_type: "int"
+        min: 1
+        max: 999
+        hint: "Laag nummer = eerder in lijst (bijv. 1, 2, 3...)"
+
+  # Optioneel: Algemene instellingen
+  - name: "settings"
+    label: "Algemene Instellingen"
+    files:
+      - label: "Team Groepsfoto"
+        name: "team_photo"
+        file: "content/settings/team-photo.json"
+        fields:
+          - label: "Groepsfoto Team"
+            name: "group_photo"
+            widget: "image"
+            required: false
+            hint: "Upload de volledige teamfoto die bovenaan de team pagina verschijnt"
