@@ -164,3 +164,17 @@
 .card-grid--4 {
   grid-template-columns: repeat(4, 1fr);
 }
+
+@media (max-width: 768px) {
+  .card-grid,
+  .card-grid--2,
+  .card-grid--3,
+  .card-grid--4 {
+    grid-template-columns: 1fr;
+    gap: var(--space-3xl);
+  }
+  
+  .card__image {
+    aspect-ratio: 16/9;
+  }
+}
