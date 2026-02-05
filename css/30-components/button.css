@@ -56,3 +56,10 @@
   color: var(--c-white);
   border-color: #0e615d;
 }
+
+@media (max-width: 768px) {
+  .btn {
+    width: 100%;
+    padding: var(--space-md) var(--space-xl);
+  }
+}

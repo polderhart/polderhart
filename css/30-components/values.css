@@ -52,3 +52,10 @@
   color: var(--text-secondary);
   font-weight: 300;
 }
+
+@media (max-width: 768px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-3xl);
+  }
+}
