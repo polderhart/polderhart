@@ -114,3 +114,36 @@
   font-size: 0.875rem;
   color: var(--text-tertiary);
 }
+
+@media (max-width: 768px) {
+  .agenda-container {
+    padding: 0 var(--space-3xl);
+  }
+  
+  .agenda-event {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    padding: var(--space-lg);
+  }
+  
+  .agenda-event__date {
+    max-width: 130px;
+  }
+  
+  .agenda-year__title {
+    font-size: clamp(1.75rem, 6vw, 2.25rem);
+  }
+  
+  .agenda-month__title {
+    font-size: 1.25rem;
+  }
+  
+  .agenda-event__title {
+    font-size: 1.25rem;
+  }
+  
+  .agenda-event__description,
+  .agenda-event__time {
+    font-size: 0.875rem;
+  }
+}

@@ -3,7 +3,6 @@
    ========================================================================== */
 
 .enrollment-intro {
-  text-align: center;
   margin: 0 auto var(--space-2xl);
 }
 
@@ -157,4 +156,31 @@
 .enrollment-cta__contacts a {
   font-size: 1.125rem;
   font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .enrollment-steps {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+  }
+  
+  .step-card {
+    padding: var(--space-xl);
+  }
+  
+  .step-card__number {
+    font-size: 2.5rem;
+  }
+  
+  .step-card__title {
+    font-size: 1.25rem;
+  }
+  
+  .enrollment-cta {
+    padding: var(--space-xl);
+  }
+  
+  .enrollment-info {
+    padding: var(--space-xl);
+  }
 }

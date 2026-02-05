@@ -31,3 +31,21 @@
   text-align: right;
 }
 
+@media (max-width: 768px) {
+  .schedule-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-xs);
+    padding: var(--space-md) 0;
+  }
+  
+  .schedule-day,
+  .schedule-time {
+    font-size: 0.9375rem;
+  }
+  
+  .schedule-time {
+    text-align: left;
+  }
+}
+
