@@ -165,6 +165,15 @@
   grid-template-columns: repeat(4, 1fr);
 }
 
+@media (max-width: 1024px) {
+  .card-grid,
+  .card-grid--3,
+  .card-grid--4 {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3xl);
+  }
+}
+
 @media (max-width: 768px) {
   .card-grid,
   .card-grid--2,

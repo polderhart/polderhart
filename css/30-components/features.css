@@ -301,3 +301,48 @@
     font-size: 0.9375rem;
   }
 }
+
+@media (max-width: 1024px) {
+  .feature {
+    grid-template-columns: 1fr;
+    gap: var(--space-3xl);
+  }
+
+  .feature--reverse {
+    grid-template-columns: 1fr;
+  }
+
+  .feature--reverse .feature__image {
+    order: 0;
+  }
+
+  .timeline {
+    padding-left: var(--space-xl);
+  }
+
+  .timeline::before {
+    left: 0;
+    transform: none;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr;
+    gap: var(--space-lg);
+    padding-left: var(--space-2xl);
+  }
+
+  .timeline-item__year {
+    grid-column: 1;
+    text-align: left;
+    padding-right: 0;
+  }
+
+  .timeline-item__content {
+    grid-column: 1;
+    padding-left: 0;
+  }
+
+  .timeline-item::after {
+    left: -6px;
+  }
+}

@@ -28,6 +28,21 @@
   margin: 0 0 var(--space-5xl);
 }
 
+@media (max-width: 1024px) {
+  .section {
+    padding: var(--space-5xl) 0;
+  }
+
+  .section__container {
+    padding: 0 var(--space-4xl);
+  }
+
+  .section__grid--2 {
+    grid-template-columns: 1fr;
+    gap: var(--space-3xl);
+  }
+}
+
 .section__subtitle {
   font-size: 0.75rem;
   text-transform: uppercase;

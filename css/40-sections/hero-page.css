@@ -69,6 +69,12 @@
   display: none;
 }
 
+@media (max-width: 1024px) {
+  .page-hero__container {
+    padding: 0 var(--space-4xl);
+  }
+}
+
 @media (max-width: 768px) {
   .page-hero {
     padding: calc(var(--nav-height) + var(--space-4xl)) 0 var(--space-2xl);

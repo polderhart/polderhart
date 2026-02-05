@@ -99,6 +99,16 @@
   color: var(--color-earth);
 }
 
+@media (max-width: 1024px) {
+  .enrollment-steps {
+    gap: var(--space-lg);
+  }
+
+  .step-card {
+    padding: var(--space-lg);
+  }
+}
+
 /* Full Width Info Card */
 .enrollment-info {
   background: var(--color-sand);

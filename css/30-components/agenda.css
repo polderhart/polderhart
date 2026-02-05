@@ -115,6 +115,12 @@
   color: var(--text-tertiary);
 }
 
+@media (max-width: 1024px) {
+  .agenda-container {
+    padding: 0 var(--space-4xl);
+  }
+}
+
 @media (max-width: 768px) {
   .agenda-container {
     padding: 0 var(--space-3xl);

@@ -53,6 +53,12 @@
   font-weight: 300;
 }
 
+@media (max-width: 1024px) {
+  .values-grid {
+    gap: var(--space-4xl) var(--space-3xl);
+  }
+}
+
 @media (max-width: 768px) {
   .values-grid {
     grid-template-columns: 1fr;

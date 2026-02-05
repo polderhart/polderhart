@@ -141,6 +141,17 @@
   transform: none;
 }
 
+@media (max-width: 1024px) {
+  .team-photo__container {
+    padding: 0 var(--space-4xl);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-4xl);
+  }
+}
+
 @media (max-width: 768px) {
   .team-photo__container {
     padding: 0 var(--space-3xl);

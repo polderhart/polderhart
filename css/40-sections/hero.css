@@ -76,6 +76,22 @@
   object-position: center;
 }
 
+@media (max-width: 1024px) {
+  .hero__container {
+    grid-template-columns: 1fr;
+    gap: var(--space-4xl);
+    padding: 0 var(--space-4xl);
+  }
+
+  .hero__content {
+    max-width: 100%;
+  }
+
+  .hero__image {
+    max-height: 500px;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
     min-height: auto;
