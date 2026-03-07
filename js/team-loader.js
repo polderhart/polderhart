@@ -133,9 +133,9 @@ class TeamLoader {
    */
   renderMemberCard(member) {
     const hasPhoto = member.photo && member.photo !== '';
-    // Voeg Netlify image transform toe voor automatische optimalisatie (max 400px breed, kwaliteit 80%)
+    const onNetlify = window.location.hostname.endsWith('.netlify.app') || window.location.hostname === 'polderhart.be' || window.location.hostname === 'www.polderhart.be';
     const photoSrc = hasPhoto
-      ? (member.photo.startsWith('/.netlify/images') ? member.photo : `/.netlify/images?url=${encodeURIComponent(member.photo)}&w=400&q=80`)
+      ? (onNetlify ? `/.netlify/images?url=${encodeURIComponent(member.photo)}&w=400&q=80` : member.photo)
       : '';
     const photoContent = hasPhoto 
       ? `<img src="${photoSrc}" alt="${member.name}" loading="lazy">`

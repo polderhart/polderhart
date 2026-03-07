@@ -52,12 +52,13 @@
       if (val !== undefined && val !== '') el.innerHTML = val;
     });
 
+    const onNetlify = window.location.hostname.endsWith('.netlify.app') || window.location.hostname === 'polderhart.be' || window.location.hostname === 'www.polderhart.be';
+
     document.querySelectorAll('[data-cms-src]').forEach(function (el) {
       const val = data[el.getAttribute('data-cms-src')];
       if (val !== undefined && val !== '') {
-        // Netlify image optimization for local paths
         const isLocal = val.startsWith('/') || val.startsWith('assets/');
-        if (isLocal) {
+        if (isLocal && onNetlify) {
           const w = el.getAttribute('data-cms-img-width') || '1200';
           const path = val.startsWith('/') ? val : '/' + val;
           el.src = '/.netlify/images?url=' + encodeURIComponent(path) + '&w=' + w + '&q=80';
