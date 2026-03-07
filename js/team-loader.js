@@ -133,7 +133,7 @@ class TeamLoader {
    */
   renderMemberCard(member) {
     const hasPhoto = member.photo && member.photo !== '';
-    const onNetlify = window.location.hostname.endsWith('.netlify.app') || window.location.hostname === 'polderhart.be' || window.location.hostname === 'www.polderhart.be';
+    const onNetlify = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1' && window.location.hostname !== '';
     const photoSrc = hasPhoto
       ? (onNetlify ? `/.netlify/images?url=${encodeURIComponent(member.photo)}&w=400&q=80` : member.photo)
       : '';

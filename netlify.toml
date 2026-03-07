@@ -1,11 +1,9 @@
 [[redirects]]
-  from = "/*"
-  to = "/index.html"
+  from = "/*.html"
+  to = "/:splat.html"
   status = 200
   force = false
 
 [build]
   publish = "/"
   
-[build.environment]
-  NODE_VERSION = "18"

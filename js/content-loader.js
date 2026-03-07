@@ -52,7 +52,7 @@
       if (val !== undefined && val !== '') el.innerHTML = val;
     });
 
-    const onNetlify = window.location.hostname.endsWith('.netlify.app') || window.location.hostname === 'polderhart.be' || window.location.hostname === 'www.polderhart.be';
+    const onNetlify = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1' && window.location.hostname !== '';
 
     document.querySelectorAll('[data-cms-src]').forEach(function (el) {
       const val = data[el.getAttribute('data-cms-src')];

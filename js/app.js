@@ -79,9 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
 // Automatische Netlify afbeeldingsoptimalisatie voor alle statische <img> tags
 // Alleen actief op Netlify, niet lokaal
 (function () {
-  const onNetlify = window.location.hostname.endsWith('.netlify.app')
-    || window.location.hostname === 'polderhart.be'
-    || window.location.hostname === 'www.polderhart.be';
+  const onNetlify = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1' && window.location.hostname !== '';
   if (!onNetlify) return;
 
   function optimizeImg(img) {
