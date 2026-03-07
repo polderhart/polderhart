@@ -1,5 +1,34 @@
 {
   "files": [
-    "directie-juf-ingrid.json"
+    "directie-juf-ingrid.json",
+    "kleuterklassen-juf-hanne.json",
+    "kleuterklassen-juf-tamara.json",
+    "kleuterklassen-juf-marianne.json",
+    "kleuterklassen-juf-alena.json",
+    "lager-juf-desiree.json",
+    "lager-juf-tania.json",
+    "lager-juf-tina.json",
+    "lager-juf-an-g.json",
+    "lager-juf-sophie-ha.json",
+    "lager-juf-sophie-he.json",
+    "lager-juf-shannah.json",
+    "bijzonder-meester-nick.json",
+    "bijzonder-juf-an-m.json",
+    "bijzonder-juf-sophie-ho.json",
+    "bijzonder-juf-sabien.json",
+    "bijzonder-juf-tina-ict.json",
+    "bijzonder-juf-kelly.json",
+    "admin-cindy.json",
+    "admin-bieke.json",
+    "opvang-juf-kelly.json",
+    "opvang-juf-walaa.json",
+    "opvang-juf-sophie-bus.json",
+    "opvang-annemie.json",
+    "opvang-nancy.json",
+    "opvang-tine.json",
+    "opvang-fatima.json",
+    "opvang-ingrid.json",
+    "opvang-lieve.json",
+    "opvang-nadia.json"
   ]
 }

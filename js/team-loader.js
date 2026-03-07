@@ -11,6 +11,28 @@ class TeamLoader {
   }
 
   /**
+   * Laad de groepsfoto uit team-photo.json en toon sectie
+   */
+  async loadGroupPhoto() {
+    try {
+      const res = await fetch('/content/settings/team-photo.json');
+      if (!res.ok) return;
+      const data = await res.json();
+      if (data.group_photo) {
+        const img = document.getElementById('team-group-photo');
+        const section = document.getElementById('team-photo-section');
+        if (img && section) {
+          img.src = data.group_photo;
+          img.alt = data.group_photo_alt || 'Het volledige team van GBS \'t Polderhart';
+          section.style.display = '';
+        }
+      }
+    } catch (e) {
+      // Geen foto beschikbaar, sectie blijft verborgen
+    }
+  }
+
+  /**
    * Initialiseer de team loader
    */
   async init() {
@@ -20,6 +42,7 @@ class TeamLoader {
       return;
     }
 
+    await this.loadGroupPhoto();
     await this.loadTeamMembers();
     this.render();
   }
@@ -110,8 +133,12 @@ class TeamLoader {
    */
   renderMemberCard(member) {
     const hasPhoto = member.photo && member.photo !== '';
+    // Voeg Netlify image transform toe voor automatische optimalisatie (max 400px breed, kwaliteit 80%)
+    const photoSrc = hasPhoto
+      ? (member.photo.startsWith('/.netlify/images') ? member.photo : `/.netlify/images?url=${encodeURIComponent(member.photo)}&w=400&q=80`)
+      : '';
     const photoContent = hasPhoto 
-      ? `<img src="${member.photo}" alt="${member.name}" loading="lazy">`
+      ? `<img src="${photoSrc}" alt="${member.name}" loading="lazy">`
       : '';
     
     const emailLink = member.email 

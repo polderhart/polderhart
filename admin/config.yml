@@ -68,7 +68,7 @@ collections:
         name: "photo"
         widget: "image"
         required: false
-        hint: "Upload een foto (bij voorkeur vierkant, min. 300x300px)"
+        hint: "Upload een portretfoto (JPEG of PNG, bij voorkeur vierkant zoals 400x400px, max. 2MB). De foto wordt automatisch verkleind en geoptimaliseerd."
       
       - label: "Volgorde"
         name: "order"
@@ -91,7 +91,13 @@ collections:
             name: "group_photo"
             widget: "image"
             required: false
-            hint: "Upload de volledige teamfoto die bovenaan de team pagina verschijnt"
+            hint: "Upload de volledige teamfoto (JPEG of PNG, max. 5MB). De foto wordt automatisch geoptimaliseerd op de website."
+          - label: "Alt-tekst groepsfoto"
+            name: "group_photo_alt"
+            widget: "string"
+            required: false
+            default: "Het volledige team van GBS 't Polderhart"
+            hint: "Kort beschrijving van de foto (voor toegankelijkheid)"
 
       - label: "Schoolgegevens"
         name: "school_info"
