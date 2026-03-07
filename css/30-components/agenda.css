@@ -48,14 +48,9 @@
   background: var(--color-cream);
   border: 1px solid var(--border-light);
   border-radius: var(--radius-md);
-  transition: all 600ms ease;
 }
 
-.agenda-event:hover {
-  border-color: var(--border-medium);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-}
+
 
 /* Date Block */
 .agenda-event__date {
