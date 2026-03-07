@@ -35,14 +35,9 @@
   border-radius: var(--radius-md);
   padding: var(--space-xl);
   position: relative;
-  transition: all 600ms ease;
 }
 
-.step-card:hover {
-  border-color: var(--color-earth);
-  transform: translateY(-2px);
-  box-shadow: 0 8px 24px rgba(42, 37, 32, 0.06);
-}
+
 
 /* Step Number */
 .step-card__number {

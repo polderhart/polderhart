@@ -1,6 +1,6 @@
 @font-face {
   font-family: 'Gestura';
-  src: url('../assets/fonts/gestura-font-family/GesturaTextTRIAL-Regular-BF64b755042cf0f.otf') format('opentype');
+  src: url('../../assets/fonts/gestura-font-family/GesturaTextTRIAL-Regular-BF64b755042cf0f.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -8,7 +8,7 @@
 
 @font-face {
   font-family: 'Gestura';
-  src: url('../assets/fonts/gestura-font-family/GesturaTextTRIAL-Semibold-BF64b755043a198.otf') format('opentype');
+  src: url('../../assets/fonts/gestura-font-family/GesturaTextTRIAL-Semibold-BF64b755043a198.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -16,7 +16,7 @@
 
 @font-face {
   font-family: 'Gestura';
-  src: url('../assets/fonts/gestura-font-family/GesturaTextTRIAL-Light-BF64b755042b8e0.otf') format('opentype');
+  src: url('../../assets/fonts/gestura-font-family/GesturaTextTRIAL-Light-BF64b755042b8e0.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -24,7 +24,7 @@
 
 @font-face {
   font-family: 'Gestura Display';
-  src: url('../assets/fonts/gestura-font-family/GesturaDisplayTRIAL-Regular-BF64b755043c4b8.otf') format('opentype');
+  src: url('../../assets/fonts/gestura-font-family/GesturaDisplayTRIAL-Regular-BF64b755043c4b8.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -32,7 +32,7 @@
 
 @font-face {
   font-family: 'Gestura Display';
-  src: url('../assets/fonts/gestura-font-family/GesturaDisplayTRIAL-Semibold-BF64b755044a586.otf') format('opentype');
+  src: url('../../assets/fonts/gestura-font-family/GesturaDisplayTRIAL-Semibold-BF64b755044a586.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -40,7 +40,7 @@
 
 @font-face {
   font-family: 'Rework';
-  src: url('../assets/fonts/rework-font-family-1768805289-0/ReworkTextTRIAL-Regular.otf') format('opentype');
+  src: url('../../assets/fonts/rework-font-family-1768805289-0/ReworkTextTRIAL-Regular.otf') format('opentype');
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -48,7 +48,7 @@
 
 @font-face {
   font-family: 'Rework';
-  src: url('../assets/fonts/rework-font-family-1768805289-0/ReworkTextTRIAL-Semibold.otf') format('opentype');
+  src: url('../../assets/fonts/rework-font-family-1768805289-0/ReworkTextTRIAL-Semibold.otf') format('opentype');
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -56,7 +56,7 @@
 
 @font-face {
   font-family: 'Rework';
-  src: url('../assets/fonts/rework-font-family-1768805289-0/ReworkTextTRIAL-Light.otf') format('opentype');
+  src: url('../../assets/fonts/rework-font-family-1768805289-0/ReworkTextTRIAL-Light.otf') format('opentype');
   font-weight: 300;
   font-style: normal;
   font-display: swap;
@@ -97,12 +97,13 @@
   --border-light: rgba(0, 0, 0, 0.06);
   --border-medium: rgba(0, 0, 0, 0.1);
   --border-dark: var(--c-gray-300);
-  --border-dark: var(--c-gray-300);
   
   /* Legacy color names for compatibility */
   --color-cream: var(--color-sand);
   --color-moss: var(--color-forest);
   --color-charcoal: var(--text-primary);
+  --color-sunset: var(--c-gray-700);
+  --color-earth: var(--c-gray-600);
   
   /* Typography - Modern Font Stack */
   --font-display: 'Gestura Display', -apple-system, BlinkMacSystemFont, sans-serif;

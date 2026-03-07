@@ -35,7 +35,7 @@
       }
       if (doc.file) {
         html += '<div style="margin-top: var(--space-lg);">';
-        html += '<a href="' + escapeHtml(doc.file) + '" target="_blank" class="btn">Download PDF</a>';
+        html += '<a href="' + encodeURI(doc.file) + '" target="_blank" class="btn">Download PDF</a>';
         html += '</div>';
       }
       html += '</div>';
