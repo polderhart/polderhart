@@ -57,6 +57,7 @@
     document.querySelectorAll('[data-cms-src]').forEach(function (el) {
       const val = data[el.getAttribute('data-cms-src')];
       if (val !== undefined && val !== '') {
+        el.style.display = '';
         const isLocal = val.startsWith('/') || val.startsWith('assets/');
         if (isLocal && onNetlify) {
           const w = el.getAttribute('data-cms-img-width') || '1200';
