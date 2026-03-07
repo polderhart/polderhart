@@ -54,7 +54,17 @@
 
     document.querySelectorAll('[data-cms-src]').forEach(function (el) {
       const val = data[el.getAttribute('data-cms-src')];
-      if (val !== undefined && val !== '') el.src = val;
+      if (val !== undefined && val !== '') {
+        // Netlify image optimization for local paths
+        const isLocal = val.startsWith('/') || val.startsWith('assets/');
+        if (isLocal) {
+          const w = el.getAttribute('data-cms-img-width') || '1200';
+          const path = val.startsWith('/') ? val : '/' + val;
+          el.src = '/.netlify/images?url=' + encodeURIComponent(path) + '&w=' + w + '&q=80';
+        } else {
+          el.src = val;
+        }
+      }
     });
 
     document.querySelectorAll('[data-cms-alt]').forEach(function (el) {
