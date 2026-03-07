@@ -75,3 +75,39 @@ document.addEventListener('DOMContentLoaded', () => {
     lastScroll = currentScroll;
   });
 });
+
+// Automatische Netlify afbeeldingsoptimalisatie voor alle statische <img> tags
+// Alleen actief op Netlify, niet lokaal
+(function () {
+  const onNetlify = window.location.hostname.endsWith('.netlify.app')
+    || window.location.hostname === 'polderhart.be'
+    || window.location.hostname === 'www.polderhart.be';
+  if (!onNetlify) return;
+
+  function optimizeImg(img) {
+    const src = img.getAttribute('src');
+    if (!src) return;
+    // Sla over: al geoptimaliseerd, externe URLs, SVG, data URIs, logo
+    if (src.startsWith('/.netlify/images') || src.startsWith('http') || src.startsWith('data:') || src.endsWith('.svg')) return;
+    // Sla kleine iconen over (logo, waarden-iconen e.d.)
+    if (img.classList.contains('nav__logo-img') || img.classList.contains('value-card__icon')) return;
+    const path = src.startsWith('/') ? src : '/' + src;
+    img.src = '/.netlify/images?url=' + encodeURIComponent(path) + '&w=1600&q=80';
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('img').forEach(optimizeImg);
+    // Ook dynamisch geladen afbeeldingen opvangen
+    const observer = new MutationObserver(function (mutations) {
+      mutations.forEach(function (m) {
+        m.addedNodes.forEach(function (node) {
+          if (node.nodeType === 1) {
+            if (node.tagName === 'IMG') optimizeImg(node);
+            node.querySelectorAll && node.querySelectorAll('img').forEach(optimizeImg);
+          }
+        });
+      });
+    });
+    observer.observe(document.body, { childList: true, subtree: true });
+  });
+})();
