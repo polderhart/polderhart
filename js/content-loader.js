@@ -104,7 +104,7 @@
 
   async function init() {
     const path = window.location.pathname;
-    const pageName = PAGE_MAP[path] || PAGE_MAP[path.replace(/\/$/, '/index.html')];
+    const pageName = PAGE_MAP[path] || PAGE_MAP[path.replace(/\/$/, '/index.html')] || PAGE_MAP[path + '.html'];
 
     const data = {};
 
