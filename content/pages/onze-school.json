@@ -1,88 +1,71 @@
 {
-  "hero_title": "Onze school",
-  "hero_subtitle": "Een school met een warm hart waar elk kind mag groeien",
-
-  "intro_image": "/assets/school.jpg",
-  "intro_image_alt": "Het schoolgebouw van GBS 't Polderhart",
+  "why_title": "Waarom kiezen voor 't Polderhart?",
+  "playground_image_alt": "Groene speelplaats met speeltoestellen",
   "intro_label": "Welkom",
   "intro_title": "Een plek waar kinderen groeien",
-  "intro_description_1": "Bij 't Polderhart staat het welbevinden van elk kind centraal. In onze kleine, warme schoolgemeenschap krijgt ieder kind de persoonlijke aandacht die het verdient.",
-  "intro_description_2": "We werken met kleine klasgroepen in een groene omgeving, waar kinderen niet alleen leren maar ook ontdekken, spelen en opgroeien in een sfeer van vertrouwen en veiligheid.",
-
-  "timeline_title": "Een dag op school",
-  "timeline_subtitle": "Ontdek hoe een typische schooldag bij 't Polderhart eruitziet",
-
+  "infra_label": "Infrastructuur",
+  "intro_image": "/assets/school.jpg",
+  "sport_label": "Beweging",
+  "infra_title": "Moderne klassen voor optimaal leren",
+  "cta_title": "Kom kennismaken",
+  "infra_image": "",
+  "infra_description": "Onze lichte, ruime klaslokalen zijn uitgerust met moderne leermiddelen en digitale tools. De gezellige inrichting zorgt voor een warme sfeer waarin kinderen zich thuis voelen.",
+  "cta_description": "Wil je graag meer weten over onze school? Maak een afspraak voor een rondleiding en ontdek zelf waarom kinderen bij 't Polderhart graag naar school gaan.",
+  "sport_title": "Volop in beweging",
+  "why_subtitle": "Een overzicht van wat onze school bijzonder maakt",
+  "sport_image": "",
+  "playground_label": "Buitenruimte",
+  "sport_description": "In onze eigen turnzaal komen kinderen wekelijks in beweging. Van spelletjes tot sportieve uitdagingen, bewegen en samenwerken staan centraal in ons bewegingsonderwijs.",
+  "intro_image_alt": "Het schoolgebouw van GBS 't Polderhart",
+  "hero_title": "Onze school",
+  "why_1_title": "Kleine school, grote aandacht",
   "timeline_1": {
     "title": "Start van de dag",
     "description": "Vanaf 8.30 uur verwelkomen we alle kinderen met een warm onthaal. De lessen starten om 8.40 uur. Er is tijd voor een praatje en om rustig aan de dag te beginnen in een vertrouwde sfeer.",
-    "image": "",
+    "image": "/assets/pictures/vriend3.jpg",
     "image_alt": "Kinderen worden verwelkomd bij aankomst op school"
   },
-
+  "why_2_title": "Brede ontwikkeling",
+  "playground_title": "Spelen in het groen",
   "timeline_2": {
     "title": "Actieve voormiddag",
     "description": "De voormiddag staat vol met gevarieerde lesactiviteiten. Van taal en rekenen tot wereldoriëntatie, kinderen leren op een actieve en ontdekkende manier in kleine groepjes tot 11.50 uur.",
-    "image": "",
+    "image": "/assets/pictures/kids.jpg",
     "image_alt": "Kinderen aan het werk tijdens een les"
   },
-
+  "why_3_title": "Groene omgeving",
   "timeline_3": {
     "title": "Middagpauze",
     "description": "Tijd om bij te tanken! Kinderen eten hun brooddoos of genieten van een warme maaltijd. Daarna is er volop tijd om te spelen, ravotten en energie op te doen op onze groene speelplaats.",
     "image": "",
     "image_alt": "Kinderen spelen op de groene speelplaats"
   },
-
+  "why_4_title": "Betrokken gemeenschap",
+  "infra_image_alt": "Moderne klaslokalen met digitale leermiddelen",
+  "timeline_subtitle": "Ontdek hoe een typische schooldag bij 't Polderhart eruitziet",
   "timeline_4": {
     "title": "Creatieve namiddag",
     "description": "De namiddag biedt ruimte voor creatieve vakken en projectwerk. Muziek, kunst, beweging en ontdekkend leren komen aan bod. Kinderen kunnen hun talenten ontdekken en ontwikkelen.",
     "image": "",
     "image_alt": "Kinderen bezig met creatieve activiteit"
   },
-
+  "why_5_title": "Praktische organisatie",
+  "why_1_description": "Door onze kleinschaligheid kennen alle leerkrachten alle kinderen. Dit zorgt voor een warme, huiselijke sfeer waarin elk kind zich gekend en gewaardeerd voelt.",
+  "playground_image": "",
   "timeline_5": {
     "title": "Einde schooldag",
     "description": "De schooldag eindigt tussen 15.10 en 16.00 uur, afhankelijk van de leeftijd. Voor wie naschoolse opvang nodig heeft, is er studiewerking tot 18 uur met huiswerkbegeleiding en speelmogelijkheden.",
     "image": "",
     "image_alt": "Naschoolse opvang met kinderen"
   },
-
-  "infra_label": "Infrastructuur",
-  "infra_title": "Moderne klassen voor optimaal leren",
-  "infra_description": "Onze lichte, ruime klaslokalen zijn uitgerust met moderne leermiddelen en digitale tools. De gezellige inrichting zorgt voor een warme sfeer waarin kinderen zich thuis voelen.",
-  "infra_image": "",
-  "infra_image_alt": "Moderne klaslokalen met digitale leermiddelen",
-
-  "playground_label": "Buitenruimte",
-  "playground_title": "Spelen in het groen",
-  "playground_description": "Onze speelplaats ligt midden in het groen met speeltoestellen, een zandbak en veel ruimte om te ravotten. Kinderen leren de natuur waarderen en krijgen volop bewegingsvrijheid.",
-  "playground_image": "",
-  "playground_image_alt": "Groene speelplaats met speeltoestellen",
-
-  "sport_label": "Beweging",
-  "sport_title": "Volop in beweging",
-  "sport_description": "In onze eigen turnzaal komen kinderen wekelijks in beweging. Van spelletjes tot sportieve uitdagingen, bewegen en samenwerken staan centraal in ons bewegingsonderwijs.",
-  "sport_image": "",
-  "sport_image_alt": "Kinderen aan het sporten in de turnzaal",
-
-  "why_title": "Waarom kiezen voor 't Polderhart?",
-  "why_subtitle": "Een overzicht van wat onze school bijzonder maakt",
-
-  "why_1_title": "Kleine school, grote aandacht",
-  "why_1_description": "Door onze kleinschaligheid kennen alle leerkrachten alle kinderen. Dit zorgt voor een warme, huiselijke sfeer waarin elk kind zich gekend en gewaardeerd voelt.",
-
-  "why_2_title": "Brede ontwikkeling",
   "why_2_description": "We geloven in een brede basisvorming waarbij kinderen naast cognitieve vaardigheden ook sociaal, emotioneel en creatief tot ontwikkeling komen.",
-
-  "why_3_title": "Groene omgeving",
+  "playground_description": "Onze speelplaats ligt midden in het groen met speeltoestellen, een zandbak en veel ruimte om te ravotten. Kinderen leren de natuur waarderen en krijgen volop bewegingsvrijheid.",
   "why_3_description": "Onze school ligt midden in het groen met veel ruimte om te spelen en te ontdekken. Kinderen leren de natuur waarderen en genieten van buitenactiviteiten.",
-
-  "why_4_title": "Betrokken gemeenschap",
   "why_4_description": "Onze vriendenkring, betrokken ouders en enthousiast team zorgen samen voor een hechte schoolgemeenschap waar iedereen welkom is.",
-
-  "why_5_title": "Praktische organisatie",
+  "timeline_title": "Een dag op school",
+  "sport_image_alt": "Kinderen aan het sporten in de turnzaal",
+  "intro_description_1": "Bij 't Polderhart staat het welbevinden van elk kind centraal. In onze kleine, warme schoolgemeenschap krijgt ieder kind de persoonlijke aandacht die het verdient.",
   "why_5_description": "Met schoolbusvervoer, voor- en naschoolse opvang, warme maaltijden en een studiewerking denken we mee met drukke gezinnen.",
-
-  "cta_title": "Kom kennismaken",
-  "cta_description": "Wil je graag meer weten over onze school? Maak een afspraak voor een rondleiding en ontdek zelf waarom kinderen bij 't Polderhart graag naar school gaan."
+  "intro_description_2": "We werken met kleine klasgroepen in een groene omgeving, waar kinderen niet alleen leren maar ook ontdekken, spelen en opgroeien in een sfeer van vertrouwen en veiligheid.",
+  "hero_subtitle": "Een school met een warm hart waar elk kind mag groeien"
 }
