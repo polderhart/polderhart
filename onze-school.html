@@ -82,8 +82,8 @@
     <!-- PAGE HERO -->
     <section class="page-hero">
         <div class="page-hero__container">
-            <h1 class="page-hero__title">Onze school</h1>
-            <p class="page-hero__subtitle">Een school met een warm hart waar elk kind mag groeien</p>
+            <h1 class="page-hero__title" data-cms-text="hero_title">Onze school</h1>
+            <p class="page-hero__subtitle" data-cms-text="hero_subtitle">Een school met een warm hart waar elk kind mag groeien</p>
         </div>
     </section>
 
@@ -91,17 +91,19 @@
     <section class="section">
         <div class="section__container">
             <div class="feature">
-                <div class="feature__image" role="img" aria-label="Het schoolgebouw van GBS 't Polderhart">
-                    <img src="assets/school.jpg" alt="Het schoolgebouw van GBS 't Polderhart" loading="eager">
+                <div class="feature__image" role="img" data-cms-alt="intro_image_alt"
+                     aria-label="Het schoolgebouw van GBS 't Polderhart">
+                    <img src="assets/school.jpg" alt="Het schoolgebouw van GBS 't Polderhart" loading="eager"
+                         data-cms-src="intro_image" data-cms-alt="intro_image_alt">
                 </div>
                 <div class="feature__content">
-                    <span class="feature__label">Welkom</span>
-                    <h2 class="feature__title">Een plek waar kinderen groeien</h2>
-                    <p class="feature__description">
+                    <span class="feature__label" data-cms-text="intro_label">Welkom</span>
+                    <h2 class="feature__title" data-cms-text="intro_title">Een plek waar kinderen groeien</h2>
+                    <p class="feature__description" data-cms-text="intro_description_1">
                         Bij 't Polderhart staat het welbevinden van elk kind centraal. In onze kleine, warme
                         schoolgemeenschap krijgt ieder kind de persoonlijke aandacht die het verdient.
                     </p>
-                    <p class="feature__description">
+                    <p class="feature__description" data-cms-text="intro_description_2">
                         We werken met kleine klasgroepen in een groene omgeving, waar kinderen niet alleen leren maar
                         ook ontdekken, spelen en opgroeien in een sfeer van vertrouwen en veiligheid.
                     </p>
@@ -114,78 +116,92 @@
     <section class="section" style="background: var(--color-cream); padding: var(--space-3xl) 0;">
         <div class="section__container">
             <div class="section__header">
-                <h2 class="section__title">Een dag op school</h2>
-                <p class="section__description">Ontdek hoe een typische schooldag bij 't Polderhart eruitziet</p>
+                <h2 class="section__title" data-cms-text="timeline_title">Een dag op school</h2>
+                <p class="section__description" data-cms-text="timeline_subtitle">Ontdek hoe een typische schooldag bij 't Polderhart eruitziet</p>
             </div>
 
             <div class="timeline">
                 <div class="timeline-item timeline-item--left">
                     <div class="timeline-item__content">
-                        <h3 class="timeline-item__title">Start van de dag</h3>
-                        <p class="timeline-item__description">
+                        <h3 class="timeline-item__title" data-cms-text="timeline_1_title">Start van de dag</h3>
+                        <p class="timeline-item__description" data-cms-text="timeline_1_description">
                             Vanaf 8.30 uur verwelkomen we alle kinderen met een warm onthaal. De lessen starten om
                             8.40 uur. Er is tijd voor een praatje en om rustig aan de dag te beginnen in een
                             vertrouwde sfeer.
                         </p>
                     </div>
-                    <div class="timeline-item__image" role="img"
+                    <div class="timeline-item__image" role="img" data-cms-alt="timeline_1_image_alt"
                         aria-label="Kinderen worden verwelkomd bij aankomst op school">
-                        Foto onthaal
+                        <img src="" alt="" data-cms-src="timeline_1_image" data-cms-alt="timeline_1_image_alt"
+                             style="width:100%;height:100%;object-fit:cover;" loading="lazy"
+                             onerror="this.style.display='none'" />
                     </div>
                 </div>
 
                 <div class="timeline-item timeline-item--right">
                     <div class="timeline-item__content">
-                        <h3 class="timeline-item__title">Actieve voormiddag</h3>
-                        <p class="timeline-item__description">
+                        <h3 class="timeline-item__title" data-cms-text="timeline_2_title">Actieve voormiddag</h3>
+                        <p class="timeline-item__description" data-cms-text="timeline_2_description">
                             De voormiddag staat vol met gevarieerde lesactiviteiten. Van taal en rekenen tot
                             wereldoriëntatie, kinderen leren op een actieve en ontdekkende manier in kleine groepjes
                             tot 11.50 uur.
                         </p>
                     </div>
-                    <div class="timeline-item__image" role="img" aria-label="Kinderen aan het werk tijdens een les">
-                        Foto in de klas
+                    <div class="timeline-item__image" role="img" data-cms-alt="timeline_2_image_alt"
+                        aria-label="Kinderen aan het werk tijdens een les">
+                        <img src="" alt="" data-cms-src="timeline_2_image" data-cms-alt="timeline_2_image_alt"
+                             style="width:100%;height:100%;object-fit:cover;" loading="lazy"
+                             onerror="this.style.display='none'" />
                     </div>
                 </div>
 
                 <div class="timeline-item timeline-item--left">
                     <div class="timeline-item__content">
-                        <h3 class="timeline-item__title">Middagpauze</h3>
-                        <p class="timeline-item__description">
+                        <h3 class="timeline-item__title" data-cms-text="timeline_3_title">Middagpauze</h3>
+                        <p class="timeline-item__description" data-cms-text="timeline_3_description">
                             Tijd om bij te tanken! Kinderen eten hun brooddoos of genieten van een warme maaltijd.
                             Daarna is er volop tijd om te spelen, ravotten en energie op te doen op onze groene
                             speelplaats.
                         </p>
                     </div>
-                    <div class="timeline-item__image" role="img" aria-label="Kinderen spelen op de groene speelplaats">
-                        Foto speelplaats
+                    <div class="timeline-item__image" role="img" data-cms-alt="timeline_3_image_alt"
+                        aria-label="Kinderen spelen op de groene speelplaats">
+                        <img src="" alt="" data-cms-src="timeline_3_image" data-cms-alt="timeline_3_image_alt"
+                             style="width:100%;height:100%;object-fit:cover;" loading="lazy"
+                             onerror="this.style.display='none'" />
                     </div>
                 </div>
 
                 <div class="timeline-item timeline-item--right">
                     <div class="timeline-item__content">
-                        <h3 class="timeline-item__title">Creatieve namiddag</h3>
-                        <p class="timeline-item__description">
+                        <h3 class="timeline-item__title" data-cms-text="timeline_4_title">Creatieve namiddag</h3>
+                        <p class="timeline-item__description" data-cms-text="timeline_4_description">
                             De namiddag biedt ruimte voor creatieve vakken en projectwerk. Muziek, kunst, beweging en
                             ontdekkend leren komen aan bod. Kinderen kunnen hun talenten ontdekken en ontwikkelen.
                         </p>
                     </div>
-                    <div class="timeline-item__image" role="img" aria-label="Kinderen bezig met creatieve activiteit">
-                        Foto creatieve activiteit
+                    <div class="timeline-item__image" role="img" data-cms-alt="timeline_4_image_alt"
+                        aria-label="Kinderen bezig met creatieve activiteit">
+                        <img src="" alt="" data-cms-src="timeline_4_image" data-cms-alt="timeline_4_image_alt"
+                             style="width:100%;height:100%;object-fit:cover;" loading="lazy"
+                             onerror="this.style.display='none'" />
                     </div>
                 </div>
 
                 <div class="timeline-item timeline-item--left">
                     <div class="timeline-item__content">
-                        <h3 class="timeline-item__title">Einde schooldag</h3>
-                        <p class="timeline-item__description">
+                        <h3 class="timeline-item__title" data-cms-text="timeline_5_title">Einde schooldag</h3>
+                        <p class="timeline-item__description" data-cms-text="timeline_5_description">
                             De schooldag eindigt tussen 15.10 en 16.00 uur, afhankelijk van de leeftijd. Voor wie
                             naschoolse opvang nodig heeft, is er studiewerking tot 18 uur met huiswerkbegeleiding en
                             speelmogelijkheden.
                         </p>
                     </div>
-                    <div class="timeline-item__image" role="img" aria-label="Naschoolse opvang met kinderen">
-                        Foto naschoolse opvang
+                    <div class="timeline-item__image" role="img" data-cms-alt="timeline_5_image_alt"
+                        aria-label="Naschoolse opvang met kinderen">
+                        <img src="" alt="" data-cms-src="timeline_5_image" data-cms-alt="timeline_5_image_alt"
+                             style="width:100%;height:100%;object-fit:cover;" loading="lazy"
+                             onerror="this.style.display='none'" />
                     </div>
                 </div>
             </div>
@@ -203,13 +219,16 @@
     <section class="section">
         <div class="section__container">
             <div class="feature feature--reverse">
-                <div class="feature__image" role="img" aria-label="Moderne klaslokalen met digitale leermiddelen">
-                    Foto moderne klassen
+                <div class="feature__image" role="img" data-cms-alt="infra_image_alt"
+                     aria-label="Moderne klaslokalen met digitale leermiddelen">
+                    <img src="" alt="" data-cms-src="infra_image" data-cms-alt="infra_image_alt"
+                         style="width:100%;height:100%;object-fit:cover;" loading="lazy"
+                         onerror="this.style.display='none'" />
                 </div>
                 <div class="feature__content">
-                    <span class="feature__label">Infrastructuur</span>
-                    <h2 class="feature__title">Moderne klassen voor optimaal leren</h2>
-                    <p class="feature__description">
+                    <span class="feature__label" data-cms-text="infra_label">Infrastructuur</span>
+                    <h2 class="feature__title" data-cms-text="infra_title">Moderne klassen voor optimaal leren</h2>
+                    <p class="feature__description" data-cms-text="infra_description">
                         Onze lichte, ruime klaslokalen zijn uitgerust met moderne leermiddelen en digitale tools. De
                         gezellige inrichting zorgt voor een warme sfeer waarin kinderen zich thuis voelen.
                     </p>
@@ -221,13 +240,16 @@
     <section class="section">
         <div class="section__container">
             <div class="feature">
-                <div class="feature__image" role="img" aria-label="Groene speelplaats met speeltoestellen">
-                    Foto speelplaats natuur
+                <div class="feature__image" role="img" data-cms-alt="playground_image_alt"
+                     aria-label="Groene speelplaats met speeltoestellen">
+                    <img src="" alt="" data-cms-src="playground_image" data-cms-alt="playground_image_alt"
+                         style="width:100%;height:100%;object-fit:cover;" loading="lazy"
+                         onerror="this.style.display='none'" />
                 </div>
                 <div class="feature__content">
-                    <span class="feature__label">Buitenruimte</span>
-                    <h2 class="feature__title">Spelen in het groen</h2>
-                    <p class="feature__description">
+                    <span class="feature__label" data-cms-text="playground_label">Buitenruimte</span>
+                    <h2 class="feature__title" data-cms-text="playground_title">Spelen in het groen</h2>
+                    <p class="feature__description" data-cms-text="playground_description">
                         Onze speelplaats ligt midden in het groen met speeltoestellen, een zandbak en veel ruimte om
                         te ravotten. Kinderen leren de natuur waarderen en krijgen volop bewegingsvrijheid.
                     </p>
@@ -239,13 +261,16 @@
     <section class="section">
         <div class="section__container">
             <div class="feature feature--reverse">
-                <div class="feature__image" role="img" aria-label="Kinderen aan het sporten in de turnzaal">
-                    Foto turnzaal sport
+                <div class="feature__image" role="img" data-cms-alt="sport_image_alt"
+                     aria-label="Kinderen aan het sporten in de turnzaal">
+                    <img src="" alt="" data-cms-src="sport_image" data-cms-alt="sport_image_alt"
+                         style="width:100%;height:100%;object-fit:cover;" loading="lazy"
+                         onerror="this.style.display='none'" />
                 </div>
                 <div class="feature__content">
-                    <span class="feature__label">Beweging</span>
-                    <h2 class="feature__title">Volop in beweging</h2>
-                    <p class="feature__description">
+                    <span class="feature__label" data-cms-text="sport_label">Beweging</span>
+                    <h2 class="feature__title" data-cms-text="sport_title">Volop in beweging</h2>
+                    <p class="feature__description" data-cms-text="sport_description">
                         In onze eigen turnzaal komen kinderen wekelijks in beweging. Van spelletjes tot sportieve
                         uitdagingen, bewegen en samenwerken staan centraal in ons bewegingsonderwijs.
                     </p>
@@ -258,8 +283,8 @@
     <section class="section" style="background: var(--color-cream); padding: var(--space-3xl) 0;">
         <div class="section__container">
             <div class="section__header">
-                <h2 class="section__title">Waarom kiezen voor 't Polderhart?</h2>
-                <p class="section__description">Een overzicht van wat onze school bijzonder maakt</p>
+                <h2 class="section__title" data-cms-text="why_title">Waarom kiezen voor 't Polderhart?</h2>
+                <p class="section__description" data-cms-text="why_subtitle">Een overzicht van wat onze school bijzonder maakt</p>
             </div>
 
             <div style="max-width: 800px; margin: 0 auto;">
@@ -267,8 +292,8 @@
                     <div class="process-step">
                         <div class="process-step__number">1</div>
                         <div class="process-step__content">
-                            <h3 class="process-step__title">Kleine school, grote aandacht</h3>
-                            <p class="process-step__description">
+                            <h3 class="process-step__title" data-cms-text="why_1_title">Kleine school, grote aandacht</h3>
+                            <p class="process-step__description" data-cms-text="why_1_description">
                                 Door onze kleinschaligheid kennen alle leerkrachten alle kinderen. Dit zorgt voor een
                                 warme, huiselijke sfeer waarin elk kind zich gekend en gewaardeerd voelt.
                             </p>
@@ -278,8 +303,8 @@
                     <div class="process-step">
                         <div class="process-step__number">2</div>
                         <div class="process-step__content">
-                            <h3 class="process-step__title">Brede ontwikkeling</h3>
-                            <p class="process-step__description">
+                            <h3 class="process-step__title" data-cms-text="why_2_title">Brede ontwikkeling</h3>
+                            <p class="process-step__description" data-cms-text="why_2_description">
                                 We geloven in een brede basisvorming waarbij kinderen naast cognitieve vaardigheden ook
                                 sociaal, emotioneel en creatief tot ontwikkeling komen.
                             </p>
@@ -289,8 +314,8 @@
                     <div class="process-step">
                         <div class="process-step__number">3</div>
                         <div class="process-step__content">
-                            <h3 class="process-step__title">Groene omgeving</h3>
-                            <p class="process-step__description">
+                            <h3 class="process-step__title" data-cms-text="why_3_title">Groene omgeving</h3>
+                            <p class="process-step__description" data-cms-text="why_3_description">
                                 Onze school ligt midden in het groen met veel ruimte om te spelen en te ontdekken.
                                 Kinderen leren de natuur waarderen en genieten van buitenactiviteiten.
                             </p>
@@ -300,8 +325,8 @@
                     <div class="process-step">
                         <div class="process-step__number">4</div>
                         <div class="process-step__content">
-                            <h3 class="process-step__title">Betrokken gemeenschap</h3>
-                            <p class="process-step__description">
+                            <h3 class="process-step__title" data-cms-text="why_4_title">Betrokken gemeenschap</h3>
+                            <p class="process-step__description" data-cms-text="why_4_description">
                                 Onze <a href="vriendenkring.html">vriendenkring</a>, betrokken ouders en enthousiast
                                 team zorgen samen voor een hechte
                                 schoolgemeenschap waar iedereen welkom is.
@@ -312,8 +337,8 @@
                     <div class="process-step">
                         <div class="process-step__number">5</div>
                         <div class="process-step__content">
-                            <h3 class="process-step__title">Praktische organisatie</h3>
-                            <p class="process-step__description">
+                            <h3 class="process-step__title" data-cms-text="why_5_title">Praktische organisatie</h3>
+                            <p class="process-step__description" data-cms-text="why_5_description">
                                 Met schoolbusvervoer, voor- en naschoolse opvang, warme maaltijden en een
                                 studiewerking denken we mee met drukke gezinnen.
                             </p>
@@ -328,8 +353,8 @@
     <section class="section">
         <div class="section__container">
             <div style="text-align: center; max-width: 600px; margin: 0 auto; padding: var(--space-3xl) 0;">
-                <h2 class="section__title">Kom kennismaken</h2>
-                <p class="section__description" style="margin-bottom: var(--space-xl);">
+                <h2 class="section__title" data-cms-text="cta_title">Kom kennismaken</h2>
+                <p class="section__description" style="margin-bottom: var(--space-xl);" data-cms-text="cta_description">
                     Wil je graag meer weten over onze school? Maak een afspraak voor een rondleiding en ontdek zelf
                     waarom kinderen bij 't Polderhart graag naar school gaan.
                 </p>
@@ -373,10 +398,9 @@
 
                 <div>
                     <h3 class="footer__column-title">Contact</h3>
-                    <div class="footer__contact-item">Nieuwe Steenweg 37<br>8377 Zuienkerke</div>
-                    <div class="footer__contact-item"><a
-                            href="mailto:ingrid.igodt@gbszuienkerke.net">ingrid.igodt@gbszuienkerke.net</a></div>
-                    <div class="footer__contact-item"><a href="tel:+3250418430">+32 50 41 84 30</a></div>
+                    <div class="footer__contact-item"><span data-cms-text="site_address_street">Nieuwe Steenweg 37</span><br><span data-cms-text="site_address_city">8377 Zuienkerke</span></div>
+                    <div class="footer__contact-item"><a href="mailto:ingrid.igodt@gbszuienkerke.net" data-cms-href="site_email_href" data-cms-text="site_email">ingrid.igodt@gbszuienkerke.net</a></div>
+                    <div class="footer__contact-item"><a href="tel:+3250418430" data-cms-href="site_phone_href" data-cms-text="site_phone_display">+32 50 41 84 30</a></div>
                 </div>
             </div>
 
@@ -395,6 +419,7 @@
     </footer>
 
     <script src="js/app.js"></script>
+    <script src="js/content-loader.js"></script>
 </body>
 
 </html>

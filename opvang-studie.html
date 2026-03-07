@@ -82,8 +82,8 @@
     <section class="page-hero">
         <div class="page-hero__container">
 
-            <h1 class="page-hero__title">Opvang en studie</h1>
-            <p class="page-hero__subtitle">Voor en na schooltijd</p>
+            <h1 class="page-hero__title" data-cms-text="hero_title">Opvang en studie</h1>
+            <p class="page-hero__subtitle" data-cms-text="hero_subtitle">Voor en na schooltijd</p>
         </div>
     </section>
 
@@ -96,25 +96,25 @@
         <div class="section__container">
             <div class="card-grid card-grid--2">
                 <div class="card card--static">
-                    <h3 class="card__title">Voor-schoolse opvang</h3>
+                    <h3 class="card__title" data-cms-text="voor_title">Voor-schoolse opvang</h3>
                     <p class="card__description">
-                        Van 7:00 tot 8:15<br><br>
-                        Voor kinderen die vroeg gebracht moeten worden, bieden we gratis opvang aan vanaf 7 uur 's
-                        ochtends.
+                        Van <span data-cms-text="voor_hours_start">7:00</span> tot <span data-cms-text="voor_hours_end">8:15</span><br><br>
+                        <span data-cms-text="voor_extra">Voor kinderen die vroeg gebracht moeten worden, bieden we gratis opvang aan vanaf 7 uur 's
+                        ochtends.</span>
                     </p>
                 </div>
                 <div class="card card--static">
-                    <h3 class="card__title">Na-schoolse opvang</h3>
+                    <h3 class="card__title" data-cms-text="na_title">Na-schoolse opvang</h3>
                     <p class="card__description">
-                        Van 15:30 tot 18:00<br><br>
-                        Na de schooluren kunnen kinderen onder begeleiding spelen, knutselen of hun huiswerk maken.
+                        Van <span data-cms-text="na_hours_start">15:30</span> tot <span data-cms-text="na_hours_end">18:00</span><br><br>
+                        <span data-cms-text="na_extra">Na de schooluren kunnen kinderen onder begeleiding spelen, knutselen of hun huiswerk maken.</span>
                     </p>
                 </div>
             </div>
 
             <div class="card card--static" style="margin-top: var(--space-xl);">
-                <h3 class="card__title">Studiebegeleiding</h3>
-                <p class="card__description">
+                <h3 class="card__title" data-cms-text="studie_title">Studiebegeleiding</h3>
+                <p class="card__description" data-cms-text="studie_description">
                     Voor leerlingen van de lagere school organiseren we studiemomenten waar ze hun huiswerk
                     kunnen maken onder begeleiding. Dit van maandag tot vrijdag van 15:45 tot 16:30.
                 </p>
@@ -156,10 +156,9 @@
 
                 <div>
                     <h3 class="footer__column-title">Contact</h3>
-                    <div class="footer__contact-item">Nieuwe Steenweg 37<br>8377 Zuienkerke</div>
-                    <div class="footer__contact-item"><a
-                            href="mailto:ingrid.igodt@gbszuienkerke.net">ingrid.igodt@gbszuienkerke.net</a></div>
-                    <div class="footer__contact-item"><a href="tel:+3250418430">+32 50 41 84 30</a></div>
+                    <div class="footer__contact-item"><span data-cms-text="site_address_street">Nieuwe Steenweg 37</span><br><span data-cms-text="site_address_city">8377 Zuienkerke</span></div>
+                    <div class="footer__contact-item"><a href="mailto:ingrid.igodt@gbszuienkerke.net" data-cms-href="site_email_href" data-cms-text="site_email">ingrid.igodt@gbszuienkerke.net</a></div>
+                    <div class="footer__contact-item"><a href="tel:+3250418430" data-cms-href="site_phone_href" data-cms-text="site_phone_display">+32 50 41 84 30</a></div>
                 </div>
             </div>
 
@@ -178,6 +177,7 @@
     </footer>
 
     <script src="js/app.js"></script>
+    <script src="js/content-loader.js"></script>
 </body>
 
 </html>

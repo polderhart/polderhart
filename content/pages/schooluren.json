@@ -1,0 +1,26 @@
+{
+  "hero_title": "Schooluren",
+  "hero_subtitle": "Overzicht van onze lestijden",
+
+  "intro_description": "Onze school biedt een duidelijke lessenstructuur aangepast aan de verschillende leeftijdsgroepen.",
+
+  "jong_subtitle": "Kleuter, 1ste, 2de en 3de leerjaar",
+  "jong_title": "Jongere leerlingen",
+  "jong_ma": "8.40 – 11.50 • 13.15 – 16.00",
+  "jong_di": "8.40 – 11.50 • 13.15 – 16.00",
+  "jong_wo": "8.40 – 11.50",
+  "jong_do": "8.40 – 11.50 • 13.15 – 16.00",
+  "jong_vr": "8.40 – 11.50 • 13.00 – 15.10",
+
+  "oud_subtitle": "4de, 5de en 6de leerjaar",
+  "oud_title": "Oudere leerlingen",
+  "oud_ma": "8.40 – 11.50 • 13.00 – 16.00",
+  "oud_di": "8.40 – 11.50 • 13.00 – 16.00",
+  "oud_wo": "8.40 – 11.50",
+  "oud_do": "8.40 – 11.50 • 13.00 – 16.00",
+  "oud_vr": "8.40 – 11.50 • 13.00 – 15.10",
+
+  "info_title": "Belangrijk om te weten",
+  "info_description_1": "De deuren openen om 8.30 uur. We vragen om op tijd aanwezig te zijn zodat de lessen stipt kunnen beginnen om 8.40 uur.",
+  "info_description_2": "Voor opvang voor en na schooltijd, bekijk onze opvang pagina."
+}

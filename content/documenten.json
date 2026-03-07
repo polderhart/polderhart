@@ -1,0 +1,19 @@
+{
+  "documents": [
+    {
+      "title": "Schoolreglement",
+      "description": "Het schoolreglement bevat alle afspraken en regels van onze school.",
+      "file": "/assets/docu/schoolregelement.pdf"
+    },
+    {
+      "title": "Pedagogisch Project",
+      "description": "Ontdek onze visie en aanpak in het pedagogisch project.",
+      "file": "/assets/docu/pedagogisch project.pdf"
+    },
+    {
+      "title": "Infobrochure",
+      "description": "Alle praktische informatie over onze school in één document.",
+      "file": "/assets/docu/Infobrochure.pdf"
+    }
+  ]
+}

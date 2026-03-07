@@ -1,0 +1,43 @@
+{
+  "hero_subtitle": "Gemeentelijke Basisschool in Zuienkerke",
+  "hero_title": "'t Polderhart",
+  "hero_description": "Waar elk kind mag groeien, leren en spelen in een veilige en vertrouwde omgeving. Onze school in het hartje van Zuienkerke staat voor persoonlijke aandacht, gezelligheid en groeikansen.",
+  "hero_image": "/assets/hero-image.jpg",
+  "hero_image_alt": "Kinderen in de klas van GBS 't Polderhart",
+
+  "about_title": "Een school waar elk kind zichzelf kan zijn",
+  "about_description_1": "Bij 't Polderhart geloven we in onderwijs met aandacht voor elk kind. Of je nu dromerig bent of druk, analytisch of creatief – hier is ruimte om te groeien op jouw manier.",
+  "about_description_2": "Onze kleuters en leerlingen leren niet alleen rekenen en lezen, maar ook samenwerken, nadenken en ontdekken. In een warme omgeving waar leerkrachten écht tijd nemen.",
+  "about_image": "",
+  "about_image_alt": "School foto",
+
+  "values_title": "Waar wij voor staan",
+  "values_subtitle": "Onze kernwaarden vormen de basis van alles wat we doen",
+
+  "value1": {
+    "icon": "/assets/1.png",
+    "title": "Ambitieus",
+    "description": "We dagen kinderen uit en stimuleren hun nieuwsgierigheid"
+  },
+
+  "value2": {
+    "icon": "/assets/2.png",
+    "title": "Balans",
+    "description": "Leren en spelen in evenwicht voor optimale ontwikkeling"
+  },
+
+  "value3": {
+    "icon": "/assets/3.png",
+    "title": "Verbondenheid",
+    "description": "Een hechte gemeenschap waar iedereen welkom is"
+  },
+
+  "value4": {
+    "icon": "/assets/4.png",
+    "title": "Zorgzaam",
+    "description": "Persoonlijke aandacht voor elk kind en zijn talenten"
+  },
+
+  "cta_title": "Klaar om deel te worden van 't Polderhart?",
+  "cta_description": "Ontdek hoe we leren leuk en betekenisvol maken. Neem contact op voor een kennismakingsgesprek of schrijf direct in."
+}

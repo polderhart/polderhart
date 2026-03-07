@@ -81,8 +81,8 @@
     <!-- PAGE HERO -->
     <section class="page-hero">
         <div class="page-hero__container">
-            <h1 class="page-hero__title">Schoolbus</h1>
-            <p class="page-hero__subtitle">Gemakkelijk vervoer naar school</p>
+            <h1 class="page-hero__title" data-cms-text="hero_title">Schoolbus</h1>
+            <p class="page-hero__subtitle" data-cms-text="hero_subtitle">Gemakkelijk vervoer naar school</p>
         </div>
     </section>
 
@@ -90,7 +90,7 @@
         <div class="section__container">
             <!-- Intro -->
             <div class="enrollment-intro">
-                <p >
+                <p data-cms-html="intro_description">
                     Kinderen die in Zuienkerke (en deelgemeenten) wonen, kunnen thuis worden opgehaald en naar huis
                     teruggebracht met onze schoolbus. <br>
                     De kinderen kennen onze buschauffeur - juf Marleen - al, zij zorgt ook voor een veilige voortour bij
@@ -103,8 +103,8 @@
             <!-- Tarieven Section -->
             <div class="card card--static"
                 style="margin: 0 auto var(--space-6xl); padding: var(--space-4xl) var(--space-3xl);">
-                <h3 class="card__title" style="margin-bottom: var(--space-xl);">Tarieven busvervoer 2022-2023</h3>
-                <p class="card__description" style="margin-bottom: var(--space-2xl);">
+                <h3 class="card__title" style="margin-bottom: var(--space-xl);" data-cms-text="tarieven_title">Tarieven busvervoer 2022-2023</h3>
+                <p class="card__description" style="margin-bottom: var(--space-2xl);" data-cms-text="tarieven_intro">
                     Voor het busvervoer worden de (zeer voordelige!) tarieven van De Lijn gehanteerd.
                     Bovendien komt de Gemeente Zuienkerke voor schoolvervoer 25% tegemoet in de onkosten.
                 </p>
@@ -128,8 +128,8 @@
 
             <!-- Trajecten Section -->
             <div class="enrollment-info" style="margin: 0 auto var(--space-5xl);">
-                <h3 class="enrollment-info__title">Trajecten en haltes</h3>
-                <p class="enrollment-info__description">
+                <h3 class="enrollment-info__title" data-cms-text="routes_title">Trajecten en haltes</h3>
+                <p class="enrollment-info__description" data-cms-text="routes_description">
                     Hieronder vindt u een overzicht van de verschillende trajecten met data en tijdstippen.
                 </p>
             </div>
@@ -138,11 +138,11 @@
             <div
                 style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: var(--space-5xl); margin: 0 auto;">
                 <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-light);">
-                    <img src="assets/docu/bus1.jpeg" alt="Kaart schoolbus traject 1 - route via Meetkerke"
+                    <img src="assets/docu/bus1.jpeg" data-cms-src="route_image_1" data-cms-alt="route_image_1_alt" alt="Kaart schoolbus traject 1 - route via Meetkerke"
                         loading="lazy" style="width: 100%; height: auto; display: block;">
                 </div>
                 <div style="border-radius: var(--radius-md); overflow: hidden; border: 1px solid var(--border-light);">
-                    <img src="assets/docu/bus2.jpeg" alt="Kaart schoolbus traject 2 - route via Nieuwmunster"
+                    <img src="assets/docu/bus2.jpeg" data-cms-src="route_image_2" data-cms-alt="route_image_2_alt" alt="Kaart schoolbus traject 2 - route via Nieuwmunster"
                         loading="lazy" style="width: 100%; height: auto; display: block;">
                 </div>
             </div>
@@ -185,10 +185,9 @@
 
                 <div>
                     <h3 class="footer__column-title">Contact</h3>
-                    <div class="footer__contact-item">Nieuwe Steenweg 37<br>8377 Zuienkerke</div>
-                    <div class="footer__contact-item"><a
-                            href="mailto:ingrid.igodt@gbszuienkerke.net">ingrid.igodt@gbszuienkerke.net</a></div>
-                    <div class="footer__contact-item"><a href="tel:+3250418430">+32 50 41 84 30</a></div>
+                    <div class="footer__contact-item"><span data-cms-text="site_address_street">Nieuwe Steenweg 37</span><br><span data-cms-text="site_address_city">8377 Zuienkerke</span></div>
+                    <div class="footer__contact-item"><a href="mailto:ingrid.igodt@gbszuienkerke.net" data-cms-href="site_email_href" data-cms-text="site_email">ingrid.igodt@gbszuienkerke.net</a></div>
+                    <div class="footer__contact-item"><a href="tel:+3250418430" data-cms-href="site_phone_href" data-cms-text="site_phone_display">+32 50 41 84 30</a></div>
                 </div>
             </div>
 
@@ -207,6 +206,7 @@
     </footer>
 
     <script src="js/app.js"></script>
+    <script src="js/content-loader.js"></script>
 </body>
 
 </html>

@@ -81,8 +81,8 @@
     <!-- PAGE HERO -->
     <section class="page-hero">
         <div class="page-hero__container">
-            <h1 class="page-hero__title">Documenten</h1>
-            <p class="page-hero__subtitle">Alle belangrijke documenten op één plek</p>
+            <h1 class="page-hero__title" data-cms-text="hero_title">Documenten</h1>
+            <p class="page-hero__subtitle" data-cms-text="hero_subtitle">Alle belangrijke documenten op één plek</p>
         </div>
     </section>
 
@@ -93,35 +93,8 @@
 
     <section class="section">
         <div class="section__container">
-
-            <div class="card card--static" style="margin-bottom: var(--space-5xl);">
-                <h3 class="card__title">Schoolreglement</h3>
-                <p class="card__description">
-                    Het schoolreglement bevat alle afspraken en regels van onze school.
-                </p>
-                <div style="margin-top: var(--space-lg);">
-                    <a href="assets/docu/schoolregelement.pdf" target="_blank" class="btn">Download PDF</a>
-                </div>
-            </div>
-
-            <div class="card card--static" style="margin-bottom: var(--space-5xl);">
-                <h3 class="card__title">Pedagogisch Project</h3>
-                <p class="card__description">
-                    Ontdek onze visie en aanpak in het pedagogisch project.
-                </p>
-                <div style="margin-top: var(--space-lg);">
-                    <a href="assets/docu/pedagogisch project.pdf" target="_blank" class="btn">Download PDF</a>
-                </div>
-            </div>
-
-            <div class="card card--static">
-                <h3 class="card__title">Infobrochure</h3>
-                <p class="card__description">
-                    Alle praktische informatie over onze school in één document.
-                </p>
-                <div style="margin-top: var(--space-lg);">
-                    <a href="assets/docu/Infobrochure.pdf" target="_blank" class="btn">Download PDF</a>
-                </div>
+            <div id="documenten-container">
+                <p style="color: var(--text-secondary);">Documenten worden geladen...</p>
             </div>
         </div>
     </section>
@@ -160,10 +133,9 @@
 
                 <div>
                     <h3 class="footer__column-title">Contact</h3>
-                    <div class="footer__contact-item">Nieuwe Steenweg 37<br>8377 Zuienkerke</div>
-                    <div class="footer__contact-item"><a
-                            href="mailto:ingrid.igodt@gbszuienkerke.net">ingrid.igodt@gbszuienkerke.net</a></div>
-                    <div class="footer__contact-item"><a href="tel:+3250418430">+32 50 41 84 30</a></div>
+                    <div class="footer__contact-item"><span data-cms-text="site_address_street">Nieuwe Steenweg 37</span><br><span data-cms-text="site_address_city">8377 Zuienkerke</span></div>
+                    <div class="footer__contact-item"><a href="mailto:ingrid.igodt@gbszuienkerke.net" data-cms-href="site_email_href" data-cms-text="site_email">ingrid.igodt@gbszuienkerke.net</a></div>
+                    <div class="footer__contact-item"><a href="tel:+3250418430" data-cms-href="site_phone_href" data-cms-text="site_phone_display">+32 50 41 84 30</a></div>
                 </div>
             </div>
 
@@ -180,6 +152,8 @@
     </footer>
 
     <script src="js/app.js"></script>
+    <script src="js/content-loader.js"></script>
+    <script src="js/documenten-loader.js"></script>
 </body>
 
 </html>

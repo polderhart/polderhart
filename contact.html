@@ -82,8 +82,8 @@
     <section class="page-hero">
         <div class="page-hero__container">
 
-            <h1 class="page-hero__title">Contacteer ons</h1>
-            <p class="page-hero__subtitle">Vragen of opmerkingen? We helpen je graag verder</p>
+            <h1 class="page-hero__title" data-cms-text="hero_title">Contacteer ons</h1>
+            <p class="page-hero__subtitle" data-cms-text="hero_subtitle">Vragen of opmerkingen? We helpen je graag verder</p>
         </div>
     </section>
     <!-- CONTACT CONTENT -->
@@ -93,18 +93,18 @@
                 <div class="card card--static">
                     <h3 class="card__title">Adres</h3>
                     <p class="card__description">
-                        GBS 't Polderhart Zuienkerke<br>
-                        Nieuwe Steenweg 37<br>
-                        8377 Zuienkerke
+                        <span data-cms-text="site_school_name">GBS 't Polderhart Zuienkerke</span><br>
+                        <span data-cms-text="site_address_street">Nieuwe Steenweg 37</span><br>
+                        <span data-cms-text="site_address_city">8377 Zuienkerke</span>
                     </p>
                 </div>
                 <div class="card card--static">
                     <h3 class="card__title">Contact</h3>
                     <p class="card__description">
                         <strong>E-mail:</strong><br>
-                        <a href="mailto:ingrid.igodt@gbszuienkerke.net">ingrid.igodt@gbszuienkerke.net</a><br><br>
+                        <a href="mailto:ingrid.igodt@gbszuienkerke.net" data-cms-href="site_email_href" data-cms-text="site_email">ingrid.igodt@gbszuienkerke.net</a><br><br>
                         <strong>Telefoon:</strong><br>
-                        <a href="tel:+3250418430">+32 50 41 84 30</a>
+                        <a href="tel:+3250418430" data-cms-href="site_phone_href" data-cms-text="site_phone_display">+32 50 41 84 30</a>
                     </p>
                 </div>
             </div>
@@ -121,15 +121,15 @@
             <!-- Bereikbaarheid -->
             <div class="card card--static">
                 <h3 class="card__title">Onze locatie</h3>
-                <p class="card__description">
+                <p class="card__description" data-cms-text="location_description">
                     Onze school is gelegen in het midden van het dorp.
                 </p>
-                <p class="card__description">
+                <p class="card__description" data-cms-text="location_description_2">
                     Achteraan de school, met uitzicht op de velden, vind je een heuse schooltuin. Het tuintje biedt niet
                     alleen plaats voor een snoepjesbos maar de kinderen kunnen er ook naar hartelust zaaien en planten.
                     De kippen maken het gezellig met hun gekakel.
                 </p>
-                <p class="card__description">
+                <p class="card__description" data-cms-text="location_description_3">
                     Dankzij de zitbokken van de <a href="vriendenkring.html">vriendenkring</a>, kunnen er ook
                     buitenlessen doorgaan.
                 </p>
@@ -157,10 +157,10 @@
             <div class="card card--static" style="margin-top: var(--space-5xl);">
                 <h3 class="card__title">Openingsuren secretariaat</h3>
                 <p class="card__description">
-                    <strong>Maandag tot vrijdag:</strong> 8:00 - 16:00<br>
-                    <strong>Woensdag:</strong> 8:00 - 12:30
+                    <strong>Maandag tot vrijdag:</strong> <span data-cms-text="site_secretary_hours_weekdays">8:00 - 16:00</span><br>
+                    <strong>Woensdag:</strong> <span data-cms-text="site_secretary_hours_wednesday">8:00 - 12:30</span>
                 </p>
-                <p class="card__description">
+                <p class="card__description" data-cms-text="site_secretary_appointment_note">
                     Voor een afspraak met de directie kan je best vooraf bellen of mailen.
                 </p>
             </div>
@@ -202,10 +202,9 @@
 
                 <div>
                     <h3 class="footer__column-title">Contact</h3>
-                    <div class="footer__contact-item">Nieuwe Steenweg 37<br>8377 Zuienkerke</div>
-                    <div class="footer__contact-item"><a
-                            href="mailto:ingrid.igodt@gbszuienkerke.net">ingrid.igodt@gbszuienkerke.net</a></div>
-                    <div class="footer__contact-item"><a href="tel:+3250418430">+32 50 41 84 30</a></div>
+                    <div class="footer__contact-item"><span data-cms-text="site_address_street">Nieuwe Steenweg 37</span><br><span data-cms-text="site_address_city">8377 Zuienkerke</span></div>
+                    <div class="footer__contact-item"><a href="mailto:ingrid.igodt@gbszuienkerke.net" data-cms-href="site_email_href" data-cms-text="site_email">ingrid.igodt@gbszuienkerke.net</a></div>
+                    <div class="footer__contact-item"><a href="tel:+3250418430" data-cms-href="site_phone_href" data-cms-text="site_phone_display">+32 50 41 84 30</a></div>
                 </div>
             </div>
 
@@ -224,6 +223,7 @@
     </footer>
 
     <script src="js/app.js"></script>
+    <script src="js/content-loader.js"></script>
 </body>
 
 </html>
