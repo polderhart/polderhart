@@ -62,6 +62,7 @@ class TeamLoader {
       const promises = manifest.files.map(filename => 
         fetch(`/content/team/${filename}`)
           .then(r => r.json())
+          .then(data => { data._slug = filename.replace('.json', ''); return data; })
           .catch(e => {
             console.error(`Fout bij laden van ${filename}:`, e);
             return null;
@@ -146,13 +147,13 @@ class TeamLoader {
     const photoContent = hasPhoto
       ? `<img src="${photoSrc}" alt="${member.name}" loading="lazy"${positionStyle}>`
       : '';
-    
-    const emailLink = member.email 
+
+    const emailLink = member.email
       ? `<a href="mailto:${member.email}" class="team-card__email">Stuur een e-mail</a>`
       : '';
 
     return `
-      <div class="team-card">
+      <div class="team-card" data-slug="${member._slug || ''}">
         <div class="team-card__photo">
           ${photoContent}
         </div>
@@ -257,6 +258,7 @@ class TeamLoader {
     }
 
     this.container.innerHTML = html;
+    window.dispatchEvent(new CustomEvent('team:rendered'));
   }
 }
 
