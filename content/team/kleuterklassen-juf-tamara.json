@@ -1,9 +1,11 @@
 {
-  "section": "kleuterklassen",
+  "photo_zoom": "1",
   "subsection": "",
-  "name": "Juf Tamara",
+  "section": "kleuterklassen",
+  "name": "Juf Tamara Willaert",
+  "order": 11,
+  "photo": "/assets/team/tamara-willaert.jpg",
   "role": "K2",
-  "email": "tamara.willaert@gbszuienkerke.net",
-  "photo": "",
-  "order": 11
+  "photo_position": "top center",
+  "email": "tamara.willaert@gbszuienkerke.net"
 }
