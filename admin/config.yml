@@ -1,7 +1,6 @@
 # Decap CMS Configuration voor 't Polderhart
 backend:
-  name: github
-  repo: yamushka/polderhart
+  name: git-gateway
   branch: main
 
 # Lokale development (comment out voor productie)
@@ -14,7 +13,7 @@ public_folder: "/assets/pictures"
 locale: "nl"
 
 collections:
-  # Team Members - gestructureerd per sectie zoals in team.html
+  # Team Members
   - name: "team"
     label: "Team"
     label_singular: "Teamlid"
@@ -29,47 +28,27 @@ collections:
     editor:
       preview: false
     fields:
-      - label: "Sectie"
-        name: "section"
-        widget: "select"
-        options:
-          - { label: "Directie", value: "directie" }
-          - { label: "Kleuterklassen", value: "kleuterklassen" }
-          - { label: "Lagere school", value: "lager" }
-          - { label: "Bijzondere leerkrachten", value: "bijzonder" }
-          - { label: "Administratie", value: "admin" }
-          - { label: "Opvang en ondersteuning", value: "opvang" }
-        hint: "Onder welke hoofdtitel moet dit teamlid verschijnen?"
-      
-      - label: "Subsectie (optioneel)"
-        name: "subsection"
-        widget: "string"
-        required: false
-        hint: "Alleen voor Leerkrachten: 'Kleuterklassen' of 'Lagere school', of voor Ondersteunend: 'Administratie' of 'Opvang en ondersteuning'"
-      
-      - label: "Naam"
-        name: "name"
-        widget: "string"
-        hint: "Bijv. 'Juf Ingrid' of 'Meester Nick'"
-      
-      - label: "Rol"
-        name: "role"
-        widget: "string"
-        hint: "Bijv. 'Directeur' of 'Eerste leerjaar'"
-      
+      - { label: "Sectie", name: "section", widget: "select", options: [
+          { label: "Directie", value: "directie" },
+          { label: "Kleuterklassen", value: "kleuterklassen" },
+          { label: "Lagere school", value: "lager" },
+          { label: "Bijzondere leerkrachten", value: "bijzonder" },
+          { label: "Administratie", value: "admin" },
+          { label: "Opvang en ondersteuning", value: "opvang" }
+        ] }
+
+      - { label: "Subsectie (optioneel)", name: "subsection", widget: "string", required: false }
+      - { label: "Naam", name: "name", widget: "string" }
+      - { label: "Rol", name: "role", widget: "string" }
+
       - label: "Email"
         name: "email"
         widget: "string"
         required: false
         pattern: ['^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', "Voer een geldig e-mailadres in"]
-        hint: "Laat leeg als geen email beschikbaar"
-      
-      - label: "Foto"
-        name: "photo"
-        widget: "image"
-        required: false
-        hint: "Upload een portretfoto (JPEG of PNG, bij voorkeur vierkant zoals 400x400px, max. 2MB). De foto wordt automatisch verkleind en geoptimaliseerd."
-      
+
+      - { label: "Foto", name: "photo", widget: "image", required: false }
+
       - label: "Volgorde"
         name: "order"
         widget: "number"
@@ -77,9 +56,8 @@ collections:
         value_type: "int"
         min: 1
         max: 999
-        hint: "Laag nummer = eerder in lijst (bijv. 1, 2, 3...)"
 
-  # Optioneel: Algemene instellingen
+  # Settings
   - name: "settings"
     label: "Algemene Instellingen"
     files:
@@ -87,61 +65,22 @@ collections:
         name: "team_photo"
         file: "content/settings/team-photo.json"
         fields:
-          - label: "Groepsfoto Team"
-            name: "group_photo"
-            widget: "image"
-            required: false
-            hint: "Upload de volledige teamfoto (JPEG of PNG, max. 5MB). De foto wordt automatisch geoptimaliseerd op de website."
-          - label: "Alt-tekst groepsfoto"
-            name: "group_photo_alt"
-            widget: "string"
-            required: false
-            default: "Het volledige team van GBS 't Polderhart"
-            hint: "Kort beschrijving van de foto (voor toegankelijkheid)"
+          - { label: "Groepsfoto Team", name: "group_photo", widget: "image", required: false }
+          - { label: "Alt-tekst groepsfoto", name: "group_photo_alt", widget: "string", required: false }
 
       - label: "Schoolgegevens"
         name: "school_info"
         file: "content/settings/school-info.json"
         fields:
-          - label: "Schoolnaam"
-            name: "school_name"
-            widget: "string"
-            hint: "Volledige schoolnaam zoals op documenten"
-          - label: "Straat en nummer"
-            name: "address_street"
-            widget: "string"
-          - label: "Postcode en gemeente"
-            name: "address_city"
-            widget: "string"
-          - label: "E-mailadres"
-            name: "email"
-            widget: "string"
-          - label: "E-mail (mailto: link)"
-            name: "email_href"
-            widget: "string"
-            hint: "Begin met mailto: bijv. mailto:naam@school.be"
-          - label: "Telefoon (zichtbaar)"
-            name: "phone_display"
-            widget: "string"
-            hint: "Bijv. +32 50 41 84 30"
-          - label: "Telefoon (tel: link)"
-            name: "phone_href"
-            widget: "string"
-            hint: "Begin met tel: en zonder spaties, bijv. tel:+3250418430"
-          - label: "Secretariaat - uren weekdagen"
-            name: "secretary_hours_weekdays"
-            widget: "string"
-            hint: "Bijv. 8:00 - 16:00"
-          - label: "Secretariaat - uren woensdag"
-            name: "secretary_hours_wednesday"
-            widget: "string"
-            hint: "Bijv. 8:00 - 12:30"
-          - label: "Afspraaknota secretariaat"
-            name: "secretary_appointment_note"
-            widget: "text"
-            required: false
+          - { label: "Schoolnaam", name: "school_name", widget: "string" }
+          - { label: "Straat en nummer", name: "address_street", widget: "string" }
+          - { label: "Postcode en gemeente", name: "address_city", widget: "string" }
+          - { label: "E-mailadres", name: "email", widget: "string" }
+          - { label: "E-mail link", name: "email_href", widget: "string" }
+          - { label: "Telefoon zichtbaar", name: "phone_display", widget: "string" }
+          - { label: "Telefoon link", name: "phone_href", widget: "string" }
 
-  # ─── AGENDA ────────────────────────────────────────────────────────
+  # Agenda
   - name: "agenda"
     label: "Schoolagenda"
     files:
@@ -152,30 +91,13 @@ collections:
           - label: "Evenementen"
             name: "events"
             widget: "list"
-            label_singular: "Evenement"
-            summary: "{{fields.date}} – {{fields.title}}"
             fields:
-              - label: "Datum"
-                name: "date"
-                widget: "datetime"
-                format: "YYYY-MM-DD"
-                date_format: "DD/MM/YYYY"
-                time_format: false
-                hint: "Datum van het evenement"
-              - label: "Titel"
-                name: "title"
-                widget: "string"
-              - label: "Tijdstip (optioneel)"
-                name: "time"
-                widget: "string"
-                required: false
-                hint: "Bijv. 14:00 – 18:00 of Hele dag"
-              - label: "Beschrijving (optioneel)"
-                name: "description"
-                widget: "string"
-                required: false
+              - { label: "Datum", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Tijdstip", name: "time", widget: "string", required: false }
+              - { label: "Beschrijving", name: "description", widget: "string", required: false }
 
-  # ─── DOCUMENTEN ────────────────────────────────────────────────────
+  # Documenten
   - name: "documenten"
     label: "Documenten"
     files:
@@ -186,353 +108,25 @@ collections:
           - label: "Documenten"
             name: "documents"
             widget: "list"
-            label_singular: "Document"
-            summary: "{{fields.title}}"
             fields:
-              - label: "Titel"
-                name: "title"
-                widget: "string"
-              - label: "Beschrijving"
-                name: "description"
-                widget: "text"
-                required: false
-              - label: "PDF bestand"
-                name: "file"
-                widget: "file"
-                media_folder: "/assets/docu"
-                public_folder: "/assets/docu"
-                hint: "Upload een PDF"
+              - { label: "Titel", name: "title", widget: "string" }
+              - { label: "Beschrijving", name: "description", widget: "text", required: false }
+              - { label: "PDF bestand", name: "file", widget: "file" }
 
-  # ─── PAGINA INHOUD ─────────────────────────────────────────────────
+  # Pagina inhoud
   - name: "paginas"
     label: "Pagina-inhoud"
     files:
-
       - label: "Homepage"
         name: "home"
         file: "content/pages/home.json"
-        media_folder: "/assets/pictures"
-        public_folder: "/assets/pictures"
         fields:
-          - { label: "Hero – ondertitel", name: "hero_subtitle", widget: "string" }
-          - { label: "Hero – hoofdtitel", name: "hero_title", widget: "string" }
-          - { label: "Hero – beschrijving", name: "hero_description", widget: "text" }
-          - { label: "Hero – foto", name: "hero_image", widget: "image", required: false }
-          - { label: "Hero – foto alt-tekst", name: "hero_image_alt", widget: "string", required: false }
-          - { label: "Over ons – titel", name: "about_title", widget: "string" }
-          - { label: "Over ons – alinea 1", name: "about_description_1", widget: "text" }
-          - { label: "Over ons – alinea 2", name: "about_description_2", widget: "text" }
-          - { label: "Over ons – foto", name: "about_image", widget: "image", required: false }
-          - { label: "Over ons – foto alt-tekst", name: "about_image_alt", widget: "string", required: false }
-          - { label: "Waarden – sectietitel", name: "values_title", widget: "string" }
-          - { label: "Waarden – sectieondertitel", name: "values_subtitle", widget: "string" }
-          - label: "Waarde 1"
-            name: "value1"
-            widget: "object"
-            fields:
-              - { label: "Icoon", name: "icon", widget: "image", required: false, hint: "Small PNG/SVG icoon" }
-              - { label: "Titel", name: "title", widget: "string" }
-              - { label: "Beschrijving", name: "description", widget: "string" }
-          - label: "Waarde 2"
-            name: "value2"
-            widget: "object"
-            fields:
-              - { label: "Icoon", name: "icon", widget: "image", required: false }
-              - { label: "Titel", name: "title", widget: "string" }
-              - { label: "Beschrijving", name: "description", widget: "string" }
-          - label: "Waarde 3"
-            name: "value3"
-            widget: "object"
-            fields:
-              - { label: "Icoon", name: "icon", widget: "image", required: false }
-              - { label: "Titel", name: "title", widget: "string" }
-              - { label: "Beschrijving", name: "description", widget: "string" }
-          - label: "Waarde 4"
-            name: "value4"
-            widget: "object"
-            fields:
-              - { label: "Icoon", name: "icon", widget: "image", required: false }
-              - { label: "Titel", name: "title", widget: "string" }
-              - { label: "Beschrijving", name: "description", widget: "string" }
-          - { label: "CTA – titel", name: "cta_title", widget: "string" }
-          - { label: "CTA – beschrijving", name: "cta_description", widget: "text" }
-
-      - label: "Onze school"
-        name: "onze_school"
-        file: "content/pages/onze-school.json"
-        media_folder: "/assets/pictures"
-        public_folder: "/assets/pictures"
-        fields:
-          - { label: "Hero – titel", name: "hero_title", widget: "string" }
-          - { label: "Hero – ondertitel", name: "hero_subtitle", widget: "string" }
-          - { label: "Intro – foto", name: "intro_image", widget: "image", required: false }
-          - { label: "Intro – foto alt-tekst", name: "intro_image_alt", widget: "string", required: false }
-          - { label: "Intro – label", name: "intro_label", widget: "string" }
-          - { label: "Intro – titel", name: "intro_title", widget: "string" }
-          - { label: "Intro – alinea 1", name: "intro_description_1", widget: "text" }
-          - { label: "Intro – alinea 2", name: "intro_description_2", widget: "text" }
-          - { label: "Dagindeling – sectietitel", name: "timeline_title", widget: "string" }
-          - { label: "Dagindeling – sectieondertitel", name: "timeline_subtitle", widget: "string" }
-          - label: "Dagindeling – stap 1 (Start van de dag)"
-            name: "timeline_1"
-            widget: "object"
-            fields:
-              - { label: "Titel", name: "title", widget: "string" }
-              - { label: "Beschrijving", name: "description", widget: "text" }
-              - { label: "Foto", name: "image", widget: "image", required: false }
-              - { label: "Foto alt-tekst", name: "image_alt", widget: "string", required: false }
-          - label: "Dagindeling – stap 2 (Voormiddag)"
-            name: "timeline_2"
-            widget: "object"
-            fields:
-              - { label: "Titel", name: "title", widget: "string" }
-              - { label: "Beschrijving", name: "description", widget: "text" }
-              - { label: "Foto", name: "image", widget: "image", required: false }
-              - { label: "Foto alt-tekst", name: "image_alt", widget: "string", required: false }
-          - label: "Dagindeling – stap 3 (Middagpauze)"
-            name: "timeline_3"
-            widget: "object"
-            fields:
-              - { label: "Titel", name: "title", widget: "string" }
-              - { label: "Beschrijving", name: "description", widget: "text" }
-              - { label: "Foto", name: "image", widget: "image", required: false }
-              - { label: "Foto alt-tekst", name: "image_alt", widget: "string", required: false }
-          - label: "Dagindeling – stap 4 (Namiddag)"
-            name: "timeline_4"
-            widget: "object"
-            fields:
-              - { label: "Titel", name: "title", widget: "string" }
-              - { label: "Beschrijving", name: "description", widget: "text" }
-              - { label: "Foto", name: "image", widget: "image", required: false }
-              - { label: "Foto alt-tekst", name: "image_alt", widget: "string", required: false }
-          - label: "Dagindeling – stap 5 (Einde schooldag)"
-            name: "timeline_5"
-            widget: "object"
-            fields:
-              - { label: "Titel", name: "title", widget: "string" }
-              - { label: "Beschrijving", name: "description", widget: "text" }
-              - { label: "Foto", name: "image", widget: "image", required: false }
-              - { label: "Foto alt-tekst", name: "image_alt", widget: "string", required: false }
-          - { label: "Infrastructuur – label", name: "infra_label", widget: "string" }
-          - { label: "Infrastructuur – titel", name: "infra_title", widget: "string" }
-          - { label: "Infrastructuur – beschrijving", name: "infra_description", widget: "text" }
-          - { label: "Infrastructuur – foto", name: "infra_image", widget: "image", required: false }
-          - { label: "Infrastructuur – foto alt-tekst", name: "infra_image_alt", widget: "string", required: false }
-          - { label: "Speelplaats – label", name: "playground_label", widget: "string" }
-          - { label: "Speelplaats – titel", name: "playground_title", widget: "string" }
-          - { label: "Speelplaats – beschrijving", name: "playground_description", widget: "text" }
-          - { label: "Speelplaats – foto", name: "playground_image", widget: "image", required: false }
-          - { label: "Speelplaats – foto alt-tekst", name: "playground_image_alt", widget: "string", required: false }
-          - { label: "Turnzaal – label", name: "sport_label", widget: "string" }
-          - { label: "Turnzaal – titel", name: "sport_title", widget: "string" }
-          - { label: "Turnzaal – beschrijving", name: "sport_description", widget: "text" }
-          - { label: "Turnzaal – foto", name: "sport_image", widget: "image", required: false }
-          - { label: "Turnzaal – foto alt-tekst", name: "sport_image_alt", widget: "string", required: false }
-          - { label: "Waarom – sectietitel", name: "why_title", widget: "string" }
-          - { label: "Waarom – sectieondertitel", name: "why_subtitle", widget: "string" }
-          - { label: "Waarom 1 – titel", name: "why_1_title", widget: "string" }
-          - { label: "Waarom 1 – beschrijving", name: "why_1_description", widget: "text" }
-          - { label: "Waarom 2 – titel", name: "why_2_title", widget: "string" }
-          - { label: "Waarom 2 – beschrijving", name: "why_2_description", widget: "text" }
-          - { label: "Waarom 3 – titel", name: "why_3_title", widget: "string" }
-          - { label: "Waarom 3 – beschrijving", name: "why_3_description", widget: "text" }
-          - { label: "Waarom 4 – titel", name: "why_4_title", widget: "string" }
-          - { label: "Waarom 4 – beschrijving", name: "why_4_description", widget: "text" }
-          - { label: "Waarom 5 – titel", name: "why_5_title", widget: "string" }
-          - { label: "Waarom 5 – beschrijving", name: "why_5_description", widget: "text" }
-          - { label: "CTA – titel", name: "cta_title", widget: "string" }
-          - { label: "CTA – beschrijving", name: "cta_description", widget: "text" }
+          - { label: "Hero titel", name: "hero_title", widget: "string" }
+          - { label: "Hero beschrijving", name: "hero_description", widget: "text" }
 
       - label: "Contact"
         name: "contact"
         file: "content/pages/contact.json"
         fields:
-          - { label: "Hero – titel", name: "hero_title", widget: "string" }
-          - { label: "Hero – ondertitel", name: "hero_subtitle", widget: "string" }
-          - { label: "Locatie – beschrijving 1", name: "location_description", widget: "text" }
-          - { label: "Locatie – beschrijving 2 (schooltuin)", name: "location_description_2", widget: "text" }
-          - { label: "Locatie – beschrijving 3 (zitbokken)", name: "location_description_3", widget: "text" }
-          - { label: "Bereikbaarheid – intro", name: "bereikbaarheid_description", widget: "text" }
-          - { label: "Bereikbaarheid – met de auto", name: "bereikbaarheid_auto", widget: "text" }
-          - { label: "Bereikbaarheid – met de fiets", name: "bereikbaarheid_fiets", widget: "text" }
-          - { label: "Bereikbaarheid – schoolbus", name: "bereikbaarheid_bus", widget: "text" }
-
-      - label: "Schooluren"
-        name: "schooluren"
-        file: "content/pages/schooluren.json"
-        fields:
-          - { label: "Hero – titel", name: "hero_title", widget: "string" }
-          - { label: "Hero – ondertitel", name: "hero_subtitle", widget: "string" }
-          - { label: "Intro – beschrijving", name: "intro_description", widget: "text" }
-          - { label: "Jongere leerlingen – ondertitel", name: "jong_subtitle", widget: "string" }
-          - { label: "Jongere leerlingen – titel", name: "jong_title", widget: "string" }
-          - { label: "Jongere leerlingen – maandag", name: "jong_ma", widget: "string" }
-          - { label: "Jongere leerlingen – dinsdag", name: "jong_di", widget: "string" }
-          - { label: "Jongere leerlingen – woensdag", name: "jong_wo", widget: "string" }
-          - { label: "Jongere leerlingen – donderdag", name: "jong_do", widget: "string" }
-          - { label: "Jongere leerlingen – vrijdag", name: "jong_vr", widget: "string" }
-          - { label: "Oudere leerlingen – ondertitel", name: "oud_subtitle", widget: "string" }
-          - { label: "Oudere leerlingen – titel", name: "oud_title", widget: "string" }
-          - { label: "Oudere leerlingen – maandag", name: "oud_ma", widget: "string" }
-          - { label: "Oudere leerlingen – dinsdag", name: "oud_di", widget: "string" }
-          - { label: "Oudere leerlingen – woensdag", name: "oud_wo", widget: "string" }
-          - { label: "Oudere leerlingen – donderdag", name: "oud_do", widget: "string" }
-          - { label: "Oudere leerlingen – vrijdag", name: "oud_vr", widget: "string" }
-          - { label: "Info – titel", name: "info_title", widget: "string" }
-          - { label: "Info – tekst 1", name: "info_description_1", widget: "text" }
-          - { label: "Info – tekst 2", name: "info_description_2", widget: "text" }
-
-      - label: "Opvang en studie"
-        name: "opvang"
-        file: "content/pages/opvang.json"
-        fields:
-          - { label: "Hero – titel", name: "hero_title", widget: "string" }
-          - { label: "Hero – ondertitel", name: "hero_subtitle", widget: "string" }
-          - { label: "Voorschoolse opvang – titel", name: "voor_title", widget: "string" }
-          - { label: "Voorschoolse opvang – uren (van)", name: "voor_hours_start", widget: "string" }
-          - { label: "Voorschoolse opvang – uren (tot)", name: "voor_hours_end", widget: "string" }
-          - { label: "Voorschoolse opvang – extra info", name: "voor_extra", widget: "text" }
-          - { label: "Naschoolse opvang – titel", name: "na_title", widget: "string" }
-          - { label: "Naschoolse opvang – uren (van)", name: "na_hours_start", widget: "string" }
-          - { label: "Naschoolse opvang – uren (tot)", name: "na_hours_end", widget: "string" }
-          - { label: "Naschoolse opvang – extra info", name: "na_extra", widget: "text" }
-          - { label: "Studiebegeleiding – titel", name: "studie_title", widget: "string" }
-          - { label: "Studiebegeleiding – beschrijving", name: "studie_description", widget: "text" }
-          - { label: "Studiebegeleiding – uren", name: "studie_hours", widget: "string" }
-
-      - label: "Inschrijven"
-        name: "inschrijvingen"
-        file: "content/pages/inschrijvingen.json"
-        media_folder: "/assets/pictures"
-        public_folder: "/assets/pictures"
-        fields:
-          - { label: "Hero – titel", name: "hero_title", widget: "string" }
-          - { label: "Hero – ondertitel", name: "hero_subtitle", widget: "string" }
-          - { label: "Intro – titel", name: "intro_title", widget: "string" }
-          - { label: "Intro – beschrijving", name: "intro_description", widget: "text" }
-          - { label: "Stap 1 – titel", name: "step1_title", widget: "string" }
-          - { label: "Stap 1 – beschrijving", name: "step1_description", widget: "text" }
-          - { label: "Stap 1 – foto", name: "step1_image", widget: "image", required: false }
-          - { label: "Stap 2 – titel", name: "step2_title", widget: "string" }
-          - { label: "Stap 2 – beschrijving", name: "step2_description", widget: "text" }
-          - { label: "Stap 2 – foto", name: "step2_image", widget: "image", required: false }
-          - { label: "Stap 3 – titel", name: "step3_title", widget: "string" }
-          - { label: "Stap 3 – beschrijving", name: "step3_description", widget: "text" }
-          - { label: "Stap 3 – foto", name: "step3_image", widget: "image", required: false }
-          - { label: "Stap 4 – titel", name: "step4_title", widget: "string" }
-          - { label: "Stap 4 – beschrijving", name: "step4_description", widget: "text" }
-          - { label: "Stap 4 – foto", name: "step4_image", widget: "image", required: false }
-          - { label: "Stap 5 – titel", name: "step5_title", widget: "string" }
-          - { label: "Stap 5 – beschrijving", name: "step5_description", widget: "text" }
-          - { label: "Stap 5 – foto", name: "step5_image", widget: "image", required: false }
-          - { label: "Wanneer inschrijven – label", name: "timing_label", widget: "string" }
-          - { label: "Wanneer inschrijven – titel", name: "timing_title", widget: "string" }
-          - { label: "Wanneer inschrijven – schooljaar", name: "timing_schooljaar", widget: "text" }
-          - { label: "Wanneer inschrijven – zomervakantie", name: "timing_zomer", widget: "text" }
-          - { label: "Wanneer inschrijven – foto", name: "timing_image", widget: "image", required: false }
-          - { label: "Documenten – label", name: "docs_label", widget: "string" }
-          - { label: "Documenten – titel", name: "docs_title", widget: "string" }
-          - { label: "Documenten – intro", name: "docs_intro", widget: "string" }
-          - { label: "Documenten – foto", name: "docs_image", widget: "image", required: false }
-          - { label: "Leeftijd – label", name: "age_label", widget: "string" }
-          - { label: "Leeftijd – titel", name: "age_title", widget: "string" }
-          - { label: "Leeftijd – beschrijving", name: "age_description", widget: "text" }
-          - { label: "Leeftijd – foto", name: "age_image", widget: "image", required: false }
-
-      - label: "Schoolbus"
-        name: "schoolbus"
-        file: "content/pages/schoolbus.json"
-        media_folder: "/assets/docu"
-        public_folder: "/assets/docu"
-        fields:
-          - { label: "Hero – titel", name: "hero_title", widget: "string" }
-          - { label: "Hero – ondertitel", name: "hero_subtitle", widget: "string" }
-          - { label: "Intro – beschrijving", name: "intro_description", widget: "text" }
-          - { label: "Tarieven – titel", name: "tarieven_title", widget: "string" }
-          - { label: "Tarieven – intro", name: "tarieven_intro", widget: "text" }
-          - { label: "Tarieven – kleuters", name: "tarieven_kleuters", widget: "text" }
-          - { label: "Tarieven – lager", name: "tarieven_lager", widget: "text" }
-          - { label: "Tarieven – vermindering", name: "tarieven_vermindering", widget: "text" }
-          - { label: "Tarieven – sporadisch", name: "tarieven_sporadisch", widget: "text" }
-          - { label: "Routes – titel", name: "routes_title", widget: "string" }
-          - { label: "Routes – beschrijving", name: "routes_description", widget: "text" }
-          - { label: "Route 1 – afbeelding", name: "route_image_1", widget: "image", required: false }
-          - { label: "Route 1 – alt-tekst", name: "route_image_1_alt", widget: "string", required: false }
-          - { label: "Route 2 – afbeelding", name: "route_image_2", widget: "image", required: false }
-          - { label: "Route 2 – alt-tekst", name: "route_image_2_alt", widget: "string", required: false }
-
-      - label: "Vriendenkring"
-        name: "vriendenkring"
-        file: "content/pages/vriendenkring.json"
-        media_folder: "/assets/pictures"
-        public_folder: "/assets/pictures"
-        fields:
-          - { label: "Hero – titel", name: "hero_title", widget: "string" }
-          - { label: "Hero – ondertitel", name: "hero_subtitle", widget: "string" }
-          - { label: "Intro – foto", name: "intro_image", widget: "image", required: false }
-          - { label: "Intro – foto alt-tekst", name: "intro_image_alt", widget: "string", required: false }
-          - { label: "Intro – label", name: "intro_label", widget: "string" }
-          - { label: "Intro – titel", name: "intro_title", widget: "string" }
-          - { label: "Intro – alinea 1", name: "intro_description_1", widget: "text" }
-          - { label: "Intro – alinea 2", name: "intro_description_2", widget: "text" }
-          - { label: "Meedoen – sectietitel", name: "join_title", widget: "string" }
-          - { label: "Meedoen – sectieondertitel", name: "join_description", widget: "text" }
-          - { label: "Meedoen 1 – foto", name: "join_1_image", widget: "image", required: false }
-          - { label: "Meedoen 1 – titel", name: "join_1_title", widget: "string" }
-          - { label: "Meedoen 1 – beschrijving", name: "join_1_description", widget: "text" }
-          - { label: "Meedoen 2 – foto", name: "join_2_image", widget: "image", required: false }
-          - { label: "Meedoen 2 – titel", name: "join_2_title", widget: "string" }
-          - { label: "Meedoen 2 – beschrijving", name: "join_2_description", widget: "text" }
-          - { label: "Meedoen 3 – foto", name: "join_3_image", widget: "image", required: false }
-          - { label: "Meedoen 3 – titel", name: "join_3_title", widget: "string" }
-          - { label: "Meedoen 3 – beschrijving", name: "join_3_description", widget: "text" }
-          - { label: "Gerealiseerd – sectietitel", name: "realized_title", widget: "string" }
-          - { label: "Gerealiseerd – sectieondertitel", name: "realized_subtitle", widget: "text" }
-          - { label: "Gerealiseerd 1 – titel", name: "realized_1_title", widget: "string" }
-          - { label: "Gerealiseerd 1 – beschrijving", name: "realized_1_description", widget: "text" }
-          - { label: "Gerealiseerd 1 – foto", name: "realized_1_image", widget: "image", required: false }
-          - { label: "Gerealiseerd 2 – titel", name: "realized_2_title", widget: "string" }
-          - { label: "Gerealiseerd 2 – beschrijving", name: "realized_2_description", widget: "text" }
-          - { label: "Gerealiseerd 2 – foto", name: "realized_2_image", widget: "image", required: false }
-          - { label: "Gerealiseerd 3 – titel", name: "realized_3_title", widget: "string" }
-          - { label: "Gerealiseerd 3 – beschrijving", name: "realized_3_description", widget: "text" }
-          - { label: "Gerealiseerd 3 – foto", name: "realized_3_image", widget: "image", required: false }
-          - { label: "Gerealiseerd 4 – titel", name: "realized_4_title", widget: "string" }
-          - { label: "Gerealiseerd 4 – beschrijving", name: "realized_4_description", widget: "text" }
-          - { label: "Gerealiseerd 4 – foto", name: "realized_4_image", widget: "image", required: false }
-
-      - label: "Jobs"
-        name: "jobs"
-        file: "content/pages/jobs.json"
-        fields:
-          - { label: "Hero – titel", name: "hero_title", widget: "string" }
-          - { label: "Hero – ondertitel", name: "hero_subtitle", widget: "string" }
-          - { label: "Intro – titel", name: "intro_title", widget: "string" }
-          - { label: "Intro – beschrijving", name: "intro_description", widget: "text" }
-          - { label: "Job 1 – titel", name: "job1_title", widget: "string" }
-          - { label: "Job 1 – beschrijving", name: "job1_description", widget: "text" }
-          - { label: "Job 2 – titel", name: "job2_title", widget: "string" }
-          - { label: "Job 2 – beschrijving", name: "job2_description", widget: "text" }
-          - { label: "Interesse – titel", name: "cta_title", widget: "string" }
-          - { label: "Interesse – beschrijving", name: "cta_description", widget: "text" }
-
-      - label: "Praktisch"
-        name: "praktisch"
-        file: "content/pages/praktisch.json"
-        fields:
-          - { label: "Hero – titel", name: "hero_title", widget: "string" }
-          - { label: "Hero – ondertitel", name: "hero_subtitle", widget: "string" }
-
-      - label: "Agenda (pagina)"
-        name: "agenda_page"
-        file: "content/pages/agenda.json"
-        fields:
-          - { label: "Hero – titel", name: "hero_title", widget: "string" }
-          - { label: "Hero – ondertitel", name: "hero_subtitle", widget: "string" }
-
-      - label: "Documenten (pagina)"
-        name: "documenten_page"
-        file: "content/pages/documenten.json"
-        fields:
-          - { label: "Hero – titel", name: "hero_title", widget: "string" }
-          - { label: "Hero – ondertitel", name: "hero_subtitle", widget: "string" }
+          - { label: "Hero titel", name: "hero_title", widget: "string" }
+          - { label: "Hero beschrijving", name: "hero_description", widget: "text" }
