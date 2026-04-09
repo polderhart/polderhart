@@ -55,7 +55,8 @@
     const onNetlify = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1' && window.location.hostname !== '';
 
     document.querySelectorAll('[data-cms-src]').forEach(function (el) {
-      const val = data[el.getAttribute('data-cms-src')];
+      const key = el.getAttribute('data-cms-src');
+      const val = data[key];
       if (val !== undefined && val !== '') {
         el.style.display = '';
         const isLocal = val.startsWith('/') || val.startsWith('assets/');
@@ -67,6 +68,12 @@
           el.src = val;
         }
       }
+      // Apply optional object-position from companion {key}_position field
+      const pos = data[key + '_position'];
+      if (pos) el.style.objectPosition = pos;
+      // Apply optional zoom from companion {key}_zoom field
+      const zoom = data[key + '_zoom'];
+      if (zoom && zoom !== '1') el.style.setProperty('--photo-zoom', zoom);
     });
 
     document.querySelectorAll('[data-cms-alt]').forEach(function (el) {

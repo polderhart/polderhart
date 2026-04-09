@@ -27,6 +27,7 @@ class TeamLoader {
             ? `/.netlify/images?url=${encodeURIComponent(data.group_photo)}&w=1400&q=80`
             : data.group_photo;
           img.alt = data.group_photo_alt || 'Het volledige team van GBS \'t Polderhart';
+          if (data.group_photo_position) img.style.objectPosition = data.group_photo_position;
           section.style.display = '';
         }
       }
@@ -138,8 +139,12 @@ class TeamLoader {
     const photoSrc = hasPhoto
       ? (onNetlify ? `/.netlify/images?url=${encodeURIComponent(member.photo)}&w=400&q=80` : member.photo)
       : '';
-    const photoContent = hasPhoto 
-      ? `<img src="${photoSrc}" alt="${member.name}" loading="lazy">`
+    const imgStyles = [];
+    if (member.photo_position) imgStyles.push(`object-position:${member.photo_position}`);
+    if (member.photo_zoom && member.photo_zoom !== '1') imgStyles.push(`--photo-zoom:${member.photo_zoom}`);
+    const positionStyle = imgStyles.length ? ` style="${imgStyles.join(';')}"` : '';
+    const photoContent = hasPhoto
+      ? `<img src="${photoSrc}" alt="${member.name}" loading="lazy"${positionStyle}>`
       : '';
     
     const emailLink = member.email 

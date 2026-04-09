@@ -41,6 +41,29 @@ collections:
         required: false
         pattern: ['^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$', "Voer een geldig e-mailadres in"]
       - { label: "Foto", name: "photo", widget: "image", required: false }
+      - label: "Foto positie"
+        name: "photo_position"
+        widget: "select"
+        required: false
+        default: "center"
+        options:
+          - { label: "Midden (standaard)", value: "center" }
+          - { label: "Boven", value: "top center" }
+          - { label: "Onder", value: "bottom center" }
+          - { label: "Links", value: "left center" }
+          - { label: "Rechts", value: "right center" }
+          - { label: "Gezicht/portret (hoog)", value: "50% 20%" }
+          - { label: "Gezicht/portret (midden)", value: "50% 35%" }
+      - label: "Foto zoom"
+        name: "photo_zoom"
+        widget: "select"
+        required: false
+        default: "1"
+        options:
+          - { label: "Normaal", value: "1" }
+          - { label: "Licht ingezoomd (1.3×)", value: "1.3" }
+          - { label: "Ingezoomd (1.6×)", value: "1.6" }
+          - { label: "Dichtbij (2×)", value: "2" }
       - label: "Volgorde"
         name: "order"
         widget: "number"
@@ -58,6 +81,17 @@ collections:
         file: "content/settings/team-photo.json"
         fields:
           - { label: "Groepsfoto Team", name: "group_photo", widget: "image", required: false }
+          - label: "Groepsfoto positie"
+            name: "group_photo_position"
+            widget: "select"
+            required: false
+            default: "center"
+            options:
+              - { label: "Midden (standaard)", value: "center" }
+              - { label: "Boven", value: "top center" }
+              - { label: "Onder", value: "bottom center" }
+              - { label: "Links", value: "left center" }
+              - { label: "Rechts", value: "right center" }
           - { label: "Alt-tekst groepsfoto", name: "group_photo_alt", widget: "string", required: false }
       - label: "Schoolgegevens"
         name: "school_info"
