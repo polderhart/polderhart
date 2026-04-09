@@ -126,7 +126,13 @@
     }
 
     applyContent(data);
+    document.body.classList.add('cms-loaded');
   }
+
+  // Safety fallback: reveal page even if fetch fails
+  setTimeout(function () {
+    document.body.classList.add('cms-loaded');
+  }, 2000);
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);

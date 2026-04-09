@@ -15,6 +15,11 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Prevent flash of hardcoded HTML text before CMS content loads */
+body:not(.cms-loaded) {
+  visibility: hidden;
+}
+
 body {
   font-family: var(--font-body);
   color: var(--text-secondary);

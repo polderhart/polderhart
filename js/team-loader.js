@@ -22,7 +22,10 @@ class TeamLoader {
         const img = document.getElementById('team-group-photo');
         const section = document.getElementById('team-photo-section');
         if (img && section) {
-          img.src = data.group_photo;
+          const onNetlify = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1' && window.location.hostname !== '';
+          img.src = onNetlify
+            ? `/.netlify/images?url=${encodeURIComponent(data.group_photo)}&w=1400&q=80`
+            : data.group_photo;
           img.alt = data.group_photo_alt || 'Het volledige team van GBS \'t Polderhart';
           section.style.display = '';
         }
