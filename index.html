@@ -9,275 +9,75 @@
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/logo.png">
 
+    <!-- CSS -->
     <link rel="stylesheet" href="css/main.css">
 
+    <!-- 🔑 Netlify Identity MOET in head -->
+    <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
-    <!-- NAVIGATION -->
+
+    <!-- NAV -->
     <nav class="nav">
         <div class="nav__container">
             <a href="index.html" class="nav__logo">
-                <img src="assets/logo.png" alt="GBS 't Polderhart logo" class="nav__logo-img">
+                <img src="assets/logo.png" alt="logo">
             </a>
 
             <ul class="nav__menu">
-                <li class="nav__item">
-                    <a href="index.html" class="nav__link nav__link--active">Welkom</a>
-                </li>
-                <li class="nav__item">
-                    <a href="onze-school.html" class="nav__link">Onze school</a>
-                </li>
-                <li class="nav__item nav__item--dropdown">
-                    <a href="praktisch.html" class="nav__link">
-                        Praktisch
-                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
-                            style="margin-left: 4px; transition: transform 0.2s;">
-                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
-                                stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                    <div class="nav__dropdown">
-                        <div class="nav__dropdown-item">
-                            <a href="inschrijvingen.html" class="nav__dropdown-link">Inschrijven</a>
-                        </div>
-                        <div class="nav__dropdown-item nav__dropdown-item--has-submenu">
-                            <a href="#" class="nav__dropdown-link">Dagelijks</a>
-                            <div class="nav__submenu">
-                                <a href="schooluren.html" class="nav__submenu-link">Schooluren</a>
-                                <a href="opvang-studie.html" class="nav__submenu-link">Opvang en studie</a>
-                                <a href="https://order.hanssens.be/menu/X78A/GBS-t-Polderhart-Zuienkerke-Kleuter"
-                                    target="_blank" rel="noopener" class="nav__submenu-link">Warme maaltijden</a>
-                            </div>
-                        </div>
-                        <div class="nav__dropdown-item">
-                            <a href="documenten.html" class="nav__dropdown-link">Documenten</a>
-                        </div>
-                        <div class="nav__dropdown-item">
-                            <a href="schoolbus.html" class="nav__dropdown-link">Schoolbus</a>
-                        </div>
-                        <div class="nav__dropdown-item">
-                            <a href="vriendenkring.html" class="nav__dropdown-link">Vriendenkring</a>
-                        </div>
-                    </div>
-                </li>
-                <li class="nav__item">
-                    <a href="team.html" class="nav__link">Team</a>
-                </li>
-                <li class="nav__item">
-                    <a href="agenda.html" class="nav__link">Agenda</a>
-                </li>
-                <li class="nav__item">
-                    <a href="contact.html" class="nav__link nav__link--cta">Contact</a>
-                </li>
+                <li><a href="index.html">Welkom</a></li>
+                <li><a href="onze-school.html">Onze school</a></li>
+                <li><a href="praktisch.html">Praktisch</a></li>
+                <li><a href="team.html">Team</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
-
-            <button class="nav__toggle" aria-label="Menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
         </div>
     </nav>
-
 
     <!-- HERO -->
     <section class="hero">
         <div class="hero__container">
-            <div class="hero__content">
-                <p class="hero__subtitle" data-cms-text="hero_subtitle">Gemeentelijke Basisschool in Zuienkerke</p>
-                <h1 class="hero__title" data-cms-text="hero_title">'t Polderhart</h1>
-                <p class="hero__description" data-cms-text="hero_description">Waar elk kind mag groeien, leren en spelen
-                    in een veilige en vertrouwde
-                    omgeving. Onze school in het hartje van Zuienkerke staat voor persoonlijke aandacht, gezelligheid en
-                    groeikansen.
+            <div>
+                <p>Gemeentelijke Basisschool in Zuienkerke</p>
+                <h1>'t Polderhart</h1>
+                <p>
+                    Waar elk kind mag groeien, leren en spelen in een veilige omgeving.
                 </p>
-                <div class="hero__actions">
-                    <a href="inschrijvingen.html" class="btn">Inschrijven</a>
-                    <a href="onze-school.html" class="btn">Onze school</a>
-                </div>
             </div>
-            <div class="hero__image">
-                <img src="assets/hero-image.jpg" alt="Kinderen in de klas van GBS 't Polderhart" loading="eager"
-                    data-cms-src="hero_image" data-cms-alt="hero_image_alt" />
-            </div>
-        </div>
-    </section>
 
-    <!-- OVER ONS -->
-    <section class="section">
-        <div class="section__container">
-            <div class="section__grid section__grid--2">
-                <div>
-                    <h2 class="section__title" data-cms-text="about_title">
-                        Een school waar elk kind zichzelf kan zijn
-                    </h2>
-                    <p class="section__description" data-cms-text="about_description_1">
-                        Bij 't Polderhart geloven we in onderwijs met aandacht voor elk kind. Of je nu dromerig bent of
-                        druk,
-                        analytisch of creatief – hier is ruimte om te groeien op jouw manier.
-                    </p>
-                    <p class="section__description" data-cms-text="about_description_2">
-                        Onze kleuters en leerlingen leren niet alleen rekenen en lezen, maar ook samenwerken, nadenken
-                        en ontdekken.
-                        In een warme omgeving waar leerkrachten écht tijd nemen.
-                    </p>
-                    <div style="margin-top: var(--space-xl);">
-                        <a href="onze-school.html" class="btn">Ontdek onze visie</a>
-                    </div>
-                </div>
-                <div
-                    style="background: var(--color-sand); height: 400px; border-radius: var(--radius-md); overflow: hidden;">
-                    <img src="" alt="School foto" data-cms-src="about_image" data-cms-alt="about_image_alt"
-                        style="width: 100%; height: 100%; object-fit: cover;" loading="lazy"
-                        onerror="this.style.display='none'" />
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- WAARDEN -->
-    <section class="section" style="background: var(--color-sand);">
-        <div class="section__container">
-            <header class="section__header">
-                <h2 class="section__title" data-cms-text="values_title">
-                    Waar wij voor staan
-                </h2>
-                <p class="section__description" data-cms-text="values_subtitle">
-                    Onze kernwaarden vormen de basis van alles wat we doen
-                </p>
-            </header>
-
-            <div class="values-grid">
-                <div class="value-card">
-                    <img src="assets/1.png" alt="Ambitieus" class="value-card__icon" data-cms-src="value1_icon"
-                        data-cms-alt="value1_title" data-cms-img-width="120">
-                    <h3 class="value-card__title" data-cms-text="value1_title">Ambitieus</h3>
-                    <p class="value-card__description" data-cms-text="value1_description">
-                        We dagen kinderen uit en stimuleren hun nieuwsgierigheid
-                    </p>
-                </div>
-
-                <div class="value-card">
-                    <img src="assets/2.png" alt="Balans" class="value-card__icon" data-cms-src="value2_icon"
-                        data-cms-alt="value2_title" data-cms-img-width="120">
-                    <h3 class="value-card__title" data-cms-text="value2_title">Balans</h3>
-                    <p class="value-card__description" data-cms-text="value2_description">
-                        Leren en spelen in evenwicht voor optimale ontwikkeling
-                    </p>
-                </div>
-
-                <div class="value-card">
-                    <img src="assets/3.png" alt="Verbondenheid" class="value-card__icon" data-cms-src="value3_icon"
-                        data-cms-alt="value3_title" data-cms-img-width="120">
-                    <h3 class="value-card__title" data-cms-text="value3_title">Verbondenheid</h3>
-                    <p class="value-card__description" data-cms-text="value3_description">
-                        Een hechte gemeenschap waar iedereen welkom is
-                    </p>
-                </div>
-
-                <div class="value-card">
-                    <img src="assets/4.png" alt="Zorgzaam" class="value-card__icon" data-cms-src="value4_icon"
-                        data-cms-alt="value4_title" data-cms-img-width="120">
-                    <h3 class="value-card__title" data-cms-text="value4_title">Zorgzaam</h3>
-                    <p class="value-card__description" data-cms-text="value4_description">
-                        Persoonlijke aandacht voor elk kind en zijn talenten
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- AGENDA -->
-
-
-    <!-- INSCHRIJF CTA -->
-    <section class="section">
-        <div class="section__container">
-            <div class="card card--static"
-                style="max-width: 800px; margin: 0 auto; text-align: center; padding: var(--space-4xl) var(--space-3xl); background: var(--color-cream); border: 2px solid var(--border-light);">
-                <h2 class="card__title" data-cms-text="cta_title">
-                    Klaar om deel te worden van 't Polderhart?
-                </h2>
-                <p class="card__description" data-cms-text="cta_description">
-                    Ontdek hoe we leren leuk en betekenisvol maken. Neem contact op voor een kennismakingsgesprek of
-                    schrijf direct in.
-                </p>
-                <div style="display: flex; gap: var(--space-md); justify-content: center; flex-wrap: wrap;">
-                    <a href="inschrijvingen.html" class="btn">Inschrijven</a>
-                    <a href="contact.html" class="btn">Contact opnemen</a>
-                </div>
+            <div>
+                <img src="assets/hero-image.jpg" alt="klas">
             </div>
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer class="footer">
-        <div class="footer__container">
-            <div class="footer__main">
-                <!-- School Info -->
-                <div class="footer__brand">
-                    <div class="footer__logo">
-                        <img src="assets/logo.png" alt="GBS 't Polderhart logo" class="footer__logo-img">
-                    </div>
-                </div>
-
-                <!-- School -->
-                <div>
-                    <h3 class="footer__column-title">School</h3>
-                    <ul class="footer__nav">
-                        <li class="footer__nav-item"><a href="onze-school.html" class="footer__nav-link">Onze school</a>
-                        </li>
-                        <li class="footer__nav-item"><a href="team.html" class="footer__nav-link">Team</a></li>
-                        <li class="footer__nav-item"><a href="praktisch.html" class="footer__nav-link">Praktisch</a>
-                        </li>
-                        <li class="footer__nav-item"><a href="vriendenkring.html"
-                                class="footer__nav-link">Vriendenkring</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <!-- Info -->
-                <div>
-                    <h3 class="footer__column-title">Info</h3>
-                    <ul class="footer__nav">
-                        <li class="footer__nav-item"><a href="agenda.html" class="footer__nav-link">Agenda</a></li>
-                        <li class="footer__nav-item"><a href="documenten.html" class="footer__nav-link">Documenten</a>
-                        </li>
-                        <li class="footer__nav-item"><a href="jobs.html" class="footer__nav-link">Jobs</a></li>
-                    </ul>
-                </div>
-
-                <!-- Contact -->
-                <div>
-                    <h3 class="footer__column-title">Contact</h3>
-                    <div class="footer__contact-item"><span data-cms-text="site_address_street">Nieuwe Steenweg
-                            37</span><br><span data-cms-text="site_address_city">8377 Zuienkerke</span></div>
-                    <div class="footer__contact-item"><a href="mailto:ingrid.igodt@gbszuienkerke.net"
-                            data-cms-href="site_email_href"
-                            data-cms-text="site_email">ingrid.igodt@gbszuienkerke.net</a></div>
-                    <div class="footer__contact-item"><a href="tel:+3250418430" data-cms-href="site_phone_href"
-                            data-cms-text="site_phone_display">+32 50 41 84 30</a></div>
-                </div>
-            </div>
-
-            <div class="footer__bottom">
-                <div class="footer__copyright">
-                    <span>© 2026 't Polderhart</span>
-                </div>
-                <div class="footer__legal">
-                    <a href="https://www.instagram.com/gbs_t_polderhart_zuienkerke?igsh=MTFoaXNiZ2I1eW50OA%3D%3D"
-                        target="_blank" rel="noopener" class="footer__legal-link">Instagram</a>
-                    <a href="https://www.facebook.com/gbszuienkerke" target="_blank" rel="noopener"
-                        class="footer__legal-link">Facebook</a>
-                </div>
-            </div>
-        </div>
+    <footer>
+        <p>© 2026 't Polderhart</p>
     </footer>
 
+    <!-- JS -->
     <script src="js/app.js"></script>
-    <script src="js/content-loader.js"></script>
+
+    <!-- 🔑 Identity login redirect -->
+    <script>
+        if (window.netlifyIdentity) {
+
+            window.netlifyIdentity.on("init", user => {
+                // 👉 Dit fixeert invite + recovery tokens
+                if (!user && window.location.hash.includes("token")) {
+                    window.netlifyIdentity.open();
+                }
+            });
+
+            window.netlifyIdentity.on("login", () => {
+                document.location.href = "/admin/";
+            });
+        }
+    </script>
+
 </body>
 
 </html>
