@@ -1,9 +1,11 @@
 {
-  "section": "kleuterklassen",
+  "photo_zoom": "1",
   "subsection": "",
-  "name": "Juf Hanne",
+  "section": "kleuterklassen",
+  "name": "Juf Hanne Vanbuynder",
+  "order": 10,
+  "photo": "/assets/team/hanne-vanbuynder-.jpg",
   "role": "Peuter en K1",
-  "email": "hanne.vanbuynder@gbszuienkerke.net",
-  "photo": "",
-  "order": 10
+  "photo_position": "top center",
+  "email": "hanne.vanbuynder@gbszuienkerke.net"
 }
