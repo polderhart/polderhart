@@ -9,11 +9,14 @@
   function init() {
     if (!window.netlifyIdentity) return;
 
+    addAdminFab();
+
     window.netlifyIdentity.on('init', function (user) {
       if (user) activate();
+      else updateFab(false);
     });
-    window.netlifyIdentity.on('login', activate);
-    window.netlifyIdentity.on('logout', deactivate);
+    window.netlifyIdentity.on('login', function () { activate(); updateFab(true); });
+    window.netlifyIdentity.on('logout', function () { deactivate(); updateFab(false); });
 
     // Team cards worden na init() asynchroon geladen
     window.addEventListener('team:rendered', function () {
@@ -21,6 +24,39 @@
     });
 
     if (window.netlifyIdentity.currentUser && window.netlifyIdentity.currentUser()) activate();
+  }
+
+  function addAdminFab() {
+    if (document.getElementById('team-admin-fab')) return;
+    var fab = document.createElement('button');
+    fab.id = 'team-admin-fab';
+    fab.className = 'team-admin-fab';
+    fab.innerHTML =
+      '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">' +
+      '<path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/>' +
+      '<path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/>' +
+      '</svg>' +
+      '<span>Foto\'s bewerken</span>';
+    fab.addEventListener('click', function () {
+      var user = window.netlifyIdentity.currentUser();
+      if (user) {
+        // al ingelogd: toggle edit mode
+        if (document.body.classList.contains('team-editor-active')) {
+          deactivate();
+        } else {
+          activate();
+        }
+      } else {
+        window.netlifyIdentity.open();
+      }
+    });
+    document.body.appendChild(fab);
+  }
+
+  function updateFab(loggedIn) {
+    var fab = document.getElementById('team-admin-fab');
+    if (!fab) return;
+    fab.querySelector('span').textContent = loggedIn ? 'Bewerken afsluiten' : "Foto's bewerken";
   }
 
   function activate() {
@@ -45,6 +81,7 @@
   function deactivate() {
     document.querySelectorAll('.team-card__pos-btn').forEach(function (b) { b.remove(); });
     document.body.classList.remove('team-editor-active');
+    updateFab(false);
   }
 
   function parsePosition(posStr) {

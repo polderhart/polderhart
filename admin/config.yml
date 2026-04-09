@@ -21,8 +21,6 @@ collections:
     format: "json"
     media_folder: "/assets/team"
     public_folder: "/assets/team"
-    editor:
-      preview: false
     fields:
       - { label: "Sectie", name: "section", widget: "select", options: [
           { label: "Directie", value: "directie" },

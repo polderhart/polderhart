@@ -179,6 +179,29 @@
 .team-editor-save:hover { background: #333; }
 .team-editor-save:disabled { background: #888; cursor: not-allowed; }
 
+/* ── Admin FAB ──────────────────────────────────── */
+.team-admin-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 18px;
+  background: #1a1a2e;
+  color: #fff;
+  border: none;
+  border-radius: 999px;
+  font-family: inherit;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  transition: background 0.15s, transform 0.15s;
+}
+.team-admin-fab:hover { background: #333; transform: translateY(-1px); }
+
 .team-card__photo {
   width: 140px;
   height: 140px;
