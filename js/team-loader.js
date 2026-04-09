@@ -70,8 +70,6 @@ class TeamLoader {
       const members = await Promise.all(promises);
       this.teamMembers = members.filter(m => m !== null);
       this.teamMembers.sort((a, b) => (a.order || 100) - (b.order || 100));
-      
-      console.log(`${this.teamMembers.length} teamleden geladen`);
     } catch (error) {
       console.error('Geen team data beschikbaar:', error);
     }

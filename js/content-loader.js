@@ -132,7 +132,7 @@
   // Safety fallback: reveal page even if fetch fails
   setTimeout(function () {
     document.body.classList.add('cms-loaded');
-  }, 2000);
+  }, 800);
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', init);
