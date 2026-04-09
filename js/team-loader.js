@@ -62,7 +62,6 @@ class TeamLoader {
       const promises = manifest.files.map(filename => 
         fetch(`/content/team/${filename}`)
           .then(r => r.json())
-          .then(data => { data._slug = filename.replace('.json', ''); return data; })
           .catch(e => {
             console.error(`Fout bij laden van ${filename}:`, e);
             return null;
@@ -153,7 +152,7 @@ class TeamLoader {
       : '';
 
     return `
-      <div class="team-card" data-slug="${member._slug || ''}">
+      <div class="team-card">
         <div class="team-card__photo">
           ${photoContent}
         </div>
@@ -258,7 +257,6 @@ class TeamLoader {
     }
 
     this.container.innerHTML = html;
-    window.dispatchEvent(new CustomEvent('team:rendered'));
   }
 }
 
