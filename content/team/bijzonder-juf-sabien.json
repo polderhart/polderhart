@@ -1,9 +1,11 @@
 {
-  "section": "bijzonder",
+  "photo_zoom": "1",
   "subsection": "",
-  "name": "Juf Sabien",
-  "role": "Zorg",
-  "email": "sabien.schapdryver@gbszuienkerke.net",
-  "photo": "/assets/team/ingrid.png",
-  "order": 33
+  "section": "bijzonder",
+  "name": "Juf Sabien Schapdryver",
+  "order": 33,
+  "photo": "/assets/team/sabien-schapdryver.jpg",
+  "role": "Zorgcoördinator & Beleidsmedewerker ",
+  "photo_position": "top center",
+  "email": "sabien.schapdryver@gbszuienkerke.net"
 }
