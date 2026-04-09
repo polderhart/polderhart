@@ -1,9 +1,11 @@
 {
-  "section": "kleuterklassen",
+  "photo_zoom": "1",
   "subsection": "",
-  "name": "Juf Alena",
+  "section": "kleuterklassen",
+  "name": "Juf Alena Dosse",
+  "order": 13,
+  "photo": "/assets/team/alena-dosse.jpg",
   "role": "Kleuter / LO",
-  "email": "alena.dosse@gbszuienkerke.net",
-  "photo": "",
-  "order": 13
+  "photo_position": "top center",
+  "email": "alena.dosse@gbszuienkerke.net"
 }
