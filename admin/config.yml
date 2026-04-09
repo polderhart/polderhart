@@ -3,8 +3,6 @@ backend:
   name: git-gateway
   branch: main
 
-publish_mode: editorial_workflow
-
 media_folder: "assets/pictures"
 public_folder: "/assets/pictures"
 
