@@ -1,9 +1,10 @@
 {
   "section": "lager",
   "subsection": "",
-  "name": "Juf Désirée Vandevyvere",
+  "name": "Juf DÃ©sirÃ©e Vandevyvere",
   "role": "Eerste leerjaar",
   "email": "desiree.vandevyvere@gbszuienkerke.net",
-  "photo": "/assets/team/désirée-vandevyvere.jpg",
-  "order": 20
+  "photo": "/assets/team/deÌsireÌe-vandevyvere.jpg",
+  "order": 20,
+  "photo_position": "58.6% 0.0%"
 }
