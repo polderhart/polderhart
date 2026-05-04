@@ -351,6 +351,7 @@ collections:
           - { label: "Functie 2 beschrijving", name: "job2_description", widget: "text" }
           - { label: "CTA titel", name: "cta_title", widget: "string" }
           - { label: "CTA beschrijving", name: "cta_description", widget: "text" }
+          - { label: "CTA e-mailadres (directie)", name: "cta_email", widget: "string", required: false }
 
       # ── Opvang en studie ─────────────────────────────────────────────────
       - label: "Opvang en studie"

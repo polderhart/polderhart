@@ -105,6 +105,14 @@
       const val = data[el.getAttribute("data-cms-href")];
       if (val !== undefined && val !== "") el.href = val;
     });
+
+    document.querySelectorAll("[data-cms-mailto]").forEach(function (el) {
+      const val = data[el.getAttribute("data-cms-mailto")];
+      if (val !== undefined && val !== "") {
+        el.href = "mailto:" + val;
+        if (!el.textContent.trim()) el.textContent = val;
+      }
+    });
   }
 
   /**
