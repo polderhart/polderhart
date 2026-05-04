@@ -145,7 +145,10 @@ class TeamLoader {
     const positionStyle = imgStyles.length ? ` style="${imgStyles.join(';')}"` : '';
     const photoContent = hasPhoto
       ? `<img src="${photoSrc}" alt="${member.name}" loading="lazy"${positionStyle}>`
-      : '';
+      : `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="team-card__photo-placeholder" aria-hidden="true">
+          <circle cx="50" cy="38" r="22" fill="var(--c-gray-300)"/>
+          <ellipse cx="50" cy="90" rx="35" ry="25" fill="var(--c-gray-300)"/>
+        </svg>`;
 
     const emailLink = member.email
       ? `<a href="mailto:${member.email}" class="team-card__email">Stuur een e-mail</a>`

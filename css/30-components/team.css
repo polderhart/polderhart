@@ -76,12 +76,19 @@
   height: 140px;
   margin: 0 auto var(--space-xl);
   border-radius: 50%;
-  background: var(--c-gray-50);
+  background: var(--c-gray-100);
   border: none;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.team-card__photo-placeholder {
+  width: 70%;
+  height: 70%;
+  display: block;
+  opacity: 0.5;
 }
 
 .team-card__photo img {
