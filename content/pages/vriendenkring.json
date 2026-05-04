@@ -1,66 +1,56 @@
 {
-  "hero_title": "Vriendenkring",
-  "hero_subtitle": "Het oudercomité van GBS 't Polderhart",
-
-  "intro_image": "/assets/pictures/vriendenkring.jpg",
-  "intro_image_alt": "Ouders van de vriendenkring tijdens een schoolactiviteit",
-  "intro_label": "Wie zijn we",
-  "intro_title": "Samen sterk voor onze kinderen",
-  "intro_description_1": "De vriendenkring is het oudercomité van GBS 't Polderhart. We zijn een groep enthousiaste ouders die zich vrijwillig inzetten om onze school nóg leuker en warmer te maken. Door het jaar heen organiseren we verschillende activiteiten en acties die niet alleen gezellig zijn, maar ook geld opbrengen voor extra's waar alle kinderen van genieten.",
-  "intro_description_2": "Van speeltoestellen tot uitstapjes, van gezellige feestjes tot schoolmaterialen – de vriendenkring zorgt voor die extra dingen die het schoolleven van onze kinderen verrijken.",
-
-  "join_title": "Kom erbij!",
-  "join_description": "Elke helpende hand is welkom. Of je nu af en toe komt helpen bij een activiteit of regelmatig meedenkt – samen maken we onze school nóg mooier voor de kinderen.",
-
-  "join_1": {
-    "title": "Kom naar een vergadering",
-    "description": "Gezellige bijeenkomsten waar we ideeën delen en nieuwe activiteiten plannen",
-    "image": "/assets/pictures/vriend2.jpg",
-    "image_alt": "Ouders in vergadering van de vriendenkring"
-  },
-
-  "join_2": {
-    "title": "Help bij evenementen",
-    "description": "Van pannenkoeken bakken tot standbediening – jouw hulp maakt het verschil",
-    "image": "/assets/pictures/vriend3.jpg",
-    "image_alt": "Vrijwilligers helpen bij schoolevenement"
-  },
-
-  "join_3": {
-    "title": "Deel je talenten",
-    "description": "Heb je leuke ideeën of handige contacten? We horen graag van je!",
-    "image": "/assets/pictures/vriend4.jpg",
-    "image_alt": "Ouders delen ideeën voor schoolactiviteiten"
-  },
-
-  "realized_title": "Wat hebben we al gerealiseerd?",
-  "realized_subtitle": "Door de inzet van het oudercomité konden we al mooie projecten realiseren",
-
   "realized_1": {
     "title": "Feestelijke evenementen",
     "description": "Van sinterklaasfeesten tot eindejaarsactiviteiten, barbecues en schoolfeesten – we zorgen voor gezellige momenten waar ouders, kinderen en het schoolteam samenkomen.",
     "image": "/assets/pictures/vriend5.jpg",
     "image_alt": "Kinderen genieten tijdens het schoolfeest"
   },
-
   "realized_2": {
     "title": "Fondsenwerving",
     "description": "Met acties zoals de chocoladeverkoop, pannenkoekenfestijn, kerstmarkt en andere initiatieven zamelen we geld in. Alle opbrengsten gaan rechtstreeks naar de school voor materiaal, speelgoed en extra uitstappen.",
     "image": "/assets/pictures/vriend6.jpg",
     "image_alt": "Succesvolle fondsenwerving door de vriendenkring"
   },
-
+  "intro_label": "Wie zijn we",
   "realized_3": {
     "title": "Speelplaatsverbetering",
     "description": "Dankzij de vriendenkring kreeg de speelplaats nieuwe toestellen, kleurrijke markering en speelmaterialen. Zo kunnen kinderen volop ravotten en bewegen tijdens de pauzes.",
     "image": "/assets/pictures/vriend7.jpg",
     "image_alt": "Nieuwe speelplaats met verbeteringen door de vriendenkring"
   },
-
   "realized_4": {
     "title": "Extra comfort in de klas",
-    "description": "Van gezellige zitbokken voor de leeshoek tot nieuwe leermaterialen – we investeren in dingen die het leren en leven op school aangenamer maken voor alle kinderen.",
+    "description": "Van gezellige zitblokken voor de leeshoek tot nieuwe leermaterialen – we investeren in dingen die het leren en leven op school aangenamer maken voor alle kinderen.",
     "image": "/assets/pictures/kids.jpg",
     "image_alt": "Kinderen genieten van de comfortabele klasomgeving"
+  },
+  "join_title": "Kom erbij!",
+  "intro_title": "Samen sterk voor onze kinderen",
+  "join_description": "Elke helpende hand is welkom. Of je nu af en toe komt helpen bij een activiteit of regelmatig meedenkt – samen maken we onze school nóg mooier voor de kinderen.",
+  "realized_title": "Wat hebben we al gerealiseerd?",
+  "intro_image": "/assets/pictures/vriendenkring.jpg",
+  "realized_subtitle": "Door de inzet van het oudercomité konden we al mooie projecten realiseren",
+  "intro_image_alt": "Ouders van de vriendenkring tijdens een schoolactiviteit",
+  "hero_title": "Vriendenkring",
+  "intro_description_1": "De vriendenkring is het oudercomité van GBS 't Polderhart. We zijn een groep enthousiaste ouders die zich vrijwillig inzetten om onze school nóg leuker en warmer te maken. Door het jaar heen organiseren we verschillende activiteiten en acties die niet alleen gezellig zijn, maar ook geld opbrengen voor extra's waar alle kinderen van genieten.",
+  "intro_description_2": "Van speeltoestellen tot uitstapjes, van gezellige feestjes tot schoolmaterialen – de vriendenkring zorgt voor die extra dingen die het schoolleven van onze kinderen verrijken.",
+  "join_1": {
+    "title": "Kom naar een vergadering",
+    "description": "Gezellige bijeenkomsten waar we ideeën delen en nieuwe activiteiten plannen",
+    "image": "/assets/pictures/vriend2.jpg",
+    "image_alt": "Ouders in vergadering van de vriendenkring"
+  },
+  "join_2": {
+    "title": "Help bij evenementen",
+    "description": "Van pannenkoeken bakken tot standbediening – jouw hulp maakt het verschil",
+    "image": "/assets/pictures/vriend3.jpg",
+    "image_alt": "Vrijwilligers helpen bij schoolevenement"
+  },
+  "hero_subtitle": "Het oudercomité van GBS 't Polderhart.",
+  "join_3": {
+    "title": "Deel je talenten",
+    "description": "Heb je leuke ideeën of handige contacten? We horen graag van je!",
+    "image": "/assets/pictures/vriend4.jpg",
+    "image_alt": "Ouders delen ideeën voor schoolactiviteiten"
   }
 }
