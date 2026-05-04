@@ -1,21 +1,17 @@
 {
-  "hero_title": "Schoolbus",
-  "hero_subtitle": "Gemakkelijk vervoer naar school",
-
-  "intro_description": "Kinderen die in Zuienkerke (en deelgemeenten) wonen, kunnen thuis worden opgehaald en naar huis teruggebracht met onze schoolbus. De kinderen kennen onze buschauffeur - juf Marleen - al, zij zorgt ook voor een veilige voortour bij schooluitstappen. Uiteraard is er ook steeds een busbegeleider mee om de kinderen te begeleiden bij het instappen of het naar huis te brengen.",
-
-  "tarieven_title": "Tarieven busvervoer 2022-2023",
-  "tarieven_intro": "Voor het busvervoer worden de (zeer voordelige!) tarieven van De Lijn gehanteerd. Bovendien komt de Gemeente Zuienkerke voor schoolvervoer 25% tegemoet in de onkosten.",
-  "tarieven_kleuters": "Kleuters reizen gratis met onze schoolbus.",
-  "tarieven_lager": "Kinderen van 6 tot 11 jaar betalen € 42,00 voor een volledig schooljaar.",
   "tarieven_vermindering": "Kinderen die houder zijn van een verminderingskaart 75% van De Lijn (bijvoorbeeld BG(J)G) hebben recht op gratis vervoer tot de leeftijd van 11 jaar indien zij de dichtstbijzijnde school bezoeken (een gezin van minimum drie kinderen, deze kinderen hoeven niet allemaal op onze school te zitten).",
-  "tarieven_sporadisch": "Voor wie er slechts sporadisch wenst gebruik te maken van het busvervoer, bieden we een 10-rittenkaart aan (kostprijs € 6,00).",
-
-  "routes_title": "Trajecten en haltes",
-  "routes_description": "Hieronder vindt u een overzicht van de verschillende trajecten met data en tijdstippen.",
-
-  "route_image_1": "/assets/docu/bus1.jpeg",
   "route_image_1_alt": "Kaart schoolbus traject 1 - route via Meetkerke",
+  "route_image_2_alt": "Kaart schoolbus traject 2 - route via Nieuwmunster",
+  "routes_title": "Trajecten en haltes",
+  "tarieven_kleuters": "Kleuters reizen gratis met onze schoolbus.",
+  "routes_description": "Hieronder vindt u een overzicht van de verschillende trajecten met data en tijdstippen.",
+  "intro_description": "Kinderen die in Zuienkerke (en deelgemeenten) wonen, kunnen thuis worden opgehaald en naar huis teruggebracht met onze schoolbusDe kinderen kennen onze buschauffeur - juf Sophie - al, zij zorgt ook voor een veilige busrit bij schooluitstappen. Uiteraard is er ook steeds een busbegeleider mee om de kinderen te begeleiden bij het instappen of het naar huis te brengen.",
+  "tarieven_intro": "Voor het busvervoer worden de (zeer voordelige!) tarieven van De Lijn gehanteerd. Bovendien komt de Gemeente Zuienkerke voor schoolvervoer 25% tegemoet in de onkosten.",
+  "tarieven_sporadisch": "Voor wie er slechts sporadisch wenst gebruik te maken van het busvervoer, bieden we een 10-rittenkaart aan (kostprijs € 6,00).",
+  "hero_title": "Schoolbus",
+  "route_image_1": "/assets/docu/bus1.jpeg",
+  "tarieven_title": "Tarieven busvervoer 2022-2023",
   "route_image_2": "/assets/docu/bus2.jpeg",
-  "route_image_2_alt": "Kaart schoolbus traject 2 - route via Nieuwmunster"
+  "hero_subtitle": "Gemakkelijk vervoer naar school",
+  "tarieven_lager": "Kinderen van 6 tot 11 jaar betalen € 42,00 voor een volledig schooljaar."
 }
