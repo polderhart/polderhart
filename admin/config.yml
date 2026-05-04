@@ -115,8 +115,8 @@ collections:
             name: "events"
             widget: "list"
             fields:
-              - { label: "Datum", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
-              - { label: "Einddatum (optioneel, voor meerdaagse events)", name: "date_end", widget: "datetime", format: "YYYY-MM-DD", time_format: false, required: false }
+              - { label: "Datum (van)", name: "date", widget: "datetime", format: "YYYY-MM-DD", time_format: false }
+              - { label: "Einddatum (tot, optioneel bij meerdaagse events)", name: "date_end", widget: "datetime", format: "YYYY-MM-DD", time_format: false, required: false, default: "" }
               - { label: "Titel", name: "title", widget: "string" }
               - { label: "Tijdstip", name: "time", widget: "string", required: false }
               - { label: "Beschrijving", name: "description", widget: "string", required: false }
