@@ -16,19 +16,19 @@
 
 (function () {
   const PAGE_MAP = {
-    '/':                    'home',
-    '/index.html':          'home',
-    '/onze-school.html':    'onze-school',
-    '/contact.html':        'contact',
-    '/schooluren.html':     'schooluren',
-    '/opvang-studie.html':  'opvang',
-    '/inschrijvingen.html': 'inschrijvingen',
-    '/schoolbus.html':      'schoolbus',
-    '/vriendenkring.html':  'vriendenkring',
-    '/jobs.html':           'jobs',
-    '/praktisch.html':      'praktisch',
-    '/agenda.html':         'agenda',
-    '/documenten.html':     'documenten',
+    "/": "home",
+    "/index.html": "home",
+    "/onze-school.html": "onze-school",
+    "/contact.html": "contact",
+    "/schooluren.html": "schooluren",
+    "/opvang-studie.html": "opvang",
+    "/inschrijvingen.html": "inschrijvingen",
+    "/schoolbus.html": "schoolbus",
+    "/vriendenkring.html": "vriendenkring",
+    "/jobs.html": "jobs",
+    "/praktisch.html": "praktisch",
+    "/agenda.html": "agenda",
+    "/documenten.html": "documenten",
   };
 
   async function fetchJSON(url) {
@@ -42,54 +42,68 @@
   }
 
   function applyContent(data) {
-    document.querySelectorAll('[data-cms-text]').forEach(function (el) {
-      const val = data[el.getAttribute('data-cms-text')];
-      if (val !== undefined && val !== '') el.textContent = val;
+    document.querySelectorAll("[data-cms-text]").forEach(function (el) {
+      const val = data[el.getAttribute("data-cms-text")];
+      if (val !== undefined && val !== "") el.textContent = val;
     });
 
-    document.querySelectorAll('[data-cms-html]').forEach(function (el) {
-      const val = data[el.getAttribute('data-cms-html')];
-      if (val !== undefined && val !== '') el.innerHTML = val;
+    document.querySelectorAll("[data-cms-html]").forEach(function (el) {
+      const val = data[el.getAttribute("data-cms-html")];
+      if (val !== undefined && val !== "") el.innerHTML = val;
     });
 
-    const onNetlify = window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1' && window.location.hostname !== '';
+    const onNetlify =
+      window.location.hostname !== "localhost" &&
+      window.location.hostname !== "127.0.0.1" &&
+      window.location.hostname !== "";
 
-    document.querySelectorAll('[data-cms-src]').forEach(function (el) {
-      const key = el.getAttribute('data-cms-src');
+    document.querySelectorAll("[data-cms-src]").forEach(function (el) {
+      const key = el.getAttribute("data-cms-src");
       const val = data[key];
-      if (val !== undefined && val !== '') {
-        el.style.display = '';
-        const isLocal = val.startsWith('/') || val.startsWith('assets/');
+      if (val !== undefined && val !== "") {
+        el.style.display = "";
+        el.parentElement &&
+          el.parentElement.classList.remove("cms-img-placeholder");
+        const isLocal = val.startsWith("/") || val.startsWith("assets/");
         if (isLocal && onNetlify) {
-          const w = el.getAttribute('data-cms-img-width') || '1200';
-          const path = val.startsWith('/') ? val : '/' + val;
-          el.src = '/.netlify/images?url=' + encodeURIComponent(path) + '&w=' + w + '&q=80';
+          const w = el.getAttribute("data-cms-img-width") || "1200";
+          const path = val.startsWith("/") ? val : "/" + val;
+          el.src =
+            "/.netlify/images?url=" +
+            encodeURIComponent(path) +
+            "&w=" +
+            w +
+            "&q=80";
         } else {
           el.src = val;
         }
+      } else if (val === "") {
+        el.style.display = "none";
+        if (el.parentElement)
+          el.parentElement.classList.add("cms-img-placeholder");
       }
       // Apply optional object-position from companion {key}_position field
-      const pos = data[key + '_position'];
+      const pos = data[key + "_position"];
       if (pos) el.style.objectPosition = pos;
       // Apply optional zoom from companion {key}_zoom field
-      const zoom = data[key + '_zoom'];
-      if (zoom && zoom !== '1') el.style.setProperty('--photo-zoom', zoom);
+      const zoom = data[key + "_zoom"];
+      if (zoom && zoom !== "1") el.style.setProperty("--photo-zoom", zoom);
     });
 
-    document.querySelectorAll('[data-cms-alt]').forEach(function (el) {
-      const val = data[el.getAttribute('data-cms-alt')];
-      if (val !== undefined && val !== '') {
-        if (el.tagName === 'IMG') {
+    document.querySelectorAll("[data-cms-alt]").forEach(function (el) {
+      const val = data[el.getAttribute("data-cms-alt")];
+      if (val !== undefined && val !== "") {
+        if (el.tagName === "IMG") {
           el.alt = val;
         } else {
-          el.setAttribute('aria-label', val);
+          el.setAttribute("aria-label", val);
         }
       }
     });
 
-    document.querySelectorAll('[data-cms-href]').forEach(function (el) {
-      const val = data[el.getAttribute('data-cms-href')];
-      if (val !== undefined && val !== '') el.href = val;
+    document.querySelectorAll("[data-cms-href]").forEach(function (el) {
+      const val = data[el.getAttribute("data-cms-href")];
+      if (val !== undefined && val !== "") el.href = val;
     });
   }
 
@@ -99,9 +113,9 @@
    */
   function flattenObject(obj, prefix) {
     return Object.keys(obj).reduce(function (acc, key) {
-      const fullKey = prefix ? prefix + '_' + key : key;
+      const fullKey = prefix ? prefix + "_" + key : key;
       const val = obj[key];
-      if (val !== null && typeof val === 'object' && !Array.isArray(val)) {
+      if (val !== null && typeof val === "object" && !Array.isArray(val)) {
         Object.assign(acc, flattenObject(val, fullKey));
       } else {
         acc[fullKey] = val;
@@ -112,19 +126,24 @@
 
   async function init() {
     const path = window.location.pathname;
-    const pageName = PAGE_MAP[path] || PAGE_MAP[path.replace(/\/$/, '/index.html')] || PAGE_MAP[path + '.html'];
+    const pageName =
+      PAGE_MAP[path] ||
+      PAGE_MAP[path.replace(/\/$/, "/index.html")] ||
+      PAGE_MAP[path + ".html"];
 
     const data = {};
 
     const [siteData, pageData] = await Promise.all([
-      fetchJSON('/content/settings/school-info.json'),
-      pageName ? fetchJSON('/content/pages/' + pageName + '.json') : Promise.resolve(null),
+      fetchJSON("/content/settings/school-info.json"),
+      pageName
+        ? fetchJSON("/content/pages/" + pageName + ".json")
+        : Promise.resolve(null),
     ]);
 
     if (siteData) {
       const flat = flattenObject(siteData, null);
       Object.keys(flat).forEach(function (key) {
-        data['site_' + key] = flat[key];
+        data["site_" + key] = flat[key];
       });
     }
 
@@ -133,16 +152,16 @@
     }
 
     applyContent(data);
-    document.body.classList.add('cms-loaded');
+    document.body.classList.add("cms-loaded");
   }
 
   // Safety fallback: reveal page even if fetch fails
   setTimeout(function () {
-    document.body.classList.add('cms-loaded');
+    document.body.classList.add("cms-loaded");
   }, 800);
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', init);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", init);
   } else {
     init();
   }
