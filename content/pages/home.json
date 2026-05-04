@@ -2,23 +2,23 @@
   "value1": {
     "icon": "/assets/1.png",
     "title": "Ambitieus",
-    "description": "We dagen kinderen uit en stimuleren hun nieuwsgierigheid"
+    "description": "We dagen kinderen uit en stimuleren hun nieuwsgierigheid."
   },
   "hero_image_alt": "Kinderen in de klas van GBS 't Polderhart",
   "value2": {
     "icon": "/assets/2.png",
     "title": "Balans",
-    "description": "Leren en spelen in evenwicht voor optimale ontwikkeling"
+    "description": "Leren en spelen in evenwicht voor optimale ontwikkeling."
   },
   "value3": {
     "icon": "/assets/3.png",
     "title": "Verbondenheid",
-    "description": "Een hechte gemeenschap waar iedereen welkom is"
+    "description": "Een hechte gemeenschap waar iedereen welkom is."
   },
   "value4": {
     "icon": "/assets/4.png",
     "title": "Zorgzaam",
-    "description": "Persoonlijke aandacht voor elk kind en zijn talenten"
+    "description": "Persoonlijke aandacht voor elk kind en zijn talenten."
   },
   "about_title": "Een school waar elk kind zichzelf kan zijn",
   "about_image": "",
