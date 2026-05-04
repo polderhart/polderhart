@@ -94,13 +94,28 @@
   color: var(--color-earth);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .enrollment-steps {
+    grid-template-columns: 1fr;
     gap: var(--space-lg);
   }
-
+  
   .step-card {
-    padding: var(--space-lg);
+    padding: var(--space-xl) var(--space-lg);
+  }
+  
+  .enrollment-cta {
+    padding: var(--space-xl) var(--space-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .step-card__number {
+    font-size: 2rem;
+  }
+  
+  .step-card__title {
+    font-size: 1.25rem;
   }
 }
 

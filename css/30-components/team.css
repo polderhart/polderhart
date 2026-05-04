@@ -6,7 +6,7 @@
 .team-photo__container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 var(--space-6xl);
+  padding: 0 var(--space-3xl);
 }
 
 .team-photo__image {
@@ -138,7 +138,7 @@
 
 @media (max-width: 1024px) {
   .team-photo__container {
-    padding: 0 var(--space-4xl);
+    padding: 0 var(--space-xl);
   }
 
   .team-grid {
@@ -149,7 +149,7 @@
 
 @media (max-width: 768px) {
   .team-photo__container {
-    padding: 0 var(--space-3xl);
+    padding: 0 var(--space-lg);
   }
   
   .team-photo__image {
@@ -157,8 +157,8 @@
   }
   
   .team-grid {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: var(--space-4xl) var(--space-3xl);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: var(--space-2xl) var(--space-xl);
   }
   
   .team-card__photo {

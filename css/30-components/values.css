@@ -55,7 +55,25 @@
 
 @media (max-width: 1024px) {
   .values-grid {
-    gap: var(--space-4xl) var(--space-3xl);
+    gap: var(--space-3xl) var(--space-2xl);
+  }
+}
+
+@media (max-width: 768px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-2xl) var(--space-lg);
+  }
+  
+  .value-card {
+    padding: var(--space-xl) var(--space-md);
+  }
+}
+
+@media (max-width: 480px) {
+  .values-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-xl);
   }
 }
 

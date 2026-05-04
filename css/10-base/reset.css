@@ -2,7 +2,9 @@
    RESET - Modern & Clean
    ========================================================================== */
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -29,7 +31,10 @@ body {
   overflow-x: hidden;
 }
 
-img, picture, video, svg {
+img,
+picture,
+video,
+svg {
   max-width: 100%;
   display: block;
 }
@@ -47,7 +52,8 @@ button {
   background: none;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -55,4 +61,151 @@ ul, ol {
 :focus-visible {
   outline: 2px solid var(--text-primary);
   outline-offset: 2px;
+}
+
+/* ==========================================================================
+   RESPONSIVE SYSTEEM - Globaal, herbruikbaar, consistent
+   Alle containers en wrappers schalen mee op elk scherm.
+   ========================================================================== */
+
+/* Basisbreedte voor alle container-achtige elementen */
+.nav__container,
+.hero__container,
+.page-hero__container,
+.section__container,
+.footer__container,
+.team-photo__container {
+  width: 100%;
+  max-width: 1400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: clamp(1rem, 5vw, 8rem);
+  padding-right: clamp(1rem, 5vw, 8rem);
+}
+
+/* Cards mogen nooit breder zijn dan hun container */
+.card--static,
+.step-card,
+.enrollment-info,
+.enrollment-cta {
+  width: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* Grids worden altijd één kolom op mobiel */
+@media (max-width: 768px) {
+  .section__grid--2,
+  .section__grid--2col,
+  .enrollment-steps,
+  .feature,
+  .feature--reverse {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-xl);
+  }
+
+  .card-grid--2,
+  .card-grid--3,
+  .card-grid--4,
+  .card-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-xl);
+  }
+
+  .hero__container {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-2xl);
+  }
+
+  .hero__content {
+    text-align: center;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero__actions .btn,
+  .btn {
+    width: 100%;
+  }
+
+  .hero__image {
+    order: -1;
+    max-height: 280px;
+  }
+
+  .footer__main {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-2xl);
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: var(--space-lg);
+    text-align: center;
+  }
+
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--space-xl);
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+    gap: var(--space-2xl) var(--space-xl);
+  }
+
+  .team-photo__image {
+    height: 280px;
+  }
+
+  .timeline {
+    padding-left: var(--space-xl);
+  }
+
+  .timeline::before {
+    left: 0;
+    transform: none;
+  }
+
+  .timeline-item {
+    grid-template-columns: 1fr !important;
+    padding-left: var(--space-2xl);
+    gap: var(--space-lg);
+  }
+
+  .timeline-item::before {
+    left: 0;
+    transform: translateX(-50%);
+  }
+
+  .timeline-item--left .timeline-item__content,
+  .timeline-item--right .timeline-item__content {
+    grid-column: 1;
+    text-align: left;
+    padding: 0;
+  }
+
+  .timeline-item--left .timeline-item__image,
+  .timeline-item--right .timeline-item__image {
+    grid-column: 1;
+    grid-row: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .values-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr !important;
+    gap: var(--space-2xl);
+  }
+
+  .card-grid--2 {
+    grid-template-columns: 1fr !important;
+  }
 }

@@ -24,7 +24,7 @@
 .page-hero__container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 var(--space-6xl);
+  padding: 0 var(--space-3xl);
 }
 
 .page-hero__breadcrumb {
@@ -71,20 +71,31 @@
 
 @media (max-width: 1024px) {
   .page-hero__container {
-    padding: 0 var(--space-4xl);
+    padding: 0 var(--space-xl);
   }
 }
 
 @media (max-width: 768px) {
   .page-hero {
-    padding: calc(var(--nav-height) + var(--space-4xl)) 0 var(--space-2xl);
+    padding: calc(var(--nav-height) + var(--space-3xl)) 0 var(--space-2xl);
   }
   
   .page-hero__container {
-    padding: 0 var(--space-3xl);
+    padding: 0 var(--space-lg);
   }
   
   .page-hero__title {
     font-size: clamp(1.75rem, 7vw, 2.5rem);
+  }
+
+  .page-hero__subtitle {
+    font-size: 1rem;
+    margin-top: var(--space-lg);
+  }
+}
+
+@media (max-width: 480px) {
+  .page-hero__container {
+    padding: 0 var(--space-md);
   }
 }
