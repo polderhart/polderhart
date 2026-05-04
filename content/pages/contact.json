@@ -1,13 +1,11 @@
 {
-  "hero_title": "Contacteer ons",
-  "hero_subtitle": "Vragen of opmerkingen? We helpen je graag verder",
-
-  "location_description": "Onze school is gelegen in het midden van het dorp.",
+  "bereikbaarheid_bus": "Meer informatie over routes en inschrijvingen vind je op de schoolbus pagina.",
+  "bereikbaarheid_fiets": "Fietsenrekken zijn beschikbaar op het schoolterrein.",
   "location_description_2": "Achteraan de school, met uitzicht op de velden, vind je een heuse schooltuin. Het tuintje biedt niet alleen plaats voor een snoepjesbos maar de kinderen kunnen er ook naar hartelust zaaien en planten. De kippen maken het gezellig met hun gekakel.",
   "location_description_3": "Dankzij de zitbokken van de vriendenkring, kunnen er ook buitenlessen doorgaan.",
-
-  "bereikbaarheid_description": "Onze school is gemakkelijk bereikbaar met de auto, fiets of te voet. Voor gezinnen die verder wonen, bieden we schoolbusvervoer aan.",
   "bereikbaarheid_auto": "Parkeren kan op de parking voor de school.",
-  "bereikbaarheid_fiets": "Fietsenrekken zijn beschikbaar op het schoolterrein.",
-  "bereikbaarheid_bus": "Meer informatie over routes en inschrijvingen vind je op de schoolbus pagina."
+  "location_description": "Onze school is gelegen in het midden van het dorp.",
+  "hero_title": "Contacteer ons",
+  "hero_subtitle": "Vragen of opmerkingen? We helpen je graag verder",
+  "bereikbaarheid_description": "Onze school is gemakkelijk bereikbaar met de auto, fiets of te voet. Voor gezinnen uit Zuienkerke en deelgemeenten, bieden we schoolbusvervoer aan."
 }
