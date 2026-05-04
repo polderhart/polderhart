@@ -158,12 +158,12 @@
   .footer__container {
     padding: 0 var(--space-xl);
   }
-  
+
   .footer__main {
     grid-template-columns: 1fr;
     gap: var(--space-2xl);
   }
-  
+
   .footer__bottom {
     flex-direction: column;
     gap: var(--space-lg);
@@ -175,7 +175,7 @@
   .footer__container {
     padding: 0 var(--space-lg);
   }
-  
+
   .footer__logo-img {
     height: 120px;
   }

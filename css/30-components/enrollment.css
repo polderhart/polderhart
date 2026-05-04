@@ -37,8 +37,6 @@
   position: relative;
 }
 
-
-
 /* Step Number */
 .step-card__number {
   display: block;
@@ -88,7 +86,7 @@
 }
 
 .step-card__list-item::before {
-  content: '→';
+  content: "→";
   position: absolute;
   left: 0;
   color: var(--color-earth);
@@ -99,11 +97,11 @@
     grid-template-columns: 1fr;
     gap: var(--space-lg);
   }
-  
+
   .step-card {
     padding: var(--space-xl) var(--space-lg);
   }
-  
+
   .enrollment-cta {
     padding: var(--space-xl) var(--space-lg);
   }
@@ -113,7 +111,7 @@
   .step-card__number {
     font-size: 2rem;
   }
-  
+
   .step-card__title {
     font-size: 1.25rem;
   }
@@ -183,23 +181,23 @@
     grid-template-columns: 1fr;
     gap: var(--space-lg);
   }
-  
+
   .step-card {
     padding: var(--space-xl);
   }
-  
+
   .step-card__number {
     font-size: 2.5rem;
   }
-  
+
   .step-card__title {
     font-size: 1.25rem;
   }
-  
+
   .enrollment-cta {
     padding: var(--space-xl);
   }
-  
+
   .enrollment-info {
     padding: var(--space-xl);
   }

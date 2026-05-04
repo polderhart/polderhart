@@ -46,15 +46,14 @@
     gap: var(--space-sm);
     padding: var(--space-md) 0;
   }
-  
+
   .schedule-day,
   .schedule-time {
     font-size: 0.9375rem;
   }
-  
+
   .schedule-time {
     text-align: right;
     white-space: nowrap;
   }
 }
-
