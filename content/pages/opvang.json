@@ -1,20 +1,17 @@
 {
-  "hero_title": "Opvang en studie",
-  "hero_subtitle": "Voor en na schooltijd",
-
-  "voor_title": "Voor-schoolse opvang",
-  "voor_description": "Van 7:00 tot 8:15\n\nVoor kinderen die vroeg gebracht moeten worden, bieden we gratis opvang aan vanaf 7 uur 's ochtends.",
-  "voor_hours_start": "7:00",
-  "voor_hours_end": "8:15",
-  "voor_extra": "Gratis opvang voor kinderen die vroeg gebracht moeten worden.",
-
-  "na_title": "Na-schoolse opvang",
-  "na_description": "Van 15:30 tot 18:00\n\nNa de schooluren kunnen kinderen onder begeleiding spelen, knutselen of hun huiswerk maken.",
-  "na_hours_start": "15:30",
-  "na_hours_end": "18:00",
   "na_extra": "Kinderen kunnen onder begeleiding spelen, knutselen of hun huiswerk maken.",
-
   "studie_title": "Studiebegeleiding",
-  "studie_description": "Voor leerlingen van de lagere school organiseren we studiemomenten waar ze hun huiswerk kunnen maken onder begeleiding. Dit van maandag tot vrijdag van 15:45 tot 16:30.",
-  "studie_hours": "Maandag tot vrijdag van 15:45 tot 16:30"
+  "na_hours_start": "15:30",
+  "voor_hours_end": "8:15",
+  "studie_description": "Voor leerlingen van de lagere school organiseren we studiemomenten waar ze hun huiswerk kunnen maken onder begeleiding. Dit op maandag, dinsdag en donderdag van 16.00 tot 16.30 uur.",
+  "na_title": "Na-schoolse opvang",
+  "voor_extra": "Opvang voor kinderen die vroeg gebracht moeten worden.",
+  "voor_hours_start": "7:00",
+  "na_description": "Van 16.00 tot 18:00\n\nNa de schooluren kunnen kinderen onder begeleiding spelen, knutselen of hun huiswerk maken.",
+  "hero_title": "Opvang en studie",
+  "voor_title": "Voor-schoolse opvang",
+  "voor_description": "Van 7:00 tot 8:15\n\n",
+  "studie_hours": "Maandag tot vrijdag van 15:45 tot 16:30",
+  "hero_subtitle": "Voor en na schooltijd",
+  "na_hours_end": "18:00"
 }
