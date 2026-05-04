@@ -15,13 +15,13 @@
   "why_subtitle": "Een overzicht van wat onze school bijzonder maakt",
   "sport_image": "/assets/pictures/vriend7.jpg",
   "playground_label": "Buitenruimte",
-  "sport_description": "In onze eigen turnzaal komen kinderen wekelijks in beweging. Van spelletjes tot sportieve uitdagingen, bewegen en samenwerken staan centraal in ons bewegingsonderwijs.",
+  "sport_description": "Daarbovenop zetten we sterk in op zwemvaardigheid. De derde kleuterklas geniet tweewekelijks van watergewenning in het zwembad van Wenduine. Vanaf het eerste leerjaar gaan we wekelijks zwemmen.",
   "intro_image_alt": "Het schoolgebouw van GBS 't Polderhart",
   "hero_title": "Onze school",
   "why_1_title": "Kleine school, grote aandacht",
   "timeline_1": {
     "title": "Start van de dag",
-    "description": "Vanaf 8.30 uur verwelkomen we alle kinderen met een warm onthaal. De lessen starten om 8.40 uur. Er is tijd voor een praatje en om rustig aan de dag te beginnen in een vertrouwde sfeer.",
+    "description": "Vanaf 8.30 uur verwelkomen we alle kinderen met een warm onthaal. De lessen starten om 8.15 uur. Er is tijd voor een praatje en om rustig aan de dag te beginnen in een vertrouwde sfeer.",
     "image": "/assets/pictures/vriend3.jpg",
     "image_alt": "Kinderen worden verwelkomd bij aankomst op school"
   },
@@ -36,7 +36,7 @@
   "why_3_title": "Groene omgeving",
   "timeline_3": {
     "title": "Middagpauze",
-    "description": "Tijd om bij te tanken! Kinderen eten hun brooddoos of genieten van een warme maaltijd. Daarna is er volop tijd om te spelen, ravotten en energie op te doen op onze groene speelplaats.",
+    "description": "Tijd om bij te tanken! Kinderen genieten van een warme maaltijd of hun eigen lunchpakket. Daarna is er volop tijd om te spelen, ravotten en energie op te doen op onze speelplaats.",
     "image": "/assets/pictures/vriend7.jpg",
     "image_alt": "Kinderen spelen op de groene speelplaats"
   },
@@ -54,7 +54,7 @@
   "playground_image": "/assets/pictures/vriend7.jpg",
   "timeline_5": {
     "title": "Einde schooldag",
-    "description": "De schooldag eindigt tussen 15.10 en 16.00 uur, afhankelijk van de leeftijd. Voor wie naschoolse opvang nodig heeft, is er studiewerking tot 18 uur met huiswerkbegeleiding en speelmogelijkheden.",
+    "description": "De schooldag eindigt om 16.00 uur (op vrijdag om 15.10 uur). Op maandag, dinsdag en donderdag is er de mogelijkheid om gratis deel te nemen aan de studie. Vanaf 16.30 uur start de naschoolse opvang.",
     "image": "/assets/pictures/vriend7.jpg",
     "image_alt": "Naschoolse opvang met kinderen"
   },
