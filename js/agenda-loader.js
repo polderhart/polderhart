@@ -38,7 +38,7 @@
       return;
     }
 
-    // Groepeer per schooljaar > maand
+    // Groepeer per schooljaar > maand (op startdatum)
     const grouped = {};
     events.forEach(function (event) {
       const d = new Date(event.date + 'T00:00:00');
@@ -78,11 +78,29 @@
           const day = d.getDate();
           const monthShort = MAAND_KORT[d.getMonth()];
 
+          let dateHtml;
+          if (event.date_end && event.date_end !== event.date) {
+            const dEnd = new Date(event.date_end + 'T00:00:00');
+            const dayEnd = dEnd.getDate();
+            if (d.getMonth() === dEnd.getMonth()) {
+              dateHtml = '<div class="agenda-event__date agenda-event__date--range">'
+                + '<div class="agenda-event__day">' + day + '–' + dayEnd + '</div>'
+                + '<div class="agenda-event__month">' + monthShort + '</div>'
+                + '</div>';
+            } else {
+              dateHtml = '<div class="agenda-event__date agenda-event__date--range">'
+                + '<div class="agenda-event__day">' + day + ' ' + monthShort + '</div>'
+                + '<div class="agenda-event__month">– ' + dayEnd + ' ' + MAAND_KORT[dEnd.getMonth()] + '</div>'
+                + '</div>';
+            }
+          } else {
+            dateHtml = '<div class="agenda-event__date">'
+              + '<div class="agenda-event__day">' + day + '</div>'
+              + '<div class="agenda-event__month">' + monthShort + '</div>'
+              + '</div>';
+          }
           html += '<div class="agenda-event">';
-          html += '<div class="agenda-event__date">';
-          html += '<div class="agenda-event__day">' + day + '</div>';
-          html += '<div class="agenda-event__month">' + monthShort + '</div>';
-          html += '</div>';
+          html += dateHtml;
           html += '<div class="agenda-event__content">';
           html += '<h4 class="agenda-event__title">' + escapeHtml(event.title) + '</h4>';
           if (event.time) {
