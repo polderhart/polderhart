@@ -2,20 +2,20 @@
   "realized_1": {
     "title": "Feestelijke evenementen",
     "description": "Van sinterklaasfeesten tot eindejaarsactiviteiten, barbecues en schoolfeesten – we zorgen voor gezellige momenten waar ouders, kinderen en het schoolteam samenkomen.",
-    "image": "",
+    "image": "/assets/pictures/vriend2.jpg",
     "image_alt": "Kinderen genieten tijdens het schoolfeest"
   },
   "realized_2": {
     "title": "Fondsenwerving",
     "description": "Met acties zoals de chocoladeverkoop, pannenkoekenfestijn, kerstmarkt en andere initiatieven zamelen we geld in. Alle opbrengsten gaan rechtstreeks naar de school voor materiaal, speelgoed en extra uitstappen.",
-    "image": "",
+    "image": "/assets/pictures/vriend7.jpg",
     "image_alt": "Succesvolle fondsenwerving door de vriendenkring"
   },
   "intro_label": "Wie zijn we",
   "realized_3": {
     "title": "Speelplaatsverbetering",
     "description": "Dankzij de vriendenkring kreeg de speelplaats nieuwe toestellen, kleurrijke markering en speelmaterialen. Zo kunnen kinderen volop ravotten en bewegen tijdens de pauzes.",
-    "image": "",
+    "image": "/assets/pictures/5e62a29f-dc22-4eda-89bb-95a0cec7aaa6.jpeg",
     "image_alt": "Nieuwe speelplaats met verbeteringen door de vriendenkring"
   },
   "realized_4": {
@@ -28,7 +28,7 @@
   "intro_title": "Samen sterk voor onze kinderen",
   "join_description": "Elke helpende hand is welkom. Of je nu af en toe komt helpen bij een activiteit of regelmatig meedenkt – samen maken we onze school nóg mooier voor de kinderen.",
   "realized_title": "Wat hebben we al gerealiseerd?",
-  "intro_image": "",
+  "intro_image": "/assets/pictures/vriendenkring.jpg",
   "realized_subtitle": "Door de inzet van het oudercomité konden we al mooie projecten realiseren.",
   "intro_image_alt": "Ouders van de vriendenkring tijdens een schoolactiviteit",
   "hero_title": "Vriendenkring",
@@ -37,20 +37,20 @@
   "join_1": {
     "title": "Kom naar een vergadering",
     "description": "Gezellige bijeenkomsten waar we ideeën delen en nieuwe activiteiten plannen",
-    "image": "",
+    "image": "/assets/pictures/vriend4.jpg",
     "image_alt": "Ouders in vergadering van de vriendenkring"
   },
   "join_2": {
     "title": "Help bij evenementen",
     "description": "Van pannenkoeken bakken tot standbediening – jouw hulp maakt het verschil",
-    "image": "",
+    "image": "/assets/pictures/schermafbeelding-2026-06-19-213228.png",
     "image_alt": "Vrijwilligers helpen bij schoolevenement"
   },
   "hero_subtitle": "Het oudercomité van GBS 't Polderhart Zuienkerke",
   "join_3": {
     "title": "Deel je talenten",
     "description": "Heb je leuke ideeën of handige contacten? We horen graag van je!",
-    "image": "",
+    "image": "/assets/pictures/vriend4.jpg",
     "image_alt": "Ouders delen ideeën voor schoolactiviteiten"
   }
 }
