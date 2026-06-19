@@ -22,7 +22,7 @@
   "timeline_1": {
     "title": "Start van de dag",
     "description": "Vanaf 8.15 uur verwelkomen we alle kinderen met een warm onthaal. De lessen starten om 8.40 uur. Er is tijd voor een praatje en om rustig aan de dag te beginnen in een vertrouwde sfeer.",
-    "image": "",
+    "image": "/assets/pictures/foto-9.jpg",
     "image_alt": "Kinderen worden verwelkomd bij aankomst op school"
   },
   "why_2_title": "Brede ontwikkeling",
@@ -30,14 +30,14 @@
   "timeline_2": {
     "title": "Voormiddag",
     "description": "De voormiddag staat vol met gevarieerde lesactiviteiten zowel in kleuter als lager.\nVan taal, rekenen, de wereld en ik, tot de Franse taal, onze Polderhartjes steken heel wat kennis op. Dit volgens het kennisrijk curriculum, de OVSG leerplandoelen en minimumdoelen.",
-    "image": "",
+    "image": "/assets/pictures/foto-10.jpg",
     "image_alt": "Kinderen aan het werk tijdens een les"
   },
   "why_3_title": "Groene omgeving",
   "timeline_3": {
     "title": "Middagpauze",
     "description": "Tijd om bij te tanken! Kinderen genieten van een warme maaltijd of hun eigen lunchpakket. Daarna is er volop tijd om te spelen, ravotten en energie op te doen op onze speelplaats.",
-    "image": "",
+    "image": "/assets/pictures/foto-11.jpg",
     "image_alt": "Kinderen spelen op de groene speelplaats"
   },
   "why_4_title": "Betrokken gemeenschap",
@@ -46,7 +46,7 @@
   "timeline_4": {
     "title": "Namiddag",
     "description": "Zoals onze pedagogische kerngedachte het uitdrukt: \"Evenwicht tussen kennen & kunnen\". \nNiet alleen het 'kennen' is belangrijk, maar ook het 'kunnen'. Kennis en vaardigheden gaan immers hand in hand. Muziek, kunst, tuinieren, koken, bewegen, knutselen, sport, spelen, educatieve uitstappen, enz... het komt allemaal aan bod in het ontdekkend leren.\nZo kunnen onze kinderen hun talenten, hun kennis en vaardigheden verder ontdekken en ontwikkelen.",
-    "image": "",
+    "image": "/assets/pictures/foto-12.jpeg",
     "image_alt": "Kinderen bezig met creatieve activiteit"
   },
   "why_5_title": "Praktische organisatie",
