@@ -322,18 +322,18 @@
     width: 100%;
     height: 100vh;
     background: white;
+    display: none;
     flex-direction: column;
     align-items: flex-start;
     padding: 120px var(--space-3xl) var(--space-3xl);
     gap: 0;
     overflow-y: auto;
-    transform: translateX(100%);
     transition: transform 0.3s ease;
     z-index: 1001;
   }
 
   .nav__menu.active {
-    transform: translateX(0);
+    display: flex;
   }
 
   .nav__item {

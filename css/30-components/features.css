@@ -93,6 +93,7 @@
   gap: var(--space-3xl);
   margin-bottom: var(--space-3xl);
   position: relative;
+  min-width: 0;
 }
 
 .timeline-item:last-child {
@@ -158,6 +159,16 @@
   color: var(--text-secondary);
 }
 
+.timeline-item__content,
+.timeline-item__image {
+  min-width: 0;
+}
+
+.timeline-item__title,
+.timeline-item__description {
+  overflow-wrap: anywhere;
+}
+
 .timeline-item__image {
   width: 100%;
   aspect-ratio: 3/2;
@@ -220,6 +231,20 @@
   font-size: 1.0625rem;
   line-height: 1.7;
   color: var(--text-secondary);
+}
+
+.friend-join-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-xl);
+  margin-bottom: var(--space-3xl);
+}
+
+.schoolbus-route-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 350px), 1fr));
+  gap: var(--space-5xl);
+  margin: 0 auto;
 }
 
 @media (max-width: 1024px) {
@@ -342,5 +367,31 @@
   
   .process-step__description {
     font-size: 0.9375rem;
+  }
+
+  .friend-join-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .schoolbus-route-grid {
+    gap: var(--space-xl);
+  }
+}
+
+@media (max-width: 480px) {
+  .timeline {
+    padding-left: 0;
+  }
+
+  .timeline::before {
+    left: 12px;
+  }
+
+  .timeline-item {
+    padding-left: 36px;
+  }
+
+  .timeline-item::before {
+    left: 12px;
   }
 }

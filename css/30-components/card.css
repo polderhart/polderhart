@@ -178,6 +178,7 @@
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: var(--space-3xl);
+  min-width: 0;
 }
 
 .card-grid--2 {
@@ -217,5 +218,12 @@
 
   .card--static {
     padding: var(--space-xl) var(--space-lg);
+    min-width: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .card--static {
+    max-width: 100%;
   }
 }

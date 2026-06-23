@@ -57,3 +57,16 @@
     white-space: nowrap;
   }
 }
+
+@media (max-width: 480px) {
+  .schedule-item {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-xs);
+  }
+
+  .schedule-time {
+    text-align: left;
+    white-space: normal;
+  }
+}

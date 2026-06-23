@@ -63,3 +63,12 @@
     padding: var(--space-md) var(--space-xl);
   }
 }
+
+@media (max-width: 480px) {
+  .btn {
+    line-height: 1.35;
+    white-space: normal;
+    overflow-wrap: anywhere;
+    text-align: center;
+  }
+}
