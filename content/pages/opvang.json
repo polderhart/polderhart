@@ -1,17 +1,17 @@
 {
   "na_extra": "Kinderen kunnen onder begeleiding spelen, knutselen of hun huiswerk maken.",
   "studie_title": "Studiebegeleiding",
-  "na_hours_start": "15:30",
-  "voor_hours_end": "8:15",
-  "studie_description": "Voor leerlingen van de lagere school organiseren we studiemomenten waar ze hun huiswerk kunnen maken onder begeleiding. Dit op maandag, dinsdag en donderdag van 16.00 tot 16.30 uur.",
+  "na_hours_start": "16.00 uur",
+  "voor_hours_end": "8.15 uur",
+  "studie_description": "Voor leerlingen van de lagere school organiseren we studiemomenten waar ze hun huiswerk kunnen maken onder begeleiding van een klasleerkracht. Dit op maandag, dinsdag en donderdag van 16.00 uur tot 16.30 uur. Voor de derde graad is er tweemaal per week een lange studie tot 17.00 uur.",
   "na_title": "Na-schoolse opvang",
   "voor_extra": "Opvang voor kinderen die vroeg gebracht moeten worden.",
-  "voor_hours_start": "7:00",
-  "na_description": "Van 16.00 tot 18:00\n\nNa de schooluren kunnen kinderen onder begeleiding spelen, knutselen of hun huiswerk maken.",
+  "voor_hours_start": "7.00 uur",
+  "na_description": "van 16.00 uur tot 18:00 uur\n\nNa de schooluren kunnen kinderen onder begeleiding spelen, knutselen of hun huiswerk maken.",
   "hero_title": "Opvang en studie",
   "voor_title": "Voor-schoolse opvang",
-  "voor_description": "Van 7:00 tot 8:15\n\n",
-  "studie_hours": "Maandag tot vrijdag van 15:45 tot 16:30",
+  "voor_description": "van 7.00 uur tot 8.15 uur\n\n",
+  "studie_hours": "maandag, dinsdag en donderdag van 16.00 uur tot 16.30 uur",
   "hero_subtitle": "Voor en na schooltijd",
-  "na_hours_end": "18:00"
+  "na_hours_end": "18.00 uur"
 }
