@@ -1,7 +1,7 @@
 # Decap CMS Configuration voor 't Polderhart
 backend:
   name: git-gateway
-  branch: main
+  branch: fix/decap-team
 
 media_folder: "assets/pictures"
 public_folder: "/assets/pictures"
