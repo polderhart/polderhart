@@ -1,0 +1,276 @@
+{
+  "members": [
+    {
+      "section": "directie",
+      "subsection": "",
+      "name": "Juf Ingrid Igodt",
+      "role": "Directeur",
+      "email": "ingrid.igodt@gbszuienkerke.net",
+      "photo": "/assets/team/ingrid.jpg",
+      "order": 1,
+      "photo_position": "50.5% 0.0%"
+    },
+    {
+      "photo_zoom": "1",
+      "subsection": "",
+      "section": "kleuterklassen",
+      "name": "Juf Hanne Vanbuynder",
+      "order": 10,
+      "photo": "/assets/team/hanne-vanbuynder-.jpg",
+      "role": "Peuter en K1",
+      "photo_position": "top center",
+      "email": "hanne.vanbuynder@gbszuienkerke.net"
+    },
+    {
+      "photo_zoom": "1",
+      "subsection": "",
+      "section": "kleuterklassen",
+      "name": "Juf Tamara Willaert",
+      "order": 11,
+      "photo": "/assets/team/tamara-willaert.jpg",
+      "role": "K2",
+      "photo_position": "top center",
+      "email": "tamara.willaert@gbszuienkerke.net"
+    },
+    {
+      "section": "kleuterklassen",
+      "subsection": "",
+      "name": "Juf Marianne Vermeersch",
+      "role": "K3",
+      "email": "marianne.vermeersch@gbszuienkerke.net",
+      "photo": "/assets/team/marianne-vermeersch.jpg",
+      "order": 12
+    },
+    {
+      "photo_zoom": "1",
+      "subsection": "",
+      "section": "kleuterklassen",
+      "name": "Juf Alena Dosse",
+      "order": 13,
+      "photo": "/assets/team/alena-dosse.jpg",
+      "role": "Kleuter / LO",
+      "photo_position": "top center",
+      "email": "alena.dosse@gbszuienkerke.net"
+    },
+    {
+      "photo_zoom": "1",
+      "subsection": "",
+      "section": "lager",
+      "name": "Juf Alena Dosse",
+      "order": 14,
+      "photo": "/assets/team/alena-dosse.jpg",
+      "role": "Eerste leerjaar",
+      "photo_position": "top center",
+      "email": "alena.dosse@gbszuienkerke.net"
+    },
+    {
+      "photo_zoom": "1",
+      "subsection": "",
+      "section": "lager",
+      "name": "Juf Désirée Vandevyvere",
+      "order": 20,
+      "photo": "/assets/team/désirée-vandevyvere.jpg",
+      "role": "Eerste leerjaar",
+      "photo_position": "top center",
+      "email": "desiree.vandevyvere@gbszuienkerke.net"
+    },
+    {
+      "section": "lager",
+      "subsection": "",
+      "name": "Juf Tania Timmerman",
+      "role": "Eerste leerjaar",
+      "email": "tania.timmerman@gbszuienkerke.net",
+      "photo": "/assets/team/tania-timmerman.jpg",
+      "order": 21,
+      "photo_position": "50.0% 0.0%"
+    },
+    {
+      "section": "lager",
+      "subsection": "",
+      "name": "Juf Tina Ducheyne",
+      "role": "Tweede leerjaar",
+      "email": "tina.ducheyne@gbszuienkerke.net",
+      "photo": "/assets/team/tina-ducheyne.jpg",
+      "order": 22,
+      "photo_position": "13.2% 0.0%"
+    },
+    {
+      "section": "lager",
+      "subsection": "",
+      "name": "Juf An Goegebeur",
+      "role": "Derde leerjaar",
+      "email": "an.goegebeur@gbszuienkerke.net",
+      "photo": "/assets/team/an-goegebeur.jpg",
+      "order": 23,
+      "photo_position": "50.0% 0.0%"
+    },
+    {
+      "section": "lager",
+      "subsection": "",
+      "name": "Juf Sophie Hanseeuw",
+      "role": "Vierde leerjaar",
+      "email": "sophie.hanseeuw@gbszuienkerke.net",
+      "photo": "/assets/team/sophie-hanseeuw.jpg",
+      "order": 24,
+      "photo_position": "50.0% 0.0%"
+    },
+    {
+      "section": "lager",
+      "subsection": "",
+      "name": "Juf Sophie Hermans",
+      "role": "Vijfde leerjaar",
+      "email": "sophie.hermans@gbszuienkerke.net",
+      "photo": "/assets/team/sophie-hermans.jpg",
+      "order": 25,
+      "photo_position": "37.3% 0.0%"
+    },
+    {
+      "section": "lager",
+      "subsection": "",
+      "name": "Juf Shannah Verpoorter ",
+      "role": "Zesde leerjaar",
+      "email": "shannah.verpoorter@gbszuienkerke.net",
+      "photo": "",
+      "order": 26
+    },
+    {
+      "section": "bijzonder",
+      "subsection": "",
+      "name": "Meester Nick Ballegeer",
+      "role": "Lichamelijke opvoeding",
+      "email": "nick.ballegeer@gbszuienkerke.net",
+      "photo": "/assets/team/gemeenteschool-zuienkerke-4.jpg",
+      "order": 30,
+      "photo_position": "0.0% 0.0%"
+    },
+    {
+      "section": "bijzonder",
+      "subsection": "",
+      "name": "Juf An Mommerency",
+      "role": "Rooms-katholieke godsdienst",
+      "email": "an.mommerency@gbszuienkerke.net",
+      "photo": "",
+      "order": 31
+    },
+    {
+      "section": "bijzonder",
+      "subsection": "",
+      "name": "Juf Sophie Houtteman",
+      "role": "Niet-confessionele zedenleer",
+      "email": "sophie.houtteman@gbszuienkerke.net",
+      "photo": "/assets/team/sophie-houtteman.jpg",
+      "order": 32,
+      "photo_position": "49.5% 0.0%"
+    },
+    {
+      "photo_zoom": "1",
+      "subsection": "",
+      "section": "bijzonder",
+      "name": "Juf Sabien Schapdryver",
+      "order": 33,
+      "photo": "/assets/team/sabien-schapdryver.jpg",
+      "role": "Zorgcoördinator & Beleidsmedewerker ",
+      "photo_position": "top center",
+      "email": "sabien.schapdryver@gbszuienkerke.net"
+    },
+    {
+      "section": "admin",
+      "subsection": "",
+      "name": "Cindy",
+      "role": "Secretariaat",
+      "email": "",
+      "photo": "",
+      "order": 40
+    },
+    {
+      "section": "admin",
+      "subsection": "",
+      "name": "Bieke",
+      "role": "Administratie",
+      "email": "",
+      "photo": "",
+      "order": 41
+    },
+    {
+      "section": "opvang",
+      "subsection": "",
+      "name": "Juf Kelly",
+      "role": "Opvang",
+      "email": "",
+      "photo": "",
+      "order": 50
+    },
+    {
+      "section": "opvang",
+      "subsection": "",
+      "name": "Juf Tina",
+      "role": "Opvang",
+      "email": "",
+      "photo": "",
+      "order": 51
+    },
+    {
+      "section": "opvang",
+      "subsection": "",
+      "name": "Juf Sophie",
+      "role": "Buschauffeur",
+      "email": "",
+      "photo": "",
+      "order": 52
+    },
+    {
+      "section": "opvang",
+      "subsection": "",
+      "name": "Annemie",
+      "role": "Busbegeleiding",
+      "email": "",
+      "photo": "",
+      "order": 53
+    },
+    {
+      "section": "opvang",
+      "subsection": "",
+      "name": "Nancy",
+      "role": "Schoonmaak & refter",
+      "email": "",
+      "photo": "",
+      "order": 54
+    },
+    {
+      "section": "opvang",
+      "subsection": "",
+      "name": "Tine",
+      "role": "Schoonmaak & refter",
+      "email": "",
+      "photo": "",
+      "order": 55
+    },
+    {
+      "section": "opvang",
+      "subsection": "",
+      "name": "Alexandra",
+      "role": "Refter",
+      "email": "",
+      "photo": "",
+      "order": 57
+    },
+    {
+      "section": "opvang",
+      "subsection": "",
+      "name": "Lieve",
+      "role": "Refter",
+      "email": "",
+      "photo": "",
+      "order": 58
+    },
+    {
+      "section": "opvang",
+      "subsection": "",
+      "name": "Nadia",
+      "role": "Refter",
+      "email": "",
+      "photo": "",
+      "order": 59
+    }
+  ]
+}
