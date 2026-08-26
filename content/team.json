@@ -53,15 +53,15 @@
       "email": "alena.dosse@gbszuienkerke.net"
     },
     {
-      "section": "lager",
+      "photo_zoom": "1",
       "subsection": "",
+      "section": "lager",
       "name": "Juf Alena Dosse",
-      "role": "Eerste leerjaar",
-      "email": "alena.dosse@gbszuienkerke.net",
-      "photo": "/assets/team/alena-dosse.jpg",
       "order": 14,
+      "photo": "/assets/team/alena-dosse.jpg",
+      "role": "Eerste leerjaar",
       "photo_position": "top center",
-      "photo_zoom": "1"
+      "email": "alena.dosse@gbszuienkerke.net"
     },
     {
       "photo_zoom": "1",
