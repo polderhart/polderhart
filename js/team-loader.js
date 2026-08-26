@@ -59,24 +59,16 @@ class TeamLoader {
   }
 
   /**
-   * Laad alle team members via manifest bestand
+   * Laad alle team members uit één Decap-geschreven JSON-bron.
    */
   async loadTeamMembers() {
     try {
-      const response = await fetch("/content/team-manifest.json");
-      const manifest = await response.json();
-
-      const promises = manifest.files.map((filename) =>
-        fetch(`/content/team/${filename}`)
-          .then((r) => r.json())
-          .catch((e) => {
-            console.error(`Fout bij laden van ${filename}:`, e);
-            return null;
-          }),
-      );
-
-      const members = await Promise.all(promises);
-      this.teamMembers = members.filter((m) => m !== null);
+      const response = await fetch("/content/team.json");
+      if (!response.ok) {
+        throw new Error("team.json niet beschikbaar");
+      }
+      const data = await response.json();
+      this.teamMembers = Array.isArray(data.members) ? data.members : [];
       this.teamMembers.sort((a, b) => (a.order || 100) - (b.order || 100));
     } catch (error) {
       console.error("Geen team data beschikbaar:", error);
