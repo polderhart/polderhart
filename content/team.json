@@ -57,7 +57,7 @@
       "subsection": "",
       "section": "lager",
       "name": "Juf Alena Dosse",
-      "order": 14,
+      "order": 16,
       "photo": "/assets/team/alena-dosse.jpg",
       "role": "Tweede leerjaar",
       "photo_position": "top center",
@@ -68,7 +68,7 @@
       "subsection": "",
       "section": "lager",
       "name": "Juf Désirée Vandevyvere",
-      "order": 20,
+      "order": 13,
       "photo": "/assets/team/désirée-vandevyvere.jpg",
       "role": "Eerste leerjaar",
       "photo_position": "top center",
@@ -81,7 +81,7 @@
       "role": "Eerste leerjaar",
       "email": "tania.timmerman@gbszuienkerke.net",
       "photo": "/assets/team/tania-timmerman.jpg",
-      "order": 21,
+      "order": 10,
       "photo_position": "50.0% 0.0%"
     },
     {
@@ -91,7 +91,7 @@
       "role": "Tweede leerjaar",
       "email": "tina.ducheyne@gbszuienkerke.net",
       "photo": "/assets/team/tina-ducheyne.jpg",
-      "order": 22,
+      "order": 15,
       "photo_position": "13.2% 0.0%"
     },
     {
@@ -101,27 +101,27 @@
       "role": "Derde leerjaar",
       "email": "an.goegebeur@gbszuienkerke.net",
       "photo": "/assets/team/an-goegebeur.jpg",
-      "order": 23,
+      "order": 17,
       "photo_position": "50.0% 0.0%"
     },
     {
       "section": "lager",
       "subsection": "",
       "name": "Juf Sophie Hanseeuw",
-      "role": "Vierde leerjaar",
+      "role": "Vijfde leerjaar",
       "email": "sophie.hanseeuw@gbszuienkerke.net",
       "photo": "/assets/team/sophie-hanseeuw.jpg",
-      "order": 24,
+      "order": 19,
       "photo_position": "50.0% 0.0%"
     },
     {
       "section": "lager",
       "subsection": "",
       "name": "Juf Sophie Hermans",
-      "role": "Vijfde leerjaar",
+      "role": "Vierde leerjaar",
       "email": "sophie.hermans@gbszuienkerke.net",
       "photo": "/assets/team/sophie-hermans.jpg",
-      "order": 25,
+      "order": 18,
       "photo_position": "37.3% 0.0%"
     },
     {
@@ -131,7 +131,7 @@
       "role": "Zesde leerjaar",
       "email": "shannah.verpoorter@gbszuienkerke.net",
       "photo": "",
-      "order": 26
+      "order": 20
     },
     {
       "section": "bijzonder",
@@ -140,7 +140,7 @@
       "role": "Lichamelijke opvoeding",
       "email": "nick.ballegeer@gbszuienkerke.net",
       "photo": "/assets/team/gemeenteschool-zuienkerke-4.jpg",
-      "order": 30,
+      "order": 21,
       "photo_position": "0.0% 0.0%"
     },
     {
@@ -150,7 +150,7 @@
       "role": "Rooms-katholieke godsdienst",
       "email": "an.mommerency@gbszuienkerke.net",
       "photo": "",
-      "order": 31
+      "order": 22
     },
     {
       "section": "bijzonder",
@@ -159,7 +159,7 @@
       "role": "Niet-confessionele zedenleer",
       "email": "sophie.houtteman@gbszuienkerke.net",
       "photo": "/assets/team/sophie-houtteman.jpg",
-      "order": 32,
+      "order": 23,
       "photo_position": "49.5% 0.0%"
     },
     {
@@ -167,7 +167,7 @@
       "subsection": "",
       "section": "bijzonder",
       "name": "Juf Sabien Schapdryver",
-      "order": 33,
+      "order": 24,
       "photo": "/assets/team/sabien-schapdryver.jpg",
       "role": "Zorgcoördinator & Beleidsmedewerker ",
       "photo_position": "top center",
@@ -180,7 +180,7 @@
       "role": "Secretariaat",
       "email": "",
       "photo": "",
-      "order": 40
+      "order": 26
     },
     {
       "section": "admin",
@@ -189,7 +189,7 @@
       "role": "Administratie",
       "email": "",
       "photo": "",
-      "order": 41
+      "order": 25
     },
     {
       "section": "opvang",
@@ -198,7 +198,7 @@
       "role": "Opvang",
       "email": "",
       "photo": "",
-      "order": 50
+      "order": 27
     },
     {
       "section": "opvang",
@@ -207,7 +207,7 @@
       "role": "Opvang",
       "email": "",
       "photo": "",
-      "order": 51
+      "order": 28
     },
     {
       "section": "opvang",
@@ -216,7 +216,7 @@
       "role": "Buschauffeur",
       "email": "",
       "photo": "",
-      "order": 52
+      "order": 29
     },
     {
       "section": "opvang",
@@ -225,7 +225,7 @@
       "role": "Busbegeleiding",
       "email": "",
       "photo": "",
-      "order": 53
+      "order": 30
     },
     {
       "section": "opvang",
@@ -234,7 +234,7 @@
       "role": "Schoonmaak & refter",
       "email": "",
       "photo": "",
-      "order": 54
+      "order": 31
     },
     {
       "section": "opvang",
@@ -243,7 +243,7 @@
       "role": "Schoonmaak & refter",
       "email": "",
       "photo": "",
-      "order": 55
+      "order": 32
     },
     {
       "section": "opvang",
@@ -252,7 +252,7 @@
       "role": "Refter",
       "email": "",
       "photo": "",
-      "order": 57
+      "order": 35
     },
     {
       "section": "opvang",
@@ -261,7 +261,7 @@
       "role": "Refter",
       "email": "",
       "photo": "",
-      "order": 58
+      "order": 33
     },
     {
       "section": "opvang",
@@ -270,7 +270,7 @@
       "role": "Refter",
       "email": "",
       "photo": "",
-      "order": 59
+      "order": 34
     }
   ]
 }
