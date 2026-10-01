@@ -206,7 +206,7 @@
       "name": "Juf Tina",
       "role": "Opvang",
       "email": "",
-      "photo": "",
+      "photo": "/assets/pictures/juftina.jpg",
       "order": 21
     },
     {
@@ -260,7 +260,7 @@
       "name": "Lieve",
       "role": "Refter",
       "email": "",
-      "photo": "",
+      "photo": "/assets/pictures/lieve.jpeg",
       "order": 26
     },
     {
