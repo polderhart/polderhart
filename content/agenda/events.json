@@ -1,28 +1,6 @@
 {
   "events": [
     {
-      "date_end": "2026-09-07",
-      "date": "2026-09-07",
-      "title": "Infoavond lagere klassen",
-      "time": "18.30 uur - 20.15 uur"
-    },
-    {
-      "date_end": "2026-09-13",
-      "date": "2026-09-13",
-      "title": "Ribbetjesfestijn",
-      "description": "georganiseerd door onze vriendenkring"
-    },
-    {
-      "date_end": "2026-09-18",
-      "date": "2026-09-18",
-      "title": "STRAP-dag"
-    },
-    {
-      "date_end": "2026-09-30",
-      "date": "2026-09-30",
-      "title": "Dag van de sportclub"
-    },
-    {
       "date_end": "2026-10-05",
       "date": "2026-10-05",
       "title": "Pedagogische studiedag",
