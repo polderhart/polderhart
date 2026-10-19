@@ -1,5 +1,5 @@
 {
-  "na_extra": "Na de schooluren kunnen kinderen onder begeleiding spelen, knutselen of hun huiswerk maken.",
+  "na_extra": "Op woensdag: van 11.50 uur tot 17.00 uur\n\nNa de schooluren kunnen kinderen onder begeleiding spelen, knutselen of hun huiswerk maken.",
   "studie_title": "Studiebegeleiding",
   "na_hours_start": "16.30 uur",
   "voor_hours_end": "8.15 uur",
@@ -7,7 +7,7 @@
   "na_title": "Na-schoolse opvang",
   "voor_extra": "Opvang voor kinderen die vroeg gebracht moeten worden.",
   "voor_hours_start": "7.00 uur",
-  "na_description": "van 16.30 uur tot 18:15 uur / op woensdag: van 11.50 uur tot 17.00 uur\n\n",
+  "na_description": "van 16.30 uur tot 18:15 uur\n\n",
   "hero_title": "Opvang en studie",
   "voor_title": "Voor-schoolse opvang",
   "voor_description": "van 7.00 uur tot 8.15 uur\n\n",
