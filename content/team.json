@@ -105,14 +105,13 @@
       "photo_position": "50.0% 0.0%"
     },
     {
+      "photo_position": "center",
+      "photo_zoom": "1",
+      "order": 11,
       "section": "lager",
-      "subsection": "",
-      "name": "Juf Sophie Hanseeuw",
-      "role": "Vijfde leerjaar",
-      "email": "sophie.hanseeuw@gbszuienkerke.net",
-      "photo": "/assets/team/sophie-hanseeuw.jpg",
-      "order": 12,
-      "photo_position": "50.0% 0.0%"
+      "name": "Juf Estée De Boeck",
+      "role": "Derde leerjaar",
+      "email": "estee.deboeck@gbszuienkerke.net"
     },
     {
       "section": "lager",
@@ -121,8 +120,18 @@
       "role": "Vierde leerjaar",
       "email": "sophie.hermans@gbszuienkerke.net",
       "photo": "/assets/team/sophie-hermans.jpg",
-      "order": 11,
+      "order": 12,
       "photo_position": "37.3% 0.0%"
+    },
+    {
+      "section": "lager",
+      "subsection": "",
+      "name": "Juf Sophie Hanseeuw",
+      "role": "Vijfde leerjaar",
+      "email": "sophie.hanseeuw@gbszuienkerke.net",
+      "photo": "/assets/team/sophie-hanseeuw.jpg",
+      "order": 13,
+      "photo_position": "50.0% 0.0%"
     },
     {
       "section": "lager",
@@ -131,7 +140,7 @@
       "role": "Zesde leerjaar",
       "email": "shannah.verpoorter@gbszuienkerke.net",
       "photo": "/assets/pictures/gemeenteschool-zuienkerke-reeks-2_-4.jpg",
-      "order": 13
+      "order": 14
     },
     {
       "section": "bijzonder",
@@ -140,7 +149,7 @@
       "role": "Lichamelijke opvoeding",
       "email": "nick.ballegeer@gbszuienkerke.net",
       "photo": "/assets/team/gemeenteschool-zuienkerke-4.jpg",
-      "order": 14,
+      "order": 15,
       "photo_position": "0.0% 0.0%"
     },
     {
@@ -150,7 +159,7 @@
       "role": "Rooms-katholieke godsdienst",
       "email": "an.mommerency@gbszuienkerke.net",
       "photo": "/assets/pictures/gemeenteschool-zuienkerke-reeks-2_-2.jpg",
-      "order": 15
+      "order": 16
     },
     {
       "section": "bijzonder",
@@ -159,7 +168,7 @@
       "role": "Niet-confessionele zedenleer",
       "email": "sophie.houtteman@gbszuienkerke.net",
       "photo": "/assets/team/sophie-houtteman.jpg",
-      "order": 16,
+      "order": 17,
       "photo_position": "49.5% 0.0%"
     },
     {
@@ -167,7 +176,7 @@
       "subsection": "",
       "section": "bijzonder",
       "name": "Juf Sabien Schapdryver",
-      "order": 17,
+      "order": 18,
       "photo": "/assets/pictures/gemeenteschool-zuienkerke-reeks-2_-9.jpg",
       "role": "Zorgcoördinator & Beleidsmedewerker ",
       "photo_position": "top center",
@@ -271,15 +280,6 @@
       "email": "",
       "photo": "",
       "order": 27
-    },
-    {
-      "photo_position": "center",
-      "photo_zoom": "1",
-      "order": 11,
-      "section": "lager",
-      "name": "Juf Estée De Boeck",
-      "role": "Derde leerjaar",
-      "email": "estee.deboeck@gbszuienkerke.net"
     }
   ]
 }
