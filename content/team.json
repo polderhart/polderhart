@@ -271,6 +271,15 @@
       "email": "",
       "photo": "",
       "order": 27
+    },
+    {
+      "photo_position": "center",
+      "photo_zoom": "1",
+      "order": 11,
+      "section": "lager",
+      "name": "Juf Estée De Boeck",
+      "role": "Derde leerjaar",
+      "email": "estee.deboeck@gbszuienkerke.net"
     }
   ]
 }
