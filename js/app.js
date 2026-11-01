@@ -74,6 +74,12 @@ document.addEventListener('DOMContentLoaded', () => {
     
     lastScroll = currentScroll;
   });
+
+  const heroVideo = document.querySelector('.hero__video');
+  if (heroVideo && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+    heroVideo.pause();
+    heroVideo.removeAttribute('autoplay');
+  }
 });
 
 // Automatische Netlify afbeeldingsoptimalisatie voor alle statische <img> tags
