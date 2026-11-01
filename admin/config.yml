@@ -371,6 +371,20 @@ collections:
         fields:
           - { label: "Hero titel", name: "hero_title", widget: "string" }
           - { label: "Hero subtitel", name: "hero_subtitle", widget: "string" }
+          - { label: "Film label", name: "film_label", widget: "string" }
+          - { label: "Film status", name: "film_soon", widget: "string" }
+          - {
+              label: "Film tekst zolang er geen video is",
+              name: "film_soon_text",
+              widget: "string",
+            }
+          - {
+              label: "Schoolfilm YouTube-link",
+              name: "film_youtube",
+              widget: "string",
+              required: false,
+              hint: "Plak een YouTube-link of de embedcode. Laat leeg zolang de film er nog niet is.",
+            }
           - { label: "Intro label", name: "intro_label", widget: "string" }
           - { label: "Intro titel", name: "intro_title", widget: "string" }
           - {

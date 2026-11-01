@@ -9,6 +9,7 @@
  *   data-cms-src="key"      → img.src             = waarde
  *   data-cms-alt="key"      → img.alt / aria-label= waarde
  *   data-cms-href="key"     → a.href               = waarde
+ *   data-cms-youtube="key"  → YouTube-link wordt een embed; leeg toont de placeholder
  *
  * Sleutels uit school-info.json worden geprefixed met "site_":
  *   data-cms-text="site_email"  → school-info.json → email
@@ -106,6 +107,18 @@
       if (val !== undefined && val !== "") el.href = val;
     });
 
+    document.querySelectorAll("[data-cms-youtube]").forEach(function (frame) {
+      const id = youtubeId(data[frame.getAttribute("data-cms-youtube")]);
+      const iframe = frame.querySelector("iframe");
+      if (!id || !iframe) return;
+      iframe.src =
+        "https://www.youtube-nocookie.com/embed/" +
+        encodeURIComponent(id) +
+        "?rel=0";
+      iframe.hidden = false;
+      frame.classList.add("is-ready");
+    });
+
     document.querySelectorAll("[data-cms-mailto]").forEach(function (el) {
       const val = data[el.getAttribute("data-cms-mailto")];
       if (val !== undefined && val !== "") {
@@ -113,6 +126,40 @@
         if (!el.textContent.trim()) el.textContent = val;
       }
     });
+  }
+
+  function youtubeId(raw) {
+    if (!raw || typeof raw !== "string") return null;
+    const text = raw.trim();
+    if (!text) return null;
+    const fromIframe = text.match(/src=["']([^"']+)["']/i);
+    const candidate = fromIframe ? fromIframe[1] : text;
+    let id = null;
+    try {
+      const url = new URL(candidate);
+      const host = url.hostname.replace(/^www\./, "");
+      if (host === "youtu.be") {
+        id = url.pathname.split("/").filter(Boolean)[0];
+      } else if (
+        host === "youtube.com" ||
+        host === "m.youtube.com" ||
+        host === "youtube-nocookie.com"
+      ) {
+        id = url.searchParams.get("v");
+        if (!id) {
+          const parts = url.pathname.split("/").filter(Boolean);
+          const marker = parts.findIndex(function (part) {
+            return part === "embed" || part === "shorts" || part === "live" || part === "v";
+          });
+          if (marker >= 0) id = parts[marker + 1];
+        }
+      }
+    } catch (e) {
+      id = candidate;
+    }
+    if (!id) return null;
+    id = id.split(/[?&#]/)[0];
+    return /^[A-Za-z0-9_-]{6,20}$/.test(id) ? id : null;
   }
 
   /**
