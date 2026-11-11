@@ -1017,6 +1017,29 @@ collections:
               required: false,
             }
 
+      # ── Schoolraad ───────────────────────────────────────────────────────
+      - label: "Schoolraad"
+        name: "schoolraad"
+        file: "content/pages/schoolraad.json"
+        fields:
+          - { label: "Hero titel", name: "hero_title", widget: "string" }
+          - {
+              label: "Hero subtitel",
+              name: "hero_subtitle",
+              widget: "string",
+              required: false,
+            }
+          - {
+              label: "Placeholder label",
+              name: "placeholder_label",
+              widget: "string",
+            }
+          - {
+              label: "Placeholder tekst",
+              name: "placeholder_text",
+              widget: "string",
+            }
+
       # ── Vriendenkring ────────────────────────────────────────────────────
       - label: "Vriendenkring"
         name: "vriendenkring"
