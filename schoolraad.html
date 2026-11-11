@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schoolraad – 't Polderhart</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/logo.png">
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="nav">
+        <div class="nav__container">
+            <a href="index.html" class="nav__logo">
+                <img src="assets/logo.png" alt="GBS 't Polderhart logo" class="nav__logo-img">
+            </a>
+
+            <ul class="nav__menu">
+                <li class="nav__item">
+                    <a href="index.html" class="nav__link">Welkom</a>
+                </li>
+                <li class="nav__item">
+                    <a href="onze-school.html" class="nav__link">Onze school</a>
+                </li>
+                <li class="nav__item nav__item--dropdown">
+                    <a href="praktisch.html" class="nav__link">
+                        Praktisch
+                        <svg width="12" height="12" viewBox="0 0 12 12" fill="none"
+                            style="margin-left: 4px; transition: transform 0.2s;">
+                            <path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <div class="nav__dropdown">
+                        <div class="nav__dropdown-item">
+                            <a href="inschrijvingen.html" class="nav__dropdown-link">Inschrijven</a>
+                        </div>
+                        <div class="nav__dropdown-item nav__dropdown-item--has-submenu">
+                            <a href="#" class="nav__dropdown-link">Dagelijks</a>
+                            <div class="nav__submenu">
+                                <a href="schooluren.html" class="nav__submenu-link">Schooluren</a>
+                                <a href="opvang-studie.html" class="nav__submenu-link">Opvang en studie</a>
+                                <a href="https://order.hanssens.be/menu/X78A/GBS-t-Polderhart-Zuienkerke-Kleuter"
+                                    target="_blank" rel="noopener" class="nav__submenu-link">Warme maaltijden</a>
+                            </div>
+                        </div>
+                        <div class="nav__dropdown-item">
+                            <a href="documenten.html" class="nav__dropdown-link">Documenten</a>
+                        </div>
+                        <div class="nav__dropdown-item">
+                            <a href="schoolbus.html" class="nav__dropdown-link">Schoolbus</a>
+                        </div>
+                        <div class="nav__dropdown-item">
+                            <a href="schoolraad.html" class="nav__dropdown-link">Schoolraad</a>
+                        </div>
+                        <div class="nav__dropdown-item">
+                            <a href="vriendenkring.html" class="nav__dropdown-link">Vriendenkring</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav__item">
+                    <a href="team.html" class="nav__link">Team</a>
+                </li>
+                <li class="nav__item">
+                    <a href="agenda.html" class="nav__link">Agenda</a>
+                </li>
+                <li class="nav__item">
+                    <a href="contact.html" class="nav__link nav__link--cta">Contact</a>
+                </li>
+            </ul>
+
+            <button class="nav__toggle" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+        <div class="page-hero__container">
+            <h1 class="page-hero__title" data-cms-text="hero_title">Schoolraad</h1>
+            <p class="page-hero__subtitle" data-cms-text="hero_subtitle"></p>
+        </div>
+    </section>
+
+    <!-- PLACEHOLDER -->
+    <section class="section">
+        <div class="section__container">
+            <div class="card card--static"
+                style="max-width: 42rem; margin: 0 auto; text-align: center; padding: var(--space-4xl) var(--space-3xl);">
+                <p style="font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.16em; color: var(--text-tertiary); margin-bottom: var(--space-md);"
+                    data-cms-text="placeholder_label">Binnenkort</p>
+                <p style="font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2rem); line-height: 1.25; color: var(--text-primary); margin: 0;"
+                    data-cms-text="placeholder_text">Hier komt binnenkort meer informatie over de schoolraad.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__main">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <img src="assets/logo.png" alt="GBS 't Polderhart logo" class="footer__logo-img">
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="footer__column-title">School</h3>
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item"><a href="onze-school.html" class="footer__nav-link">Onze school</a>
+                        </li>
+                        <li class="footer__nav-item"><a href="team.html" class="footer__nav-link">Team</a></li>
+                        <li class="footer__nav-item"><a href="praktisch.html" class="footer__nav-link">Praktisch</a>
+                        </li>
+                        <li class="footer__nav-item"><a href="vriendenkring.html"
+                                class="footer__nav-link">Vriendenkring</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__column-title">Info</h3>
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item"><a href="agenda.html" class="footer__nav-link">Agenda</a></li>
+                        <li class="footer__nav-item"><a href="documenten.html" class="footer__nav-link">Documenten</a>
+                        </li>
+                        <li class="footer__nav-item"><a href="jobs.html" class="footer__nav-link">Jobs</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="footer__column-title">Contact</h3>
+                    <div class="footer__contact-item"><span data-cms-text="site_address_street"></span><br><span
+                            data-cms-text="site_address_city"></span></div>
+                    <div class="footer__contact-item"><a href="mailto:ingrid.igodt@gbszuienkerke.net"
+                            data-cms-href="site_email_href" data-cms-text="site_email"></a></div>
+                    <div class="footer__contact-item"><a href="tel:+3250418430" data-cms-href="site_phone_href"
+                            data-cms-text="site_phone_display"></a></div>
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <span>© 2026 't Polderhart</span>
+                </div>
+                <div class="footer__legal">
+                    <a href="https://www.instagram.com/gbs_t_polderhart_zuienkerke?igsh=MTFoaXNiZ2I1eW50OA%3D%3D"
+                        target="_blank" rel="noopener" class="footer__legal-link">Instagram</a>
+                    <a href="https://www.facebook.com/gbszuienkerke" target="_blank" rel="noopener"
+                        class="footer__legal-link">Facebook</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script src="js/content-loader.js"></script>
+</body>
+
+</html>

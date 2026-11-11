@@ -25,6 +25,7 @@
     "/opvang-studie.html": "opvang",
     "/inschrijvingen.html": "inschrijvingen",
     "/schoolbus.html": "schoolbus",
+    "/schoolraad.html": "schoolraad",
     "/vriendenkring.html": "vriendenkring",
     "/jobs.html": "jobs",
     "/praktisch.html": "praktisch",
