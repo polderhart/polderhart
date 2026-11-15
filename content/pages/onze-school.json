@@ -5,6 +5,7 @@
   "intro_title": "Een plek waar kinderen groeien",
   "infra_label": "Infrastructuur",
   "intro_image": "/assets/school.jpg",
+  "film_youtube": "https://youtu.be/4EFsS7zTrHE?si=D6Ra6Nmbw6B-xJlD",
   "sport_label": "Beweging",
   "infra_title": "Moderne klassen voor optimaal leren",
   "cta_title": "Kom kennismaken",
@@ -40,9 +41,11 @@
     "image": "/assets/pictures/eetzaal-tijdens-kerst.jpg",
     "image_alt": "Kinderen spelen op de groene speelplaats"
   },
+  "film_soon_text": "De film van de school volgt hier.",
   "why_4_title": "Betrokken gemeenschap",
   "infra_image_alt": "Moderne klaslokalen met digitale leermiddelen",
   "timeline_subtitle": "Ontdek hoe een typische schooldag bij 't Polderhart eruitziet",
+  "film_soon": "Binnenkort",
   "timeline_4": {
     "title": "Namiddag",
     "description": "Zoals onze pedagogische kerngedachte het uitdrukt: \"Evenwicht tussen kennen & kunnen\". \nNiet alleen het 'kennen' is belangrijk, maar ook het 'kunnen'. Kennis en vaardigheden gaan immers hand in hand. Muziek, kunst, tuinieren, koken, bewegen, knutselen, sport, spelen, educatieve uitstappen, enz... het komt allemaal aan bod in het ontdekkend leren.\nZo kunnen onze kinderen hun talenten, hun kennis en vaardigheden verder ontdekken en ontwikkelen.",
@@ -60,6 +63,7 @@
   },
   "why_2_description": "We geloven in een brede basisvorming waarbij kinderen naast cognitieve vaardigheden ook sociaal, emotioneel en creatief tot ontwikkeling komen.",
   "playground_description": "Onze speelplaats ligt midden in het groen met speeltoestellen, een zandbak en veel ruimte om te ravotten. Kinderen leren de natuur waarderen en krijgen volop bewegingsvrijheid.",
+  "film_label": "In beeld",
   "why_3_description": "Onze school ligt midden in het groen met veel ruimte om te spelen en te ontdekken. Kinderen leren de natuur waarderen en genieten van buitenactiviteiten.",
   "why_4_description": "Onze vriendenkring, betrokken ouders en enthousiast team zorgen samen voor een hechte schoolgemeenschap waar iedereen welkom is.",
   "timeline_title": "Een dag op school",
@@ -67,9 +71,5 @@
   "intro_description_1": "Bij 't Polderhart Zuienkerke staat het welbevinden van elk kind centraal. In onze kleine, warme schoolgemeenschap krijgt ieder kind de persoonlijke aandacht die het verdient.",
   "why_5_description": "Met schoolbusvervoer, voor- en naschoolse opvang, warme maaltijden en een studiewerking denken we mee met drukke gezinnen.",
   "intro_description_2": "We werken met kleine klasgroepen in een groene omgeving, waar kinderen niet alleen leren maar ook ontdekken, spelen en opgroeien in een sfeer van vertrouwen en veiligheid.",
-  "hero_subtitle": "Een school met een warm hart waar elk kind mag groeien.",
-  "film_label": "In beeld",
-  "film_soon": "Binnenkort",
-  "film_soon_text": "De film van de school volgt hier.",
-  "film_youtube": ""
+  "hero_subtitle": "Een school met een warm hart waar elk kind mag groeien."
 }
