@@ -1,24 +1,6 @@
 {
   "events": [
     {
-      "date_end": "2026-10-05",
-      "date": "2026-10-05",
-      "title": "Pedagogische studiedag",
-      "description": "geen school"
-    },
-    {
-      "date_end": "2026-10-09",
-      "date": "2026-10-09",
-      "title": "Bibliotheek ",
-      "description": "Breng na schooltijd een bezoekje aan onze bib.",
-      "time": "15.10 uur - 16.00 uur"
-    },
-    {
-      "date_end": "2026-10-29",
-      "date": "2026-10-29",
-      "title": "Oudercontact L4-L6"
-    },
-    {
       "date_end": "2026-11-06",
       "date": "2026-11-02",
       "title": "Herfstvakantie"
